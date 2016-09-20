@@ -44,7 +44,7 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
 		$this->viewBuilder()->theme('TwitterBootstrap');	
-		//$this->viewBuilder()->layout('adminlte');		
+		$this->viewBuilder()->layout('adminlte');		
     }
 
     /**
@@ -60,5 +60,5 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
-    }
+    }	
 }
