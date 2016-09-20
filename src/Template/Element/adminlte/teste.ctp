@@ -6,9 +6,12 @@
     <li class="header">Menu do Módulo</li>
     <!-- Optionally, you can add icons to the links -->
     <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Início</span></a></li>
-	<li><a href="#"><i class="fa fa-laptop"></i> <span>Espaços</span></a></li>
-    <li><a href="#"><i class="fa fa-laptop"></i> <span>Projeto Especial</span></a></li>
-	<li><a href="#"><i class="fa fa-laptop"></i> <span>Usuários</span></a></li>
+	<li><?= $this->Html->link(__('Instituição'), ['controller' => 'Instituicaos', 'action' => 'index']) ?></li>
+	<li><?= $this->Html->link(__('Local'), ['controller' => 'Locals', 'action' => 'index']) ?></li>
+	<li><?= $this->Html->link(__('Módulos'), ['controller' => 'Modulos', 'action' => 'index']) ?></li>
+    <li><?= $this->Html->link(__('Projetos'), ['controller' => 'ProjetoEspecials', 'action' => 'index']) ?>
+	<li><?= $this->Html->link(__('Usuários'), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
+	<li><?= $this->Html->link(__('Verbas'), ['controller' => 'Verbas', 'action' => 'index']) ?></li>
 	<li><a href="#"><i class="fa fa-laptop"></i> <span>Chamados</span></a></li>
 	<!--
     <li class="treeview">

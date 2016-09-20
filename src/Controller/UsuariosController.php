@@ -37,7 +37,7 @@ class UsuariosController extends AppController
     public function view($id = null)
     {
         $usuario = $this->Usuarios->get($id, [
-            'contain' => ['Instituicaos', 'Locals', 'Verbas', 'ChamadoComentarios', 'Chamados', 'ControleOrcamentos', 'Eventos', 'FormacaoVigencias', 'Formacaos', 'Historicos', 'Logs', 'ModuloUsuarios', 'PessoaFisicas', 'PessoaJuridicas', 'Times', 'VerificaProducaos']
+            'contain' => ['Instituicaos', 'Locals', 'Modulos', 'Verbas', 'ChamadoComentarios', 'Chamados', 'ControleOrcamentos', 'Eventos', 'FormacaoVigencias', 'Formacaos', 'Historicos', 'Logs', 'PessoaFisicas', 'PessoaJuridicas', 'Times', 'VerificaProducaos']
         ]);
 
         $this->set('usuario', $usuario);
@@ -64,8 +64,9 @@ class UsuariosController extends AppController
         }
         $instituicaos = $this->Usuarios->Instituicaos->find('list', ['limit' => 200]);
         $locals = $this->Usuarios->Locals->find('list', ['limit' => 200]);
+        $modulos = $this->Usuarios->Modulos->find('list', ['limit' => 200]);
         $verbas = $this->Usuarios->Verbas->find('list', ['limit' => 200]);
-        $this->set(compact('usuario', 'instituicaos', 'locals', 'verbas'));
+        $this->set(compact('usuario', 'instituicaos', 'locals', 'modulos', 'verbas'));
         $this->set('_serialize', ['usuario']);
     }
 
@@ -79,7 +80,7 @@ class UsuariosController extends AppController
     public function edit($id = null)
     {
         $usuario = $this->Usuarios->get($id, [
-            'contain' => ['Locals', 'Verbas']
+            'contain' => ['Locals', 'Modulos', 'Verbas']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $usuario = $this->Usuarios->patchEntity($usuario, $this->request->data);
@@ -93,8 +94,9 @@ class UsuariosController extends AppController
         }
         $instituicaos = $this->Usuarios->Instituicaos->find('list', ['limit' => 200]);
         $locals = $this->Usuarios->Locals->find('list', ['limit' => 200]);
+        $modulos = $this->Usuarios->Modulos->find('list', ['limit' => 200]);
         $verbas = $this->Usuarios->Verbas->find('list', ['limit' => 200]);
-        $this->set(compact('usuario', 'instituicaos', 'locals', 'verbas'));
+        $this->set(compact('usuario', 'instituicaos', 'locals', 'modulos', 'verbas'));
         $this->set('_serialize', ['usuario']);
     }
 

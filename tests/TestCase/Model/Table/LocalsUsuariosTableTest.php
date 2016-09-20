@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\UsuariosTable;
+use App\Model\Table\LocalsUsuariosTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\UsuariosTable Test Case
+ * App\Model\Table\LocalsUsuariosTable Test Case
  */
-class UsuariosTableTest extends TestCase
+class LocalsUsuariosTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\UsuariosTable
+     * @var \App\Model\Table\LocalsUsuariosTable
      */
-    public $Usuarios;
+    public $LocalsUsuarios;
 
     /**
      * Fixtures
@@ -24,23 +24,16 @@ class UsuariosTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.usuarios',
+        'app.locals_usuarios',
+        'app.locals',
         'app.instituicaos',
         'app.agenda_em_cartazs',
         'app.agendas',
         'app.comunicacaos',
         'app.controle_orcamentos',
         'app.eventos',
-        'app.locals',
-        'app.detalhe_locals',
-        'app.historico_ocorrencias',
-        'app.ocorrencias',
-        'app.locals_usuarios',
         'app.pedido_contratacaos',
-        'app.verbas',
-        'app.verba_multiplas',
-        'app.usuarios_verbas',
-        'app.verifica_producaos',
+        'app.usuarios',
         'app.chamado_comentarios',
         'app.chamados',
         'app.formacao_vigencias',
@@ -50,8 +43,15 @@ class UsuariosTableTest extends TestCase
         'app.pessoa_fisicas',
         'app.pessoa_juridicas',
         'app.times',
+        'app.verifica_producaos',
         'app.modulos',
-        'app.modulos_usuarios'
+        'app.modulos_usuarios',
+        'app.verbas',
+        'app.verba_multiplas',
+        'app.usuarios_verbas',
+        'app.detalhe_locals',
+        'app.historico_ocorrencias',
+        'app.ocorrencias'
     ];
 
     /**
@@ -62,8 +62,8 @@ class UsuariosTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Usuarios') ? [] : ['className' => 'App\Model\Table\UsuariosTable'];
-        $this->Usuarios = TableRegistry::get('Usuarios', $config);
+        $config = TableRegistry::exists('LocalsUsuarios') ? [] : ['className' => 'App\Model\Table\LocalsUsuariosTable'];
+        $this->LocalsUsuarios = TableRegistry::get('LocalsUsuarios', $config);
     }
 
     /**
@@ -73,7 +73,7 @@ class UsuariosTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Usuarios);
+        unset($this->LocalsUsuarios);
 
         parent::tearDown();
     }
@@ -84,16 +84,6 @@ class UsuariosTableTest extends TestCase
      * @return void
      */
     public function testInitialize()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test validationDefault method
-     *
-     * @return void
-     */
-    public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

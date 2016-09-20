@@ -29,12 +29,12 @@ use Cake\ORM\Entity;
  * @property \App\Model\Entity\Formacao[] $formacaos
  * @property \App\Model\Entity\Historico[] $historicos
  * @property \App\Model\Entity\Log[] $logs
- * @property \App\Model\Entity\ModuloUsuario[] $modulo_usuarios
  * @property \App\Model\Entity\PessoaFisica[] $pessoa_fisicas
  * @property \App\Model\Entity\PessoaJuridica[] $pessoa_juridicas
  * @property \App\Model\Entity\Time[] $times
  * @property \App\Model\Entity\VerificaProducao[] $verifica_producaos
  * @property \App\Model\Entity\Local[] $locals
+ * @property \App\Model\Entity\Modulo[] $modulos
  * @property \App\Model\Entity\Verba[] $verbas
  */
 class Usuario extends Entity

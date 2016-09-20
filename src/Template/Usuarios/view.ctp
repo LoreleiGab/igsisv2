@@ -1,42 +1,42 @@
 <nav class="col-lg-2 col-md-3">
     <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href=""><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('Edit {0}', ['Usuario']), ['action' => 'edit', $usuario->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Delete {0}', ['Usuario']), ['action' => 'delete', $usuario->id], ['confirm' => __('Are you sure you want to delete # {0}?', $usuario->id)]) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Usuarios']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Usuario']), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Instituicaos']), ['controller' => 'Instituicaos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Instituicao']), ['controller' => 'Instituicaos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Chamado Comentarios']), ['controller' => 'ChamadoComentarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Chamado Comentario']), ['controller' => 'ChamadoComentarios', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Chamados']), ['controller' => 'Chamados', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Chamado']), ['controller' => 'Chamados', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Controle Orcamentos']), ['controller' => 'ControleOrcamentos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Controle Orcamento']), ['controller' => 'ControleOrcamentos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Eventos']), ['controller' => 'Eventos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Evento']), ['controller' => 'Eventos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Formacao Vigencias']), ['controller' => 'FormacaoVigencias', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Formacao Vigencia']), ['controller' => 'FormacaoVigencias', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Formacaos']), ['controller' => 'Formacaos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Formacao']), ['controller' => 'Formacaos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Historicos']), ['controller' => 'Historicos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Historico']), ['controller' => 'Historicos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Logs']), ['controller' => 'Logs', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Log']), ['controller' => 'Logs', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Modulo Usuarios']), ['controller' => 'ModuloUsuarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Modulo Usuario']), ['controller' => 'ModuloUsuarios', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Pessoa Fisicas']), ['controller' => 'PessoaFisicas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Pessoa Fisica']), ['controller' => 'PessoaFisicas', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Pessoa Juridicas']), ['controller' => 'PessoaJuridicas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Pessoa Juridica']), ['controller' => 'PessoaJuridicas', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Times']), ['controller' => 'Times', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Time']), ['controller' => 'Times', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Verifica Producaos']), ['controller' => 'VerificaProducaos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Verifica Producao']), ['controller' => 'VerificaProducaos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Locals']), ['controller' => 'Locals', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Local']), ['controller' => 'Locals', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('List {0}', ['Verbas']), ['controller' => 'Verbas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('New {0}', ['Verba']), ['controller' => 'Verbas', 'action' => 'add']) ?> </li>
+        <li class="active"><a href=""><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('Editar {0}', ['Usuario']), ['action' => 'edit', $usuario->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir {0}', ['Usuario']), ['action' => 'delete', $usuario->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $usuario->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Usuarios']), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Usuario']), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Instituicaos']), ['controller' => 'Instituicaos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Instituicao']), ['controller' => 'Instituicaos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Chamado Comentarios']), ['controller' => 'ChamadoComentarios', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Chamado Comentario']), ['controller' => 'ChamadoComentarios', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Chamados']), ['controller' => 'Chamados', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Chamado']), ['controller' => 'Chamados', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Controle Orcamentos']), ['controller' => 'ControleOrcamentos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Controle Orcamento']), ['controller' => 'ControleOrcamentos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Eventos']), ['controller' => 'Eventos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Evento']), ['controller' => 'Eventos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Formacao Vigencias']), ['controller' => 'FormacaoVigencias', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Formacao Vigencia']), ['controller' => 'FormacaoVigencias', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Formacaos']), ['controller' => 'Formacaos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Formacao']), ['controller' => 'Formacaos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Historicos']), ['controller' => 'Historicos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Historico']), ['controller' => 'Historicos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Logs']), ['controller' => 'Logs', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Log']), ['controller' => 'Logs', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Pessoa Fisicas']), ['controller' => 'PessoaFisicas', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Pessoa Fisica']), ['controller' => 'PessoaFisicas', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Pessoa Juridicas']), ['controller' => 'PessoaJuridicas', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Pessoa Juridica']), ['controller' => 'PessoaJuridicas', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Times']), ['controller' => 'Times', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Time']), ['controller' => 'Times', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Verifica Producaos']), ['controller' => 'VerificaProducaos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Verifica Producao']), ['controller' => 'VerificaProducaos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Locals']), ['controller' => 'Locals', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Local']), ['controller' => 'Locals', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Modulos']), ['controller' => 'Modulos', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Modulo']), ['controller' => 'Modulos', 'action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Verbas']), ['controller' => 'Verbas', 'action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Verba']), ['controller' => 'Verbas', 'action' => 'add']) ?> </li>
     </ul>
 </nav>
 <div class="usuarios view col-lg-10 col-md-9">
@@ -105,7 +105,7 @@
                 <th>Data</th>
                 <th>Usuario Id</th>
                 <th>Comentario</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->chamado_comentarios as $chamadoComentarios): ?>
             <tr>
@@ -115,11 +115,11 @@
                 <td><?= h($chamadoComentarios->usuario_id) ?></td>
                 <td><?= h($chamadoComentarios->comentario) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'ChamadoComentarios', 'action' => 'view', $chamadoComentarios->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'ChamadoComentarios', 'action' => 'view', $chamadoComentarios->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'ChamadoComentarios', 'action' => 'edit', $chamadoComentarios->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'ChamadoComentarios', 'action' => 'edit', $chamadoComentarios->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'ChamadoComentarios', 'action' => 'delete', $chamadoComentarios->id], ['confirm' => __('Are you sure you want to delete # {0}?', $chamadoComentarios->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'ChamadoComentarios', 'action' => 'delete', $chamadoComentarios->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $chamadoComentarios->id)]) ?>
 
                 </td>
             </tr>
@@ -142,7 +142,7 @@
                 <th>Usuario Id</th>
                 <th>Estado</th>
                 <th>Nota</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->chamados as $chamados): ?>
             <tr>
@@ -157,11 +157,11 @@
                 <td><?= h($chamados->estado) ?></td>
                 <td><?= h($chamados->nota) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Chamados', 'action' => 'view', $chamados->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Chamados', 'action' => 'view', $chamados->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Chamados', 'action' => 'edit', $chamados->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Chamados', 'action' => 'edit', $chamados->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Chamados', 'action' => 'delete', $chamados->id], ['confirm' => __('Are you sure you want to delete # {0}?', $chamados->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Chamados', 'action' => 'delete', $chamados->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $chamados->id)]) ?>
 
                 </td>
             </tr>
@@ -180,7 +180,7 @@
                 <th>Instituicao Id</th>
                 <th>Verba Pai</th>
                 <th>Publicado</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->controle_orcamentos as $controleOrcamentos): ?>
             <tr>
@@ -191,11 +191,11 @@
                 <td><?= h($controleOrcamentos->verba_pai) ?></td>
                 <td><?= h($controleOrcamentos->publicado) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'ControleOrcamentos', 'action' => 'view', $controleOrcamentos->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'ControleOrcamentos', 'action' => 'view', $controleOrcamentos->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'ControleOrcamentos', 'action' => 'edit', $controleOrcamentos->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'ControleOrcamentos', 'action' => 'edit', $controleOrcamentos->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'ControleOrcamentos', 'action' => 'delete', $controleOrcamentos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $controleOrcamentos->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'ControleOrcamentos', 'action' => 'delete', $controleOrcamentos->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $controleOrcamentos->id)]) ?>
 
                 </td>
             </tr>
@@ -228,7 +228,7 @@
                 <th>Data Envio</th>
                 <th>Ocupacao</th>
                 <th>Publicado</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->eventos as $eventos): ?>
             <tr>
@@ -253,11 +253,11 @@
                 <td><?= h($eventos->ocupacao) ?></td>
                 <td><?= h($eventos->publicado) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Eventos', 'action' => 'view', $eventos->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Eventos', 'action' => 'view', $eventos->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Eventos', 'action' => 'edit', $eventos->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Eventos', 'action' => 'edit', $eventos->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Eventos', 'action' => 'delete', $eventos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $eventos->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Eventos', 'action' => 'delete', $eventos->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $eventos->id)]) ?>
 
                 </td>
             </tr>
@@ -278,7 +278,7 @@
                 <th>Descricao</th>
                 <th>Ano</th>
                 <th>Publicado</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->formacao_vigencias as $formacaoVigencias): ?>
             <tr>
@@ -291,11 +291,11 @@
                 <td><?= h($formacaoVigencias->ano) ?></td>
                 <td><?= h($formacaoVigencias->publicado) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'FormacaoVigencias', 'action' => 'view', $formacaoVigencias->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'FormacaoVigencias', 'action' => 'view', $formacaoVigencias->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'FormacaoVigencias', 'action' => 'edit', $formacaoVigencias->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'FormacaoVigencias', 'action' => 'edit', $formacaoVigencias->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'FormacaoVigencias', 'action' => 'delete', $formacaoVigencias->id], ['confirm' => __('Are you sure you want to delete # {0}?', $formacaoVigencias->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'FormacaoVigencias', 'action' => 'delete', $formacaoVigencias->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $formacaoVigencias->id)]) ?>
 
                 </td>
             </tr>
@@ -333,7 +333,7 @@
                 <th>Verba</th>
                 <th>Data Envio</th>
                 <th>Publicado</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->formacaos as $formacaos): ?>
             <tr>
@@ -363,11 +363,11 @@
                 <td><?= h($formacaos->data_envio) ?></td>
                 <td><?= h($formacaos->publicado) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Formacaos', 'action' => 'view', $formacaos->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Formacaos', 'action' => 'view', $formacaos->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Formacaos', 'action' => 'edit', $formacaos->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Formacaos', 'action' => 'edit', $formacaos->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Formacaos', 'action' => 'delete', $formacaos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $formacaos->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Formacaos', 'action' => 'delete', $formacaos->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $formacaos->id)]) ?>
 
                 </td>
             </tr>
@@ -389,7 +389,7 @@
                 <th>Usuario Id</th>
                 <th>Ip</th>
                 <th>Data Abertura</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->historicos as $historicos): ?>
             <tr>
@@ -403,11 +403,11 @@
                 <td><?= h($historicos->ip) ?></td>
                 <td><?= h($historicos->data_abertura) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Historicos', 'action' => 'view', $historicos->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Historicos', 'action' => 'view', $historicos->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Historicos', 'action' => 'edit', $historicos->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Historicos', 'action' => 'edit', $historicos->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Historicos', 'action' => 'delete', $historicos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $historicos->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Historicos', 'action' => 'delete', $historicos->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $historicos->id)]) ?>
 
                 </td>
             </tr>
@@ -425,7 +425,7 @@
                 <th>Data Log</th>
                 <th>Endereco Ip</th>
                 <th>Descricao</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->logs as $logs): ?>
             <tr>
@@ -435,39 +435,11 @@
                 <td><?= h($logs->endereco_ip) ?></td>
                 <td><?= h($logs->descricao) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Logs', 'action' => 'view', $logs->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Logs', 'action' => 'view', $logs->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Logs', 'action' => 'edit', $logs->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Logs', 'action' => 'edit', $logs->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Logs', 'action' => 'delete', $logs->id], ['confirm' => __('Are you sure you want to delete # {0}?', $logs->id)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Modulo Usuarios']) ?></h4>
-        <?php if (!empty($usuario->modulo_usuarios)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Id</th>
-                <th>Usuario Id</th>
-                <th>Modulo Id</th>
-                <th class="actions"><?= __('Actions') ?></th>
-            </tr>
-            <?php foreach ($usuario->modulo_usuarios as $moduloUsuarios): ?>
-            <tr>
-                <td><?= h($moduloUsuarios->id) ?></td>
-                <td><?= h($moduloUsuarios->usuario_id) ?></td>
-                <td><?= h($moduloUsuarios->modulo_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'ModuloUsuarios', 'action' => 'view', $moduloUsuarios->id]) ?>
-
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'ModuloUsuarios', 'action' => 'edit', $moduloUsuarios->id]) ?>
-
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'ModuloUsuarios', 'action' => 'delete', $moduloUsuarios->id], ['confirm' => __('Are you sure you want to delete # {0}?', $moduloUsuarios->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Logs', 'action' => 'delete', $logs->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $logs->id)]) ?>
 
                 </td>
             </tr>
@@ -511,7 +483,7 @@
                 <th>Data Atualizacao</th>
                 <th>Evento Id</th>
                 <th>Usuario Id</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->pessoa_fisicas as $pessoaFisicas): ?>
             <tr>
@@ -547,11 +519,11 @@
                 <td><?= h($pessoaFisicas->evento_id) ?></td>
                 <td><?= h($pessoaFisicas->usuario_id) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'PessoaFisicas', 'action' => 'view', $pessoaFisicas->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'PessoaFisicas', 'action' => 'view', $pessoaFisicas->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'PessoaFisicas', 'action' => 'edit', $pessoaFisicas->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'PessoaFisicas', 'action' => 'edit', $pessoaFisicas->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'PessoaFisicas', 'action' => 'delete', $pessoaFisicas->id], ['confirm' => __('Are you sure you want to delete # {0}?', $pessoaFisicas->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'PessoaFisicas', 'action' => 'delete', $pessoaFisicas->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $pessoaFisicas->id)]) ?>
 
                 </td>
             </tr>
@@ -584,7 +556,7 @@
                 <th>Usuario Id</th>
                 <th>Evento Id</th>
                 <th>Data Atualizacao</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->pessoa_juridicas as $pessoaJuridicas): ?>
             <tr>
@@ -609,11 +581,11 @@
                 <td><?= h($pessoaJuridicas->evento_id) ?></td>
                 <td><?= h($pessoaJuridicas->data_atualizacao) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'PessoaJuridicas', 'action' => 'view', $pessoaJuridicas->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'PessoaJuridicas', 'action' => 'view', $pessoaJuridicas->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'PessoaJuridicas', 'action' => 'edit', $pessoaJuridicas->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'PessoaJuridicas', 'action' => 'edit', $pessoaJuridicas->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'PessoaJuridicas', 'action' => 'delete', $pessoaJuridicas->id], ['confirm' => __('Are you sure you want to delete # {0}?', $pessoaJuridicas->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'PessoaJuridicas', 'action' => 'delete', $pessoaJuridicas->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $pessoaJuridicas->id)]) ?>
 
                 </td>
             </tr>
@@ -630,7 +602,7 @@
                 <th>Usuario Id</th>
                 <th>Time</th>
                 <th>Ip</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->times as $times): ?>
             <tr>
@@ -639,11 +611,11 @@
                 <td><?= h($times->time) ?></td>
                 <td><?= h($times->ip) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Times', 'action' => 'view', $times->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Times', 'action' => 'view', $times->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Times', 'action' => 'edit', $times->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Times', 'action' => 'edit', $times->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Times', 'action' => 'delete', $times->id], ['confirm' => __('Are you sure you want to delete # {0}?', $times->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Times', 'action' => 'delete', $times->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $times->id)]) ?>
 
                 </td>
             </tr>
@@ -661,7 +633,7 @@
                 <th>Usuario Id</th>
                 <th>Instituicao Id</th>
                 <th>Status</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->verifica_producaos as $verificaProducaos): ?>
             <tr>
@@ -671,11 +643,11 @@
                 <td><?= h($verificaProducaos->instituicao_id) ?></td>
                 <td><?= h($verificaProducaos->status) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'VerificaProducaos', 'action' => 'view', $verificaProducaos->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'VerificaProducaos', 'action' => 'view', $verificaProducaos->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'VerificaProducaos', 'action' => 'edit', $verificaProducaos->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'VerificaProducaos', 'action' => 'edit', $verificaProducaos->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'VerificaProducaos', 'action' => 'delete', $verificaProducaos->id], ['confirm' => __('Are you sure you want to delete # {0}?', $verificaProducaos->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'VerificaProducaos', 'action' => 'delete', $verificaProducaos->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $verificaProducaos->id)]) ?>
 
                 </td>
             </tr>
@@ -693,7 +665,7 @@
                 <th>Local</th>
                 <th>Rider</th>
                 <th>Publicado</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->locals as $locals): ?>
             <tr>
@@ -703,11 +675,41 @@
                 <td><?= h($locals->rider) ?></td>
                 <td><?= h($locals->publicado) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Locals', 'action' => 'view', $locals->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Locals', 'action' => 'view', $locals->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Locals', 'action' => 'edit', $locals->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Locals', 'action' => 'edit', $locals->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Locals', 'action' => 'delete', $locals->id], ['confirm' => __('Are you sure you want to delete # {0}?', $locals->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Locals', 'action' => 'delete', $locals->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $locals->id)]) ?>
+
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endif; ?>
+    </div>
+    <div class="related">
+        <h4><?= __('Related {0}', ['Modulos']) ?></h4>
+        <?php if (!empty($usuario->modulos)): ?>
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>Id</th>
+                <th>Modulo</th>
+                <th>Link Pagina</th>
+                <th>Descricao</th>
+                <th class="actions"><?= __('Ação') ?></th>
+            </tr>
+            <?php foreach ($usuario->modulos as $modulos): ?>
+            <tr>
+                <td><?= h($modulos->id) ?></td>
+                <td><?= h($modulos->modulo) ?></td>
+                <td><?= h($modulos->link_pagina) ?></td>
+                <td><?= h($modulos->descricao) ?></td>
+                <td class="actions">
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Modulos', 'action' => 'view', $modulos->id]) ?>
+
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Modulos', 'action' => 'edit', $modulos->id]) ?>
+
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Modulos', 'action' => 'delete', $modulos->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $modulos->id)]) ?>
 
                 </td>
             </tr>
@@ -740,7 +742,7 @@
                 <th>Numero Reserva Encargos</th>
                 <th>Vocativo</th>
                 <th>Setor Vocativo</th>
-                <th class="actions"><?= __('Actions') ?></th>
+                <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($usuario->verbas as $verbas): ?>
             <tr>
@@ -765,11 +767,11 @@
                 <td><?= h($verbas->vocativo) ?></td>
                 <td><?= h($verbas->setor_vocativo) ?></td>
                 <td class="actions">
-                    <?= $this->Html->link(__('View'), ['controller' => 'Verbas', 'action' => 'view', $verbas->id]) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Verbas', 'action' => 'view', $verbas->id]) ?>
 
-                    <?= $this->Html->link(__('Edit'), ['controller' => 'Verbas', 'action' => 'edit', $verbas->id]) ?>
+                    <?= $this->Html->link(__('Editar'), ['controller' => 'Verbas', 'action' => 'edit', $verbas->id]) ?>
 
-                    <?= $this->Form->postLink(__('Delete'), ['controller' => 'Verbas', 'action' => 'delete', $verbas->id], ['confirm' => __('Are you sure you want to delete # {0}?', $verbas->id)]) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Verbas', 'action' => 'delete', $verbas->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $verbas->id)]) ?>
 
                 </td>
             </tr>

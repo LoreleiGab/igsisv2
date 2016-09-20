@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\UsuariosTable;
+use App\Model\Table\ModulosTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\UsuariosTable Test Case
+ * App\Model\Table\ModulosTable Test Case
  */
-class UsuariosTableTest extends TestCase
+class ModulosTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\UsuariosTable
+     * @var \App\Model\Table\ModulosTable
      */
-    public $Usuarios;
+    public $Modulos;
 
     /**
      * Fixtures
@@ -24,6 +24,7 @@ class UsuariosTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
+        'app.modulos',
         'app.usuarios',
         'app.instituicaos',
         'app.agenda_em_cartazs',
@@ -50,7 +51,6 @@ class UsuariosTableTest extends TestCase
         'app.pessoa_fisicas',
         'app.pessoa_juridicas',
         'app.times',
-        'app.modulos',
         'app.modulos_usuarios'
     ];
 
@@ -62,8 +62,8 @@ class UsuariosTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Usuarios') ? [] : ['className' => 'App\Model\Table\UsuariosTable'];
-        $this->Usuarios = TableRegistry::get('Usuarios', $config);
+        $config = TableRegistry::exists('Modulos') ? [] : ['className' => 'App\Model\Table\ModulosTable'];
+        $this->Modulos = TableRegistry::get('Modulos', $config);
     }
 
     /**
@@ -73,7 +73,7 @@ class UsuariosTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Usuarios);
+        unset($this->Modulos);
 
         parent::tearDown();
     }
@@ -94,16 +94,6 @@ class UsuariosTableTest extends TestCase
      * @return void
      */
     public function testValidationDefault()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test buildRules method
-     *
-     * @return void
-     */
-    public function testBuildRules()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

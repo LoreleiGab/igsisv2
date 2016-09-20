@@ -1,13 +1,13 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
-use App\Controller\UsuariosController;
+use App\Controller\LocalsController;
 use Cake\TestSuite\IntegrationTestCase;
 
 /**
- * App\Controller\UsuariosController Test Case
+ * App\Controller\LocalsController Test Case
  */
-class UsuariosControllerTest extends IntegrationTestCase
+class LocalsControllerTest extends IntegrationTestCase
 {
 
     /**
@@ -16,23 +16,15 @@ class UsuariosControllerTest extends IntegrationTestCase
      * @var array
      */
     public $fixtures = [
-        'app.usuarios',
+        'app.locals',
         'app.instituicaos',
         'app.agenda_em_cartazs',
         'app.agendas',
         'app.comunicacaos',
         'app.controle_orcamentos',
         'app.eventos',
-        'app.locals',
-        'app.detalhe_locals',
-        'app.historico_ocorrencias',
-        'app.ocorrencias',
-        'app.locals_usuarios',
         'app.pedido_contratacaos',
-        'app.verbas',
-        'app.verba_multiplas',
-        'app.usuarios_verbas',
-        'app.verifica_producaos',
+        'app.usuarios',
         'app.chamado_comentarios',
         'app.chamados',
         'app.formacao_vigencias',
@@ -42,8 +34,16 @@ class UsuariosControllerTest extends IntegrationTestCase
         'app.pessoa_fisicas',
         'app.pessoa_juridicas',
         'app.times',
+        'app.verifica_producaos',
+        'app.locals_usuarios',
         'app.modulos',
-        'app.modulos_usuarios'
+        'app.modulos_usuarios',
+        'app.verbas',
+        'app.verba_multiplas',
+        'app.usuarios_verbas',
+        'app.detalhe_locals',
+        'app.historico_ocorrencias',
+        'app.ocorrencias'
     ];
 
     /**

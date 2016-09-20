@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\UsuariosTable;
+use App\Model\Table\ModulosUsuariosTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\UsuariosTable Test Case
+ * App\Model\Table\ModulosUsuariosTable Test Case
  */
-class UsuariosTableTest extends TestCase
+class ModulosUsuariosTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\UsuariosTable
+     * @var \App\Model\Table\ModulosUsuariosTable
      */
-    public $Usuarios;
+    public $ModulosUsuarios;
 
     /**
      * Fixtures
@@ -24,6 +24,7 @@ class UsuariosTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
+        'app.modulos_usuarios',
         'app.usuarios',
         'app.instituicaos',
         'app.agenda_em_cartazs',
@@ -50,8 +51,7 @@ class UsuariosTableTest extends TestCase
         'app.pessoa_fisicas',
         'app.pessoa_juridicas',
         'app.times',
-        'app.modulos',
-        'app.modulos_usuarios'
+        'app.modulos'
     ];
 
     /**
@@ -62,8 +62,8 @@ class UsuariosTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Usuarios') ? [] : ['className' => 'App\Model\Table\UsuariosTable'];
-        $this->Usuarios = TableRegistry::get('Usuarios', $config);
+        $config = TableRegistry::exists('ModulosUsuarios') ? [] : ['className' => 'App\Model\Table\ModulosUsuariosTable'];
+        $this->ModulosUsuarios = TableRegistry::get('ModulosUsuarios', $config);
     }
 
     /**
@@ -73,7 +73,7 @@ class UsuariosTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Usuarios);
+        unset($this->ModulosUsuarios);
 
         parent::tearDown();
     }
@@ -84,16 +84,6 @@ class UsuariosTableTest extends TestCase
      * @return void
      */
     public function testInitialize()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test validationDefault method
-     *
-     * @return void
-     */
-    public function testValidationDefault()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }

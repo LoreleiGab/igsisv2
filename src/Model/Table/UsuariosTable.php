@@ -18,12 +18,12 @@ use Cake\Validation\Validator;
  * @property \Cake\ORM\Association\HasMany $Formacaos
  * @property \Cake\ORM\Association\HasMany $Historicos
  * @property \Cake\ORM\Association\HasMany $Logs
- * @property \Cake\ORM\Association\HasMany $ModuloUsuarios
  * @property \Cake\ORM\Association\HasMany $PessoaFisicas
  * @property \Cake\ORM\Association\HasMany $PessoaJuridicas
  * @property \Cake\ORM\Association\HasMany $Times
  * @property \Cake\ORM\Association\HasMany $VerificaProducaos
  * @property \Cake\ORM\Association\BelongsToMany $Locals
+ * @property \Cake\ORM\Association\BelongsToMany $Modulos
  * @property \Cake\ORM\Association\BelongsToMany $Verbas
  *
  * @method \App\Model\Entity\Usuario get($primaryKey, $options = [])
@@ -78,9 +78,6 @@ class UsuariosTable extends Table
         $this->hasMany('Logs', [
             'foreignKey' => 'usuario_id'
         ]);
-        $this->hasMany('ModuloUsuarios', [
-            'foreignKey' => 'usuario_id'
-        ]);
         $this->hasMany('PessoaFisicas', [
             'foreignKey' => 'usuario_id'
         ]);
@@ -97,6 +94,11 @@ class UsuariosTable extends Table
             'foreignKey' => 'usuario_id',
             'targetForeignKey' => 'local_id',
             'joinTable' => 'locals_usuarios'
+        ]);
+        $this->belongsToMany('Modulos', [
+            'foreignKey' => 'usuario_id',
+            'targetForeignKey' => 'modulo_id',
+            'joinTable' => 'modulos_usuarios'
         ]);
         $this->belongsToMany('Verbas', [
             'foreignKey' => 'usuario_id',

@@ -1,22 +1,22 @@
 <?php
 namespace App\Test\TestCase\Model\Table;
 
-use App\Model\Table\UsuariosTable;
+use App\Model\Table\InstituicaosTable;
 use Cake\ORM\TableRegistry;
 use Cake\TestSuite\TestCase;
 
 /**
- * App\Model\Table\UsuariosTable Test Case
+ * App\Model\Table\InstituicaosTable Test Case
  */
-class UsuariosTableTest extends TestCase
+class InstituicaosTableTest extends TestCase
 {
 
     /**
      * Test subject
      *
-     * @var \App\Model\Table\UsuariosTable
+     * @var \App\Model\Table\InstituicaosTable
      */
-    public $Usuarios;
+    public $Instituicaos;
 
     /**
      * Fixtures
@@ -24,7 +24,6 @@ class UsuariosTableTest extends TestCase
      * @var array
      */
     public $fixtures = [
-        'app.usuarios',
         'app.instituicaos',
         'app.agenda_em_cartazs',
         'app.agendas',
@@ -35,12 +34,7 @@ class UsuariosTableTest extends TestCase
         'app.detalhe_locals',
         'app.historico_ocorrencias',
         'app.ocorrencias',
-        'app.locals_usuarios',
-        'app.pedido_contratacaos',
-        'app.verbas',
-        'app.verba_multiplas',
-        'app.usuarios_verbas',
-        'app.verifica_producaos',
+        'app.usuarios',
         'app.chamado_comentarios',
         'app.chamados',
         'app.formacao_vigencias',
@@ -50,8 +44,14 @@ class UsuariosTableTest extends TestCase
         'app.pessoa_fisicas',
         'app.pessoa_juridicas',
         'app.times',
+        'app.verifica_producaos',
+        'app.locals_usuarios',
         'app.modulos',
-        'app.modulos_usuarios'
+        'app.modulos_usuarios',
+        'app.verbas',
+        'app.pedido_contratacaos',
+        'app.verba_multiplas',
+        'app.usuarios_verbas'
     ];
 
     /**
@@ -62,8 +62,8 @@ class UsuariosTableTest extends TestCase
     public function setUp()
     {
         parent::setUp();
-        $config = TableRegistry::exists('Usuarios') ? [] : ['className' => 'App\Model\Table\UsuariosTable'];
-        $this->Usuarios = TableRegistry::get('Usuarios', $config);
+        $config = TableRegistry::exists('Instituicaos') ? [] : ['className' => 'App\Model\Table\InstituicaosTable'];
+        $this->Instituicaos = TableRegistry::get('Instituicaos', $config);
     }
 
     /**
@@ -73,7 +73,7 @@ class UsuariosTableTest extends TestCase
      */
     public function tearDown()
     {
-        unset($this->Usuarios);
+        unset($this->Instituicaos);
 
         parent::tearDown();
     }
