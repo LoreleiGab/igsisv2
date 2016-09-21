@@ -1,14 +1,7 @@
 <div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Modulo']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Usuarios']), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Usuario']), ['controller' => 'Usuarios', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="modulos index col-md-10 columns content">
-    <h3>Modulos</h3>
+    <h3>Módulos</h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

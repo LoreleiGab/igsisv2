@@ -1,18 +1,11 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Instituicao']), ['action' => 'add']) ?></li>
-    </ul>
-</nav>
 <div class="instituicaos index col-md-10 columns content">
     <h3>Instituição</h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
-                <th><?= $this->Paginator->sort('instituicao') ?></th>
-                <th><?= $this->Paginator->sort('instituicao_pai') ?></th>
+                <th><?= $this->Paginator->sort('instituicao','Instituição') ?></th>
+                <th><?= $this->Paginator->sort('instituicao_pai','Instituição Pai') ?></th>
                 <th><?= $this->Paginator->sort('sigla') ?></th>
                 <th><?= $this->Paginator->sort('logo') ?></th>
                 <th class="actions"><?= __('Ação') ?></th>

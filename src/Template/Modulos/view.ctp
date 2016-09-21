@@ -1,19 +1,8 @@
-<nav class="col-lg-2 col-md-3">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href=""><?= __('Ação') ?></a></li>
-        <li><?= $this->Html->link(__('Editar {0}', ['Modulo']), ['action' => 'edit', $modulo->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Excluir {0}', ['Modulo']), ['action' => 'delete', $modulo->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $modulo->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Modulos']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Modulo']), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Usuarios']), ['controller' => 'Usuarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Usuario']), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
 <div class="modulos view col-lg-10 col-md-9">
     <h3><?= h($modulo->id) ?></h3>
     <table class="table table-striped table-hover">
         <tr>
-            <th>Modulo</th>
+            <th>Módulo</th>
             <td><?= h($modulo->modulo) ?></td>
         </tr>
         <tr>

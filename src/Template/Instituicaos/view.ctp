@@ -1,37 +1,8 @@
-<nav class="col-lg-2 col-md-3">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href=""><?= __('Ação') ?></a></li>
-        <li><?= $this->Html->link(__('Editar {0}', ['Instituicao']), ['action' => 'edit', $instituicao->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Excluir {0}', ['Instituicao']), ['action' => 'delete', $instituicao->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $instituicao->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Instituicaos']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Instituicao']), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Agenda Em Cartazs']), ['controller' => 'AgendaEmCartazs', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Agenda Em Cartaz']), ['controller' => 'AgendaEmCartazs', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Agendas']), ['controller' => 'Agendas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Agenda']), ['controller' => 'Agendas', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Comunicacaos']), ['controller' => 'Comunicacaos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Comunicacao']), ['controller' => 'Comunicacaos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Controle Orcamentos']), ['controller' => 'ControleOrcamentos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Controle Orcamento']), ['controller' => 'ControleOrcamentos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Eventos']), ['controller' => 'Eventos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Evento']), ['controller' => 'Eventos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Locals']), ['controller' => 'Locals', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Local']), ['controller' => 'Locals', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Pedido Contratacaos']), ['controller' => 'PedidoContratacaos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Pedido Contratacao']), ['controller' => 'PedidoContratacaos', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Usuarios']), ['controller' => 'Usuarios', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Usuario']), ['controller' => 'Usuarios', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Verbas']), ['controller' => 'Verbas', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Verba']), ['controller' => 'Verbas', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Verifica Producaos']), ['controller' => 'VerificaProducaos', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Verifica Producao']), ['controller' => 'VerificaProducaos', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
 <div class="instituicaos view col-lg-10 col-md-9">
     <h3><?= h($instituicao->id) ?></h3>
     <table class="table table-striped table-hover">
         <tr>
-            <th>Instituicao</th>
+            <th>Instituição</th>
             <td><?= h($instituicao->instituicao) ?></td>
         </tr>
         <tr>
@@ -52,7 +23,7 @@
         </tr>
     </table>
     <div class="related">
-        <h4><?= __('Related {0}', ['Agenda Em Cartazs']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Agenda Em Cartazs']) ?></h4>
         <?php if (!empty($instituicao->agenda_em_cartazs)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -96,7 +67,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Agendas']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Agendas']) ?></h4>
         <?php if (!empty($instituicao->agendas)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -136,7 +107,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Comunicacaos']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Comunicacaos']) ?></h4>
         <?php if (!empty($instituicao->comunicacaos)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -200,7 +171,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Controle Orcamentos']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Controle Orcamentos']) ?></h4>
         <?php if (!empty($instituicao->controle_orcamentos)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -234,7 +205,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Eventos']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Eventos']) ?></h4>
         <?php if (!empty($instituicao->eventos)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -296,7 +267,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Locals']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Locals']) ?></h4>
         <?php if (!empty($instituicao->locals)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -328,7 +299,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Pedido Contratacaos']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Pedido Contratacaos']) ?></h4>
         <?php if (!empty($instituicao->pedido_contratacaos)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -428,7 +399,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Usuarios']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Usuarios']) ?></h4>
         <?php if (!empty($instituicao->usuarios)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -476,7 +447,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Verbas']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Verbas']) ?></h4>
         <?php if (!empty($instituicao->verbas)): ?>
         <table class="table table-striped table-hover">
             <tr>
@@ -538,7 +509,7 @@
     <?php endif; ?>
     </div>
     <div class="related">
-        <h4><?= __('Related {0}', ['Verifica Producaos']) ?></h4>
+        <h4><?= __('Relacionado com {0}', ['Verifica Producaos']) ?></h4>
         <?php if (!empty($instituicao->verifica_producaos)): ?>
         <table class="table table-striped table-hover">
             <tr>

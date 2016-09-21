@@ -33,7 +33,7 @@
 
   <!-- Sidebar Menu -->
   <?php
-	include 'teste.ctp';
+	include 'administrador.ctp';
 	// Colocar aqui a variável do nemo do módulo para fazer o menu personalizado
   ?>
   
@@ -41,9 +41,9 @@
     <li class="header">---------------</li>
     <!-- Optionally, you can add icons to the links -->
 	<li class="treeview">
-      <a href="#"><i class="fa fa-share"></i> <span>Outras opções</span> <i class="fa fa-angle-left pull-right"></i></a>
+      <a href="#"><i class="fa fa-plus"></i> <span>Outras opções</span> <i class="fa fa-angle-left pull-right"></i></a>
       <ul class="treeview-menu">
-        <li><a href="#"><i class="fa fa-circle-o  text-blue"></i> Início</a></li>
+        <li><a href="#"><i class="fa fa-circle-o  text-blue"></i> Mural de avisos</a></li>
 		<li><a href="#"><i class="fa fa-circle-o text-red"></i> Carregar módulos</a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Ajuda</a></li>
 		<li><a href="#"><i class="fa fa-circle-o  text-green"></i> Sair</a></li>
