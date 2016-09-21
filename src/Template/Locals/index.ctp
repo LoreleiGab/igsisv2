@@ -1,26 +1,5 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Local']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Instituicaos']), ['controller' => 'Instituicaos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Instituicao']), ['controller' => 'Instituicaos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Agenda Em Cartazs']), ['controller' => 'AgendaEmCartazs', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Agenda Em Cartaz']), ['controller' => 'AgendaEmCartazs', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Agendas']), ['controller' => 'Agendas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Agenda']), ['controller' => 'Agendas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Detalhe Locals']), ['controller' => 'DetalheLocals', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Detalhe Local']), ['controller' => 'DetalheLocals', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Historico Ocorrencias']), ['controller' => 'HistoricoOcorrencias', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Historico Ocorrencia']), ['controller' => 'HistoricoOcorrencias', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Ocorrencias']), ['controller' => 'Ocorrencias', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Ocorrencia']), ['controller' => 'Ocorrencias', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Usuarios']), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Usuario']), ['controller' => 'Usuarios', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
 <div class="locals index col-md-10 columns content">
-    <h3>Locals</h3>
+    <h3>Locais</h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

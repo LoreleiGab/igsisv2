@@ -1,20 +1,3 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Verba']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Instituicaos']), ['controller' => 'Instituicaos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Instituicao']), ['controller' => 'Instituicaos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Controle Orcamentos']), ['controller' => 'ControleOrcamentos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Controle Orcamento']), ['controller' => 'ControleOrcamentos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Pedido Contratacaos']), ['controller' => 'PedidoContratacaos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Pedido Contratacao']), ['controller' => 'PedidoContratacaos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Verba Multiplas']), ['controller' => 'VerbaMultiplas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Verba Multipla']), ['controller' => 'VerbaMultiplas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Usuarios']), ['controller' => 'Usuarios', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Usuario']), ['controller' => 'Usuarios', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
 <div class="verbas index col-md-10 columns content">
     <h3>Verbas</h3>
     <table class="table table-striped table-hover">

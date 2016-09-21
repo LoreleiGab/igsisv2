@@ -1,16 +1,5 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Projeto Especial']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Evento Internos']), ['controller' => 'EventoInternos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Evento Interno']), ['controller' => 'EventoInternos', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Eventos']), ['controller' => 'Eventos', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Evento']), ['controller' => 'Eventos', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
 <div class="projetoEspecials index col-md-10 columns content">
-    <h3>Projeto Especials</h3>
+    <h3>Projetos Especiais</h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
