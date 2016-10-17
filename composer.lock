@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0de62b59ce633465c48645a944d426fa",
-    "content-hash": "400219d35e0f27124809fa11292611c4",
+    "hash": "c742909f94e5d5d5af60c4dee99b9a63",
+    "content-hash": "3410e002dd4fedd9cf3d531067484de0",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -286,6 +286,54 @@
             "time": "2016-07-14 05:16:14"
         },
         {
+            "name": "cakephp/localized",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/localized.git",
+                "reference": "3e3e90e9779cfcc0f1d1891405b779200a7407b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/localized/zipball/3e3e90e9779cfcc0f1d1891405b779200a7407b3",
+                "reference": "3e3e90e9779cfcc0f1d1891405b779200a7407b3",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.1",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "2.*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Cake\\Localized\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "CakePHP Community",
+                    "homepage": "https://github.com/cakephp/localized/graphs/contributors"
+                }
+            ],
+            "description": "CakePHP Localized Plugin",
+            "homepage": "https://github.com/cakephp/localized",
+            "keywords": [
+                "cakephp",
+                "i18n",
+                "l10n",
+                "localized"
+            ],
+            "time": "2016-02-29 16:34:17"
+        },
+        {
             "name": "cakephp/migrations",
             "version": "1.6.3",
             "source": {
@@ -376,6 +424,107 @@
             "time": "2016-04-28 03:01:34"
         },
         {
+            "name": "elboletaire/less-cake-plugin",
+            "version": "v1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elboletaire/less-cake-plugin.git",
+                "reference": "0cf60b35db2d53aef7adb050504171bc6bcd313c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elboletaire/less-cake-plugin/zipball/0cf60b35db2d53aef7adb050504171bc6bcd313c",
+                "reference": "0cf60b35db2d53aef7adb050504171bc6bcd313c",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0",
+                "oyejorge/less.php": "~1.7"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "Less\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Òscar Casajuana",
+                    "email": "elboletaire@underave.net",
+                    "homepage": "http://racotecnic.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Less parser plugin for CakePHP",
+            "keywords": [
+                "cakephp",
+                "css",
+                "less",
+                "parser",
+                "plugin"
+            ],
+            "time": "2016-05-06 12:00:38"
+        },
+        {
+            "name": "friendsofcake/bootstrap-ui",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfCake/bootstrap-ui.git",
+                "reference": "8da53d632361c5cfe39dc51e0418614be627f16d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfCake/bootstrap-ui/zipball/8da53d632361c5cfe39dc51e0418614be627f16d",
+                "reference": "8da53d632361c5cfe39dc51e0418614be627f16d",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0"
+            },
+            "require-dev": {
+                "cakephp/cakephp-codesniffer": "dev-master",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "BootstrapUI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jad Bitar",
+                    "homepage": "http://jadb.io",
+                    "role": "Author"
+                },
+                {
+                    "name": "Others",
+                    "homepage": "https://github.com/friendsofcake/bootstrap-ui/graphs/contributors"
+                }
+            ],
+            "description": "Twitter Bootstrap 3 support for CakePHP 3",
+            "homepage": "http://github.com/friendsofcake/bootstrap-ui",
+            "keywords": [
+                "bootstrap",
+                "cakephp",
+                "twitter"
+            ],
+            "time": "2016-09-23 06:49:59"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "2.8.22",
             "source": {
@@ -428,6 +577,68 @@
                 "php mobile detect"
             ],
             "time": "2016-04-24 09:47:16"
+        },
+        {
+            "name": "oyejorge/less.php",
+            "version": "v1.7.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oyejorge/less.php.git",
+                "reference": "a1e2d3c20794b37ac4d0baeb24613e579584033b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oyejorge/less.php/zipball/a1e2d3c20794b37ac4d0baeb24613e579584033b",
+                "reference": "a1e2d3c20794b37ac4d0baeb24613e579584033b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.18"
+            },
+            "bin": [
+                "bin/lessc"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Less": "lib/"
+                },
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Matt Agar",
+                    "homepage": "https://github.com/agar"
+                },
+                {
+                    "name": "Martin Jantošovič",
+                    "homepage": "https://github.com/Mordred"
+                },
+                {
+                    "name": "Josh Schmidt",
+                    "homepage": "https://github.com/oyejorge"
+                }
+            ],
+            "description": "PHP port of the Javascript version of LESS http://lesscss.org",
+            "homepage": "http://lessphp.gpeasy.com",
+            "keywords": [
+                "css",
+                "less",
+                "less.js",
+                "lesscss",
+                "php",
+                "stylesheet"
+            ],
+            "time": "2015-12-30 05:47:36"
         },
         {
             "name": "psr/http-message",
@@ -516,6 +727,59 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "ribafs/cake-control",
+            "version": "v1.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ribafs/cake-control.git",
+                "reference": "220cdc8834e21c2a3899a6f907c302dc86604fe5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ribafs/cake-control/zipball/220cdc8834e21c2a3899a6f907c302dc86604fe5",
+                "reference": "220cdc8834e21c2a3899a6f907c302dc86604fe5",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0",
+                "cakephp/localized": "~3.0",
+                "elboletaire/less-cake-plugin": ">=1.7.1",
+                "friendsofcake/bootstrap-ui": "~0.5.1",
+                "php": ">=5.5.9"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "CakeControl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ribamar FS",
+                    "email": "contato@ribafs.org",
+                    "homepage": "http://ribafs.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Plugin to implements access control with good resources: search, bcrypt, internationalization, bootstrap",
+            "keywords": [
+                "access control",
+                "admin",
+                "bcrypt",
+                "bootstrap",
+                "cakephp",
+                "internatianalization",
+                "panel",
+                "plugin",
+                "search"
+            ],
+            "time": "2016-10-07 10:54:50"
         },
         {
             "name": "robmorgan/phinx",
