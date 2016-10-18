@@ -25,26 +25,7 @@ class PermissionsTableTest extends TestCase
      */
     public $fixtures = [
         'app.permissions',
-        'app.groups',
-        'app.users',
-        'app.institutions',
-        'app.call_comments',
-        'app.calls',
-        'app.check_productions',
-        'app.estimate_controls',
-        'app.events',
-        'app.formation_effectives',
-        'app.formations',
-        'app.historics',
-        'app.legal_persons',
-        'app.log_reopenings',
-        'app.logs',
-        'app.physical_persons',
-        'app.times',
-        'app.funds',
-        'app.funds_users',
-        'app.locals',
-        'app.locals_users'
+        'app.groups'
     ];
 
     /**

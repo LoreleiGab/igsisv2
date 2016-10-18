@@ -1,3 +1,3 @@
 <section id="footer" class="text-center">
-	<p><small>por equipe Informação CCSP</small></p>
+	<p><small>by <a href="http://www.webdevbr.com.br/">WebDevBr</a></small></p>
 </section>

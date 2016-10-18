@@ -15,9 +15,6 @@
 use Cake\Core\Configure;
 use Cake\Core\Exception\MissingPluginException;
 use Cake\Core\Plugin;
-use Cake\Event\Event;
-use Cake\Event\EventManager;
-use Cake\Utility\Hash;
 
 /**
  * Additional bootstrapping and configuration for CLI environments should
@@ -37,23 +34,3 @@ try {
 } catch (MissingPluginException $e) {
     // Do not halt if the plugin is missing
 }
-
-EventManager::instance()->on(
-    'Bake.beforeRender.Controller.controller',
-    function (Event $event) {
-        $view = $event->subject();
-        if ($view->viewVars['name'] == 'Users') {
-            // add the login and logout actions to the Users controller
-            $view->viewVars['actions'] = [
-                'login',
-                'logout',
-                'index',
-                'view',
-                'add',
-                'edit',
-                'delete'
-            ];
-        }
-    }
-);
-

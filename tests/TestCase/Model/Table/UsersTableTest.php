@@ -27,7 +27,6 @@ class UsersTableTest extends TestCase
         'app.users',
         'app.institutions',
         'app.groups',
-        'app.permissions',
         'app.call_comments',
         'app.calls',
         'app.check_productions',

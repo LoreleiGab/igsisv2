@@ -19,7 +19,6 @@ class UsersControllerTest extends IntegrationTestCase
         'app.users',
         'app.institutions',
         'app.groups',
-        'app.permissions',
         'app.call_comments',
         'app.calls',
         'app.check_productions',
@@ -63,26 +62,6 @@ class UsersControllerTest extends IntegrationTestCase
         'app.ocorrencias',
         'app.locals_users'
     ];
-
-    /**
-     * Test login method
-     *
-     * @return void
-     */
-    public function testLogin()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
-    /**
-     * Test logout method
-     *
-     * @return void
-     */
-    public function testLogout()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
 
     /**
      * Test index method

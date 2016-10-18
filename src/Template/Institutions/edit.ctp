@@ -1,0 +1,14 @@
+<div class="institutions form col-md-10 columns content">
+    <?= $this->Form->create($institution) ?>
+    <fieldset>
+        <legend><?= 'Edit Institution' ?></legend>
+        <?php
+            echo $this->Form->input('initials');
+            echo $this->Form->input('institution');
+            echo $this->Form->input('institution_father');
+            echo $this->Form->input('logo');
+        ?>
+    </fieldset>
+    <?= $this->Form->button(__('Gravar')) ?>
+    <?= $this->Form->end() ?>
+</div>
