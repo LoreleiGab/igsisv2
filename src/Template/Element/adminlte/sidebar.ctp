@@ -33,7 +33,12 @@
 
   <!-- Sidebar Menu -->
   <?php
-	include 'administrador.ctp';
+	if($loguser == '' || $loguser == 'manager'){
+		include 'teste.ctp';
+	}else{
+		include '/menu/'.$loguser.'.ctp';
+	}
+	//include 'administrador.ctp';
 	// Colocar aqui a variável do nemo do módulo para fazer o menu personalizado
   ?>
   
