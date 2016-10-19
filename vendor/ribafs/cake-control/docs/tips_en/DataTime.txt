@@ -1,0 +1,31 @@
+Tips of data time
+
+In CakePHP the fields of type date, datetime or timestamp must obligatorily use DEFAULT NULL:
+
+birthday date DEFAULT NULL,
+
+And we can not change your validation to require filling with notEmpty or notBlank. Otherwise
+Cake does not recognize and does not add the record.
+
+src/Template/Clientes/add.ctp ou edit.ctp
+
+By default Cake shows only the years 2011 to 2021 in the year combo.
+
+Let's change so that the minimum age is 13 years before the current and maximum is 100 years before the present, that is, as I am in 2016, showing 1916 to 2003, but it must be designed to meet the requirement table/application. In our case, the DNOCS, must use 18 years before, or more for the first?
+
+With 100 years before now or more to second.
+
+We need to know the law and use in favor of security, leaving a margin.
+
+		echo $this->Form->input('birthday',['label' => 'Birthday',
+	        'dateFormat'    => 'DMY',
+	        'minYear'       => date('Y') - 100,
+	        'maxYear'       => date('Y') - 13,
+	        'empty'         => [
+	            'day'       => 'Day',
+	            'month'     => 'Month',
+	            'year'      => 'Year'
+            ]
+        ]);
+
+

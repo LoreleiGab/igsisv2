@@ -1,0 +1,10 @@
+Implementation from displayField() method
+
+I have two tables with relationship: users and customers.
+Customers have a field user_id
+
+In Template/Customers/index.ctp on value from user_id, 
+Change only the first occurrence of $customer->user->id to $customer->user->username:
+
+                <td><?= $customer->has('user') ? $this->Html->link($customer->user->username, ['controller' => 'Users', 'action' => 'view', $servidore->user->id]) : '' ?></td>
+

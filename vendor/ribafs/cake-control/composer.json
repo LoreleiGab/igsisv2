@@ -1,0 +1,28 @@
+{
+    "name": "ribafs/cake-control",
+    "authors": [
+        {
+            "name": "Ribamar FS",
+            "email": "contato@ribafs.org",
+            "homepage": "http://ribafs.org",
+            "role": "Developer"
+        }
+    ],
+    "description": "Plugin to implements access control with good resources: search, bcrypt, internationalization, bootstrap",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "bootstrap", "plugin", "search", "admin", "panel", "bcrypt", "internatianalization", "access control"],
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "cakephp/cakephp": "~3.0",
+        "cakephp/localized": "~3.0",
+        "elboletaire/less-cake-plugin": ">=1.7.1",
+        "friendsofcake/bootstrap-ui": "~0.5.1",
+        "fzaninotto/faker": "1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "CakeControl\\": "src"
+        }
+    }
+}

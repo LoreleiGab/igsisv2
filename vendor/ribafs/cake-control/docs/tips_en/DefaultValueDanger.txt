@@ -1,0 +1,18 @@
+Danger of Default Value
+
+In creation of tables avoid leaving defaul value in fields definition.
+If you leave it will not be required, user input is not required.
+When you press enter without entering anything the default value will be stored.
+
+A good example is the user_id field in the Customers/add.ctp which for default is thus created by the Bake.
+
+    echo $this->Form->input('user_id', ['options' => $users]);          
+
+Thus the first value is assumed whenever the user does not select anything in the select.
+
+Idealy change to other value:
+            echo $this->Form->input('user_id', ['empty' => true,'options' => $users]);
+            
+So, when you tap enter, with nothing selected will be required to select something.
+                       
+

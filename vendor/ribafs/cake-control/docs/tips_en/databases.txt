@@ -1,0 +1,25 @@
+Tips about Databases
+
+Tables
+
+If a field is not important do not add to table.
+But if it is important then turn it required.
+
+Relationships
+
+The secondary field of the relationship must be NOT NULL in the table.
+user_id NOT NULL in customers.
+
+Example
+users with customers
+
+In customers have a field user_id to relationship with users table.
+In customers table the field user_id must be:
+
+user_id int not null
+
+Otherwise we will have problems registration of all records empty and boring relationship.
+
+Relationships on database is more robust.
+
+
