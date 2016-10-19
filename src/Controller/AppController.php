@@ -16,27 +16,22 @@ namespace App\Controller;
 
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+//use Cake\Core\Configure;
+//use Cake\Core\Configure\Engine\PhpConfig;
 
-/**
- * Application Controller
- *
- * Add your application-wide methods in the class below, your controllers
- * will inherit them.
- *
- * @link http://book.cakephp.org/3.0/en/controllers.html#the-app-controller
- */
 class AppController extends Controller
 {
+	// Controller default to no admins users
+	protected $noAdmins = 'Customers';
+		
+	public $helpers = [
+		'Less.Less', // required for parsing less files
+		'BootstrapUI.Form',
+		'BootstrapUI.Html',
+		'BootstrapUI.Flash',
+		'BootstrapUI.Paginator'
+	];	
 
-    /**
-     * Initialization hook method.
-     *
-     * Use this method to add common initialization code like loading components.
-     *
-     * e.g. `$this->loadComponent('Security');`
-     *
-     * @return void
-     */
     public function initialize()
     {
         parent::initialize();
@@ -44,21 +39,104 @@ class AppController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
 		$this->viewBuilder()->theme('TwitterBootstrap');	
-		$this->viewBuilder()->layout('adminlte');		
+		$this->viewBuilder()->layout('adminlte');	
+		$this->loadComponent('Control'); // Nosso componente
+        $this->loadComponent('Auth', [
+            'loginRedirect' => [
+                'controller' => 'Permissions',
+                'action' => 'index',
+				'base' => false
+            ],
+            'loginAction' => [
+                'plugin' => false,
+                'controller' => 'Users',
+                'action' => 'login'
+            ],                    
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'login'
+            ],
+		'unauthorizedRedirect' => [
+		'controller' => 'Users',
+		'action' => 'login',
+		'prefix' => false
+	   ],
+	    'authError' => 'Your dont have access to this area',
+              'flash' => [
+                  'element' => 'error'
+              ]
+        ]);		
+
+		$user = $this->request->session()->read('Auth.User');
+		$loguser = $user['username'];
+		$this->set('loguser',$loguser);
+		
+		$group=$user['group_id'];
+		$this->set('group',$group);
+		
+		$controller = $this->request->controller;
+		$this->set('controller',$controller);
+		
+		$action = $this->request->action;
+		// Via url: users/login?temp=default
+		// $layout=$this->request->query('temp');
+	    	// $this->set('template',$layout);
+
+		if($loguser == '' || $loguser == 'manager'){
+			$this->viewBuilder()->layout('CakeControl.admin');
+		}else{
+			$this->viewBuilder()->layout('adminlte');
+		}
+
+		// Uncomment to full acccess to actions below
+//		$this->Auth->allow(['index','add','edit']);
+		
+		if(isset($group)){
+			// Populate permissions table.
+			// Full permissions in all tables to users from Supers group
+			//$this->Control->populate(1);
+			// Full permissions only in groups, users and permissions tables to users from Admins group
+			//$this->Control->populate(2);
+			// All permissions in all tables that are not groups, users and permissions to all users from group Managers
+			//$this->Control->populate(3);
+			// After the first login the application can comment on the above three lines
+
+			// Send current controller to topmenu.ctp element
+			$this->set('supers',$this->Control->tables($controller,$action,1));
+			$this->set('admins',$this->Control->tables($controller,$action,2));
+			$this->set('managers',$this->Control->tables($controller,$action,3));
+			$this->set('users',$this->Control->tables($controller,$action,4));
+		}
+
+		if($action != 'login' && $action != 'logout'){
+			if(isset($group) && $this->Control->access($controller,$action,$group)==false){	
+				$this->Flash->error(__('As user "'.$user['username'].'", you do not have permission to access '.$controller.'/'.$action));
+				return $this->redirect($this->referer());
+			}
+		}
     }
 
-    /**
-     * Before render callback.
-     *
-     * @param \Cake\Event\Event $event The beforeRender event.
-     * @return void
-     */
+	public function isAuthorized($user)
+	{
+		$requestedUserId=$this->request->pass[0];
+
+		if ($user['group_id']==1){
+		    return true;
+		} else if ($user['group_id']!=1 || $user['group_id']!=2) {
+			if (!($this->request->action == 'index')) {
+				if($userid==$user['id']) {
+				    return true;
+				}
+			}
+	    	return false;
+		}
+		return parent::isAuthorized($user);
+	}
+
     public function beforeRender(Event $event)
-    {
-        if (!array_key_exists('_serialize', $this->viewVars) &&
-            in_array($this->response->type(), ['application/json', 'application/xml'])
-        ) {
+    {	    
+        if (!array_key_exists('_serialize', $this->viewVars) && in_array($this->response->type(), ['application/json', 'application/xml'])) {
             $this->set('_serialize', true);
         }
-    }	
+    }
 }

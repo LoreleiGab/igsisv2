@@ -66,6 +66,40 @@ use Cake\Network\Request;
 use Cake\Utility\Inflector;
 use Cake\Utility\Security;
 
+// Habilita o parseamento de datas localizadas
+date_default_timezone_set('America/Fortaleza');
+
+
+\Cake\I18n\Time::setToStringFormat([IntlDateFormatter::MEDIUM, IntlDateFormatter::SHORT]);
+
+Inflector::rules('irregular', [
+     'solicitacao' => 'solicitacoes'
+]);
+
+/**
+ * Locale Formats
+ */
+\Cake\I18n\Time::setToStringFormat([IntlDateFormatter::MEDIUM, IntlDateFormatter::SHORT]);
+\Cake\I18n\Time::setToStringFormat('dd/MM/YYYY HH:mm');
+
+\Cake\Database\Type::build('date')
+    ->useLocaleParser()
+    ->setLocaleFormat('dd/MM/yyyy');
+
+\Cake\Database\Type::build('datetime')
+    ->useLocaleParser()
+    ->setLocaleFormat('dd/MM/yyyy HH:mm');
+
+\Cake\Database\Type::build('timestamp')
+    ->useLocaleParser()
+    ->setLocaleFormat('dd/MM/yyyy HH:mm');
+
+\Cake\Database\Type::build('decimal')
+    ->useLocaleParser();
+
+\Cake\Database\Type::build('float')
+    ->useLocaleParser();
+ 
 /*
  * Read configuration file and inject configuration into various
  * CakePHP classes.
@@ -113,7 +147,8 @@ mb_internal_encoding(Configure::read('App.encoding'));
  * Set the default locale. This controls how dates, number and currency is
  * formatted and sets the default language to use for translations.
  */
-ini_set('intl.default_locale', Configure::read('App.defaultLocale'));
+//ini_set('intl.default_locale', Configure::read('App.defaultLocale'));
+ini_set('intl.default_locale', 'pt_BR');
 
 /*
  * Register application error and exception handlers.
@@ -187,12 +222,21 @@ Request::addDetector('tablet', function ($request) {
  * locale specific date formats. For details see
  * @link http://book.cakephp.org/3.0/en/core-libraries/internationalization-and-localization.html#parsing-localized-datetime-data
  */
+ 
 Type::build('time')
     ->useImmutable();
 Type::build('date')
     ->useImmutable();
 Type::build('datetime')
     ->useImmutable();
+
+/**
+ * Default formats
+ */
+\Cake\I18n\Time::setToStringFormat('dd/MM/yyyy HH:mm:ss');
+\Cake\I18n\Date::setToStringFormat('dd/MM/yyyy');
+\Cake\I18n\FrozenTime::setToStringFormat('dd/MM/yyyy HH:mm:ss');
+\Cake\I18n\FrozenDate::setToStringFormat('dd/MM/yyyy');
 
 /*
  * Custom Inflector rules, can be set to correctly pluralize or singularize
@@ -223,5 +267,6 @@ if (Configure::read('debug')) {
 }
 
 Plugin::load('Migrations');
-
 Plugin::load('TwitterBootstrap');
+Plugin::load('CakeControl', ['bootstrap' => true]);
+Plugin::load('Cake/Localized');
