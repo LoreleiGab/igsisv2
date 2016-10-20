@@ -9,7 +9,7 @@
         ?></li>
         <li><?= $this->Html->link(__('List {0}', 'Juridical Relations'), ['action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Listar {0}', 'Events'), ['controller' => 'Events', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Novo {0}', 'Event'), ['controller' => 'Events', 'action' => 'add']) ?></li>
+        
     </ul>
 </nav>
 <div class="juridicalRelations form col-md-10 columns content">
@@ -17,7 +17,7 @@
     <fieldset>
         <legend><?= 'Edit Juridical Relation' ?></legend>
         <?php
-            echo $this->Form->input('name');
+            echo $this->Form->input('juridical_relation');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Gravar')) ?>

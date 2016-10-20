@@ -4,11 +4,7 @@
         <li><?= $this->Html->link(__('Editar {0}', ['Producer']), ['action' => 'edit', $producer->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Excluir {0}', ['Producer']), ['action' => 'delete', $producer->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $producer->id)]) ?> </li>
         <li><?= $this->Html->link(__('Listar {0}', ['Producers']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Producer']), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['controller' => 'Events', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Event']), ['controller' => 'Events', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Internal Events']), ['controller' => 'InternalEvents', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Internal Event']), ['controller' => 'InternalEvents', 'action' => 'add']) ?> </li>
+        
     </ul>
 </nav>
 <div class="producers view col-lg-10 col-md-9">

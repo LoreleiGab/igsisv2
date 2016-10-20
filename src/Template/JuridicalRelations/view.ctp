@@ -5,16 +5,16 @@
         <li><?= $this->Form->postLink(__('Excluir {0}', ['Juridical Relation']), ['action' => 'delete', $juridicalRelation->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $juridicalRelation->id)]) ?> </li>
         <li><?= $this->Html->link(__('Listar {0}', ['Juridical Relations']), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Novo {0}', ['Juridical Relation']), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['controller' => 'Events', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Event']), ['controller' => 'Events', 'action' => 'add']) ?> </li>
+        
+        
     </ul>
 </nav>
 <div class="juridicalRelations view col-lg-10 col-md-9">
     <h3><?= h($juridicalRelation->name) ?></h3>
     <table class="table table-striped table-hover">
         <tr>
-            <th>Name</th>
-            <td><?= h($juridicalRelation->name) ?></td>
+            <th>Juridical Relation</th>
+            <td><?= h($juridicalRelation->juridical_relation) ?></td>
         </tr>
         <tr>
             <th>'Id</th>
@@ -29,7 +29,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Juridical Relation Id</th>
-                <th>Special Project Id</th>
+                <th>Especial Project Id</th>
                 <th>Type Event Id</th>
                 <th>Sub Event</th>
                 <th>Fiscal Id</th>
@@ -53,7 +53,7 @@
                 <td><?= h($events->id) ?></td>
                 <td><?= h($events->name) ?></td>
                 <td><?= h($events->juridical_relation_id) ?></td>
-                <td><?= h($events->special_project_id) ?></td>
+                <td><?= h($events->especial_project_id) ?></td>
                 <td><?= h($events->type_event_id) ?></td>
                 <td><?= h($events->sub_event) ?></td>
                 <td><?= h($events->fiscal_id) ?></td>

@@ -1,14 +1,5 @@
 <div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Surrogate']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Events']), ['controller' => 'Events', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Event']), ['controller' => 'Events', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Internal Events']), ['controller' => 'InternalEvents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Internal Event']), ['controller' => 'InternalEvents', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="surrogates index col-md-10 columns content">
     <h3>Surrogates</h3>
     <table class="table table-striped table-hover">
