@@ -1,16 +1,4 @@
-<nav class="col-lg-2 col-md-3">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href=""><?= __('Ação') ?></a></li>
-        <li><?= $this->Html->link(__('Editar {0}', ['Fiscal']), ['action' => 'edit', $fiscal->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Excluir {0}', ['Fiscal']), ['action' => 'delete', $fiscal->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $fiscal->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Fiscals']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Fiscal']), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['controller' => 'Events', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Event']), ['controller' => 'Events', 'action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Internal Events']), ['controller' => 'InternalEvents', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Internal Event']), ['controller' => 'InternalEvents', 'action' => 'add']) ?> </li>
-    </ul>
-</nav>
+
 <div class="fiscals view col-lg-10 col-md-9">
     <h3><?= h($fiscal->name) ?></h3>
     <table class="table table-striped table-hover">

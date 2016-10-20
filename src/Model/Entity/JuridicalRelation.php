@@ -7,7 +7,7 @@ use Cake\ORM\Entity;
  * JuridicalRelation Entity
  *
  * @property int $id
- * @property string $name
+ * @property string $juridical_relation
  *
  * @property \App\Model\Entity\Event[] $events
  */
