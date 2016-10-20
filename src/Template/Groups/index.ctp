@@ -1,14 +1,5 @@
 <div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Group']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Permissions']), ['controller' => 'Permissions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Permission']), ['controller' => 'Permissions', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Users']), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['User']), ['controller' => 'Users', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="groups index col-md-10 columns content">
     <h3>Groups</h3>
     <table class="table table-striped table-hover">

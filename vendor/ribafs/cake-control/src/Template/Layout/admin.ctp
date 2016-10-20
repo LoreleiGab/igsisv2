@@ -54,13 +54,14 @@ if (Configure::read('App.author')) {
 </head>
 <body onLoad="username.focus();">
     <header role="banner" class="navbar navbar-inverse">
-        <div class="container">
-	<?php 
+        <div class="container"><span style="color: #FFF; font-weight: bold; font-size: larger"> IGSIS2</span>
+	<?php /*
 		if(isset($loguser)){
 			echo $this->element('CakeControl.topmenu');
 		}else{
+			echo "<font color='white'><strong>IGSIS</strong></font>";
 			//echo $this->element('CakeControl.topmenu-no');
-		}
+		}*/
 	?>
             <div class="navbar-header">
                 <?php if ($this->fetch('navbar.top')): ?>

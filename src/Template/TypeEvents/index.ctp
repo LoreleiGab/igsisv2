@@ -1,22 +1,5 @@
 <div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Type Event']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Agenda Posters']), ['controller' => 'AgendaPosters', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Agenda Poster']), ['controller' => 'AgendaPosters', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Agendas']), ['controller' => 'Agendas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Agenda']), ['controller' => 'Agendas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Events']), ['controller' => 'Events', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Event']), ['controller' => 'Events', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Internal Events']), ['controller' => 'InternalEvents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Internal Event']), ['controller' => 'InternalEvents', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Sub Events']), ['controller' => 'SubEvents', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Sub Event']), ['controller' => 'SubEvents', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Temp Posters']), ['controller' => 'TempPosters', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Temp Poster']), ['controller' => 'TempPosters', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="typeEvents index col-md-10 columns content">
     <h3>Type Events</h3>
     <table class="table table-striped table-hover">

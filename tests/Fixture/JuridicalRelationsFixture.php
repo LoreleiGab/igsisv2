@@ -18,10 +18,10 @@ class JuridicalRelationsFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'name' => ['type' => 'string', 'length' => 60, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'juridical_relation' => ['type' => 'string', 'length' => 60, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'juridical_relations_UNIQUE' => ['type' => 'unique', 'columns' => ['name'], 'length' => []],
+            'juridical_relations_UNIQUE' => ['type' => 'unique', 'columns' => ['juridical_relation'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -38,7 +38,7 @@ class JuridicalRelationsFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'name' => 'Lorem ipsum dolor sit amet'
+            'juridical_relation' => 'Lorem ipsum dolor sit amet'
         ],
     ];
 }
