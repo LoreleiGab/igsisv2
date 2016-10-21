@@ -3,9 +3,10 @@
         <li class="active"><a href=""><?= __('Ação') ?></a></li>
         <li><?= $this->Html->link(__('Editar {0}', ['Event']), ['action' => 'edit', $event->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Excluir {0}', ['Event']), ['action' => 'delete', $event->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $event->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Event']), ['action' => 'add']) ?> </li>
-       
+		<li><?= $this->Html->link(__('Novo {0}', ['Event']), ['action' => 'add']) ?> </li>       
+	    <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['action' => 'index']) ?> </li>
+        
+        
     </ul>
 </nav>
 <div class="events view col-lg-10 col-md-9">
@@ -56,8 +57,8 @@
             <td><?= $this->Number->format($event->id) ?></td>
         </tr>
         <tr>
-            <th>'Especial Project Id</th>
-            <td><?= $this->Number->format($event->especial_project_id) ?></td>
+            <th>'Special Project Id</th>
+            <td><?= $this->Number->format($event->special_project_id) ?></td>
         </tr>
         <tr>
             <th>Date Send</th>
@@ -597,7 +598,7 @@
             <tr>
                 <th>Id</th>
                 <th>Event Id</th>
-                <th>Legal Representative</th>
+                <th>Name</th>
                 <th>Civil Status Id</th>
                 <th>Rg</th>
                 <th>Cpf</th>
@@ -608,7 +609,7 @@
             <tr>
                 <td><?= h($legalRepresentatives->id) ?></td>
                 <td><?= h($legalRepresentatives->event_id) ?></td>
-                <td><?= h($legalRepresentatives->legal_representative) ?></td>
+                <td><?= h($legalRepresentatives->name) ?></td>
                 <td><?= h($legalRepresentatives->civil_status_id) ?></td>
                 <td><?= h($legalRepresentatives->rg) ?></td>
                 <td><?= h($legalRepresentatives->cpf) ?></td>

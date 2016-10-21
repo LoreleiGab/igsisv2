@@ -3,8 +3,9 @@
         <li class="active"><a href=""><?= __('Ação') ?></a></li>
         <li><?= $this->Html->link(__('Editar {0}', ['Juridical Relation']), ['action' => 'edit', $juridicalRelation->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Excluir {0}', ['Juridical Relation']), ['action' => 'delete', $juridicalRelation->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $juridicalRelation->id)]) ?> </li>
+		
+		<li><?= $this->Html->link(__('Novo {0}', ['Juridical Relation']), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('Listar {0}', ['Juridical Relations']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Juridical Relation']), ['action' => 'add']) ?> </li>
         
         
     </ul>
@@ -13,8 +14,8 @@
     <h3><?= h($juridicalRelation->name) ?></h3>
     <table class="table table-striped table-hover">
         <tr>
-            <th>Juridical Relation</th>
-            <td><?= h($juridicalRelation->juridical_relation) ?></td>
+            <th>Name</th>
+            <td><?= h($juridicalRelation->name) ?></td>
         </tr>
         <tr>
             <th>'Id</th>

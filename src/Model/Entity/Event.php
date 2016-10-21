@@ -9,7 +9,7 @@ use Cake\ORM\Entity;
  * @property int $id
  * @property string $name
  * @property int $juridical_relation_id
- * @property int $especial_project_id
+ * @property int $special_project_id
  * @property int $type_event_id
  * @property bool $sub_event
  * @property int $fiscal_id

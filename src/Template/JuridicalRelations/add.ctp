@@ -10,7 +10,7 @@
     <fieldset>
         <legend><?= 'Add Juridical Relation' ?></legend>
         <?php
-            echo $this->Form->input('juridical_relation');
+            echo $this->Form->input('name');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Gravar')) ?>

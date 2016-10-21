@@ -1,4 +1,15 @@
-
+<nav class="col-lg-2 col-md-3">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href=""><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('Editar {0}', ['Internal Event']), ['action' => 'edit', $internalEvent->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir {0}', ['Internal Event']), ['action' => 'delete', $internalEvent->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $internalEvent->id)]) ?> </li>
+		
+		<li><?= $this->Html->link(__('Novo {0}', ['Internal Event']), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Internal Events']), ['action' => 'index']) ?> </li>
+        
+        
+    </ul>
+</nav>
 <div class="internalEvents view col-lg-10 col-md-9">
     <h3><?= h($internalEvent->name) ?></h3>
     <table class="table table-striped table-hover">

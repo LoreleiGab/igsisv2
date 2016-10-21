@@ -7,10 +7,9 @@
                 ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $event->id)]
             )
         ?></li>
-		
-		<li><?= $this->Html->link(__('New {0}', ['Event']), ['action' => 'add']) ?></li>
+		<li><?= $this->Html->link(__('Novo {0}', ['Event']), ['action' => 'add']) ?> </li>       
         <li><?= $this->Html->link(__('List {0}', 'Events'), ['action' => 'index']) ?></li>
-       
+        
     </ul>
 </nav>
 <div class="events form col-md-10 columns content">
@@ -20,7 +19,7 @@
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('juridical_relation_id', ['options' => $juridicalRelations]);
-            echo $this->Form->input('especial_project_id');
+            echo $this->Form->input('special_project_id');
             echo $this->Form->input('type_event_id', ['options' => $typeEvents]);
             echo $this->Form->input('sub_event');
             echo $this->Form->input('fiscal_id', ['options' => $fiscals]);

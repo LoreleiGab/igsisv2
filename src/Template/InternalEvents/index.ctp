@@ -1,5 +1,12 @@
 <div class="row">
-
+<nav class="col-md-2" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a><?= __('Actions') ?></a></li>
+		
+        <li><?= $this->Html->link(__('New {0}', ['Internal Event']), ['action' => 'add']) ?></li>
+        
+    </ul>
+</nav>
 <div class="internalEvents index col-md-10 columns content">
     <h3>Internal Events</h3>
     <table class="table table-striped table-hover">

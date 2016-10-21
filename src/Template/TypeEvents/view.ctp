@@ -3,8 +3,10 @@
         <li class="active"><a href=""><?= __('Ação') ?></a></li>
         <li><?= $this->Html->link(__('Editar {0}', ['Type Event']), ['action' => 'edit', $typeEvent->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Excluir {0}', ['Type Event']), ['action' => 'delete', $typeEvent->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $typeEvent->id)]) ?> </li>
+		
+		<li><?= $this->Html->link(__('Novo {0}', ['Type Event']), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('Listar {0}', ['Type Events']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Type Event']), ['action' => 'add']) ?> </li>
+        
        
     </ul>
 </nav>

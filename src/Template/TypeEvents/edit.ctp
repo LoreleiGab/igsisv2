@@ -7,8 +7,9 @@
                 ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $typeEvent->id)]
             )
         ?></li>
+		<li><?= $this->Html->link(__('Novo {0}', ['Type Event']), ['action' => 'add']) ?> </li>
         <li><?= $this->Html->link(__('List {0}', 'Type Events'), ['action' => 'index']) ?></li>
-       <li><?= $this->Html->link(__('Novo {0}', ['Type Event']), ['action' => 'add']) ?> </li>
+       
     </ul>
 </nav>
 <div class="typeEvents form col-md-10 columns content">

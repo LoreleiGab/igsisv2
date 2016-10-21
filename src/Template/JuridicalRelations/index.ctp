@@ -3,7 +3,7 @@
     <ul class="nav nav-pills nav-stacked">
         <li class="active"><a><?= __('Actions') ?></a></li>
         <li><?= $this->Html->link(__('New {0}', ['Juridical Relation']), ['action' => 'add']) ?></li>
-       
+        
     </ul>
 </nav>
 <div class="juridicalRelations index col-md-10 columns content">
@@ -12,7 +12,7 @@
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
-                <th><?= $this->Paginator->sort('juridical_relation') ?></th>
+                <th><?= $this->Paginator->sort('name') ?></th>
                 <th class="actions"><?= __('Ação') ?></th>
             </tr>
         </thead>
@@ -20,7 +20,7 @@
             <?php foreach ($juridicalRelations as $juridicalRelation): ?>
             <tr>
                 <td><?= $this->Number->format($juridicalRelation->id) ?></td>
-                <td><?= h($juridicalRelation->juridical_relation) ?></td>
+                <td><?= h($juridicalRelation->name) ?></td>
                 <td class="actions" style="white-space:nowrap">
                     <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $juridicalRelation->id], ['class'=>'btn btn-default btn-xs']) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $juridicalRelation->id], ['class'=>'btn btn-primary btn-xs']) ?>

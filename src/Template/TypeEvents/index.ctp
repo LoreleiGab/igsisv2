@@ -3,7 +3,7 @@
     <ul class="nav nav-pills nav-stacked">
         <li class="active"><a><?= __('Actions') ?></a></li>
         <li><?= $this->Html->link(__('New {0}', ['Type Event']), ['action' => 'add']) ?></li>
-       <li><?= $this->Html->link(__('Novo {0}', ['Type Event']), ['action' => 'add']) ?> </li>
+       
     </ul>
 </nav>
 <div class="typeEvents index col-md-10 columns content">

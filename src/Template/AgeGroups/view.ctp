@@ -1,4 +1,13 @@
-
+<nav class="col-lg-2 col-md-3">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href=""><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('Editar {0}', ['Age Group']), ['action' => 'edit', $ageGroup->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir {0}', ['Age Group']), ['action' => 'delete', $ageGroup->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $ageGroup->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Age Groups']), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Age Group']), ['action' => 'add']) ?> </li>
+       
+    </ul>
+</nav>
 <div class="ageGroups view col-lg-10 col-md-9">
     <h3><?= h($ageGroup->name) ?></h3>
     <table class="table table-striped table-hover">
