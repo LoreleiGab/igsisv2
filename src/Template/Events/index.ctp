@@ -1,7 +1,14 @@
 <div class="row">
-
+<nav class="col-md-2" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a><?= __('Actions') ?></a></li>
+		
+        <li><?= $this->Html->link(__('New {0}', ['Event']), ['action' => 'add']) ?></li>
+       
+    </ul>
+</nav>
 <div class="events index col-md-10 columns content">
-    <h3>Events</h3>
+    <h3><?= __('Events') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
@@ -21,7 +28,7 @@
                 <td><?= $this->Number->format($event->id) ?></td>
                 <td><?= h($event->name) ?></td>
                 <td><?= $event->has('juridical_relation') ? $this->Html->link($event->juridical_relation->name, ['controller' => 'JuridicalRelations', 'action' => 'view', $event->juridical_relation->id]) : '' ?></td>
-                <td><?= $event->has('special_project') ? $this->Html->link($event->special_project->name, ['controller' => 'SpecialProjects', 'action' => 'view', $event->special_project->id]) : '' ?></td>
+                <td><?= $this->Number->format($event->especial_project_id) ?></td>
                 <td><?= $event->has('type_event') ? $this->Html->link($event->type_event->name, ['controller' => 'TypeEvents', 'action' => 'view', $event->type_event->id]) : '' ?></td>
                 <td><?= h($event->sub_event) ?></td>
                 <td><?= $event->has('fiscal') ? $this->Html->link($event->fiscal->name, ['controller' => 'Fiscals', 'action' => 'view', $event->fiscal->id]) : '' ?></td>

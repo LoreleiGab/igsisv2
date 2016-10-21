@@ -54,3 +54,23 @@ INSERT INTO `users` (`id`, `username`, `name`, `rf_rg`, `password`, `phone`, `em
 (11, 'manager', '', '3', '$2y$10$fdyw12c8ILUDI3AF3w.1Au/Ti6T89gbpYe/bl0LcHcTOCTeccC/BS', '', '', 1, 3, 0, NULL, 1),
 (12, 'user', '', '4', '$2y$10$BxWeJUnnaocfyNw/M9OH7OXlqrIHsLy0Fd968WTenQE/Gjb8tKNBu', '', '', 1, 4, 0, NULL, 1),
 (14, 'lorelei', '', '772.103.0', '$2y$10$BtOXnGu1e4OpInBRHXBOJOn1e06xcOty65UwBBF3T5.pkkwSDrfEe', '', '', 1, 1, 0, NULL, 1);
+
+INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
+('', 1, 'Events', 'index', NULL, NULL),
+('', 1, 'Events', 'view', NULL, NULL),
+('', 1, 'Events', 'add', NULL, NULL),
+('', 1, 'Events', 'edit', NULL, NULL);
+
+INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
+('', 1, 'Institutions', 'index', NULL, NULL),
+('', 1, 'Institutions', 'view', NULL, NULL),
+('', 1, 'Institutions', 'add', NULL, NULL),
+('', 1, 'Institutions', 'edit', NULL, NULL);
+
+INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
+('', 1, 'SpecialProjects', 'index', NULL, NULL),
+('', 1, 'SpecialProjects', 'view', NULL, NULL),
+('', 1, 'SpecialProjects', 'add', NULL, NULL),
+('', 1, 'SpecialProjects', 'edit', NULL, NULL);
+
+

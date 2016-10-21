@@ -37,7 +37,7 @@ class SpecialProjectsController extends AppController
     public function view($id = null)
     {
         $specialProject = $this->SpecialProjects->get($id, [
-            'contain' => ['Institutions', 'Events']
+            'contain' => ['Institutions']
         ]);
 
         $this->set('specialProject', $specialProject);
