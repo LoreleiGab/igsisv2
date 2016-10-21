@@ -1,4 +1,5 @@
 msgid ""
+msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2012-10-22 10:52+0200\n"
@@ -355,3 +356,1653 @@ msgstr "Excluir %s"
 #: View/Scaffolds/view.ctp:70;105
 msgid "Related %s"
 msgstr "%s relacionados(as)"
+
+#: View/Scaffolds/index.ctp:43
+msgid "Users"
+msgstr "Usuários"
+
+#: View/Scaffolds/index.ctp:48
+msgid "Username"
+msgstr "Nome de Usuário"
+
+#: View/Scaffolds/index.ctp
+msgid "Name"
+msgstr "Nome"
+
+#: View/Scaffolds/index.ctp
+msgid "Password"
+msgstr "Senha"
+
+#: View/Scaffolds/index.ctp
+msgid "Phone"
+msgstr "Telefone"
+
+#: View/Scaffolds/index.ctp
+msgid "Created"
+msgstr "Criado"
+
+#: View/Scaffolds/index.ctp
+msgid "Modified"
+msgstr "Modificado"
+
+#: View/Scaffolds/index.ctp
+msgid "Permissions"
+msgstr "Permissões"
+
+#: View/Scaffolds/
+msgid "Action"
+msgstr "Acesso"
+
+#: View/Scaffolds/add.ctp
+msgid "User Name"
+msgstr "Nome de Usuário"
+
+#: View/Scaffolds/
+msgid "Institution"
+msgstr "Instituição"
+
+#: View/Scaffolds/
+msgid "Group"
+msgstr "Grupo"
+
+#: View/Scaffolds/
+msgid "Get Notification"
+msgstr "Receber Notificações"
+
+#: View/Scaffolds/
+msgid "Contracts"
+msgstr "Contratos"
+
+#: View/Scaffolds/
+msgid "Add User"
+msgstr "Adicionar Usuário"
+
+#: View/Scaffolds/index.ctp
+msgid "Institution Father"
+msgstr "Instituição Pai"
+
+#: View/Scaffolds/index.ctp
+msgid "Initials"
+msgstr "Sigla"
+
+#: View/Scaffolds/
+msgid "Effort"
+msgstr "Empenho"
+
+#: View/Scaffolds/
+msgid "Date Effort"
+msgstr "Data do Empenho"
+
+#: View/Scaffolds/
+msgid "Process"
+msgstr "Processo"
+
+#: View/Scaffolds/
+msgid "Description"
+msgstr "Descrição"
+
+#: View/Scaffolds/
+msgid "Cancellation"
+msgstr "Cancelamento"
+
+#: View/Scaffolds/
+msgid "Sold Out"
+msgstr "Liquidado"
+
+#: View/Scaffolds/
+msgid "Value"
+msgstr "Valor"
+
+#: View/Scaffolds/
+msgid "Value Pay"
+msgstr "Valor a Liquidar"
+
+#: View/Scaffolds/
+msgid "Paid"
+msgstr "Pago"
+
+#: View/Scaffolds/
+msgid "Social Reason"
+msgstr "Razão Social"
+
+#: View/Scaffolds/
+msgid "Allocation"
+msgstr "Dotação"
+
+#: View/Scaffolds/
+msgid "Age Groups"
+msgstr "Faixas Etárias"
+
+#: View/Scaffolds/
+msgid "Age Group"
+msgstr "Faixa Etária"
+
+#: View/Scaffolds/
+msgid "Agenda Posters"
+msgstr "Revista em Cartaz"
+
+#: View/Scaffolds/
+msgid "Name Event"
+msgstr "Nome do Evento"
+
+#: View/Scaffolds/
+msgid "Type Event"
+msgstr "Tipo de Evento"
+
+#: View/Scaffolds/
+msgid "Date"
+msgstr "Data"
+
+#: View/Scaffolds/
+msgid "Hour"
+msgstr "Hora"
+
+#: View/Scaffolds/
+msgid "Agendas"
+msgstr "Agenda"
+
+#: View/Scaffolds/
+msgid "Artistic Proposals"
+msgstr "Propostas Artísticas"
+
+#: View/Scaffolds/
+msgid "Synopsis"
+msgstr "Sinopse"
+
+#: View/Scaffolds/
+msgid "Technical Form"
+msgstr "Ficha Técnica"
+
+#: View/Scaffolds/
+msgid "Historic Artistis"
+msgstr "Histórico do Artista"
+
+#: View/Scaffolds/
+msgid "Local Origin"
+msgstr "Local de Origem"
+
+#: View/Scaffolds/
+msgid "Local Presentation"
+msgstr "Local de Apresentação"
+
+#: View/Scaffolds/
+msgid "Budget"
+msgstr "Orçamento"
+
+#: View/Scaffolds/
+msgid "Language"
+msgstr "Linguagem"
+
+#: View/Scaffolds/
+msgid "Infraestructure"
+msgstr "Infraestrutura"
+
+#: View/Scaffolds/
+msgid "Contact"
+msgstr "Contato"
+
+#: View/Scaffolds/
+msgid "Date Send"
+msgstr "Data de Envio"
+
+#: View/Scaffolds/
+msgid "Link Agent SPCultura"
+msgstr "Link Agente SPCultura"
+
+#: View/Scaffolds/
+msgid "Banks"
+msgstr "Bancos"
+
+#: View/Scaffolds/
+msgid "Bank"
+msgstr "Banco"
+
+#: View/Scaffolds/
+msgid "Code"
+msgstr "Código"
+
+#: View/Scaffolds/
+msgid "Call Comments"
+msgstr "Comentários de Chamados"
+
+#: View/Scaffolds/
+msgid "Comment"
+msgstr "Comentário"
+
+#: View/Scaffolds/
+msgid "Calls"
+msgstr "Chamados"
+
+#: View/Scaffolds/
+msgid "User Id"
+msgstr "Nome do Usuário"
+
+#: View/Scaffolds/
+msgid "Type Call Id"
+msgstr "Tipo de Chamado"
+
+#: View/Scaffolds/
+msgid "Title"
+msgstr "Título"
+
+#: View/Scaffolds/
+msgid "Justification"
+msgstr "Justificativa"
+
+#: View/Scaffolds/
+msgid "Note"
+msgstr "Nota"
+
+#: View/Scaffolds/
+msgid "Type Event Id"
+msgstr "Tipo de Evento"
+
+#: View/Scaffolds/
+msgid "Institution Id"
+msgstr "Instituição"
+
+#: View/Scaffolds/
+msgid "Local Id"
+msgstr "Local"
+
+#: View/Scaffolds/
+msgid "Occurrences Id"
+msgstr "Ocorrências"
+
+#: View/Scaffolds/
+msgid "Cinema Id"
+msgstr "Cinema"
+
+#: View/Scaffolds/
+msgid "Call Id"
+msgstr "Chamado"
+
+#: View/Scaffolds/
+msgid "Categories"
+msgstr "Categorias"
+
+#: View/Scaffolds/
+msgid "Category Equipments"
+msgstr "Categoria dos Equipamentos"
+
+#: View/Scaffolds/
+msgid "Category Equipment"
+msgstr "Categoria do Equipamento"
+
+#: View/Scaffolds/
+msgid "Check Productions"
+msgstr "Verificação da Produção"
+
+#: View/Scaffolds/
+msgid "Original Title"
+msgstr "Título Original"
+
+#: View/Scaffolds/
+msgid "Direction"
+msgstr "Direção"
+
+#: View/Scaffolds/
+msgid "Movie Country Id"
+msgstr "País"
+
+#: View/Scaffolds/
+msgid "Production Year"
+msgstr "Ano de Produção"
+
+#: View/Scaffolds/
+msgid "Cast"
+msgstr "Elenco"
+
+#: View/Scaffolds/
+msgid "Genre"
+msgstr "Gênero"
+
+#: View/Scaffolds/
+msgstr "Classificação Etária"
+msgid "Age Rating"
+
+#: View/Scaffolds/
+msgid "Minutes"
+msgstr "Minutos"
+
+#: View/Scaffolds/
+msgid "Link Trailer"
+msgstr "Link do Trailer"
+
+#: View/Scaffolds/
+msgid "Gauge"
+msgstr "Bitola"
+
+#: View/Scaffolds/
+msgid "Civil Status"
+msgstr "Estado Civil"
+
+#: View/Scaffolds/
+msgid "Communications"
+msgstr "Comunicação"
+
+#: View/Scaffolds/
+msgid "Special Project"
+msgstr "Projeto Especial"
+
+#: View/Scaffolds/
+msgid "Project"
+msgstr "Projeto"
+
+#: View/Scaffolds/
+msgid "Author"
+msgstr "Autor"
+
+#: View/Scaffolds/
+msgid "Seem Artistic"
+msgstr "Parecer Artístico"
+
+#: View/Scaffolds/
+msgid "Release Communication"
+msgstr "Release da Comunicação"
+
+#: View/Scaffolds/
+msgid "Movie"
+msgstr "Filme"
+
+#: View/Scaffolds/
+msgid "Edited"
+msgstr "Editado"
+
+#: View/Scaffolds/
+msgid "Reviewed"
+msgstr "Revisado"
+
+#: View/Scaffolds/
+msgid "Record Audio"
+msgstr "Registro de Áudio"
+
+#: View/Scaffolds/
+msgid "Record Video"
+msgstr "Registro de Vídeo"
+
+#: View/Scaffolds/
+msgid "Record Photography"
+msgstr "Registro de Fotografia"
+
+#: View/Scaffolds/
+msgid "Observation"
+msgstr "Observação"
+
+#: View/Scaffolds/
+msgid "Photo"
+msgstr "Foto"
+
+#: View/Scaffolds/
+msgid "Detail Locals"
+msgstr "Detalhes dos Locais"
+
+#: View/Scaffolds/
+msgid "Territory Id"
+msgstr "Território"
+
+#: View/Scaffolds/
+msgid "Region Id"
+msgstr "região"
+
+#: View/Scaffolds/
+msgid "Complement"
+msgstr "Complement"
+
+#: View/Scaffolds/
+msgid "Link Access Map"
+msgstr "Link de Acesso ao Mapa"
+
+#: View/Scaffolds/
+msgid "Phone 1"
+msgstr "Telefone 1"
+
+#: View/Scaffolds/
+msgid "Phone 2"
+msgstr "Telefone 2"
+
+#: View/Scaffolds/
+msgid "Category Equipment Id"
+msgstr "Categoria do Equipamento"
+
+#: View/Scaffolds/
+msgid "Formation Subprefecture Id"
+msgstr "Subprefeitura"
+
+#: View/Scaffolds/
+msgid "Phone 1 Responsible"
+msgstr "Responsável - Telefone 1"
+
+#: View/Scaffolds/
+msgid "Phone 2 Responsible"
+msgstr "Responsável - Telefone 2"
+
+#: View/Scaffolds/
+msgid "Email Responsible"
+msgstr "Email do Responsável"
+
+#: View/Scaffolds/
+msgid "Detailing Action"
+msgstr "Detalhamento da Ação"
+
+#: View/Scaffolds/
+msgid "Code Detailing Action"
+msgstr "Código do Detalhamento da Ação"
+
+#: View/Scaffolds/
+msgid "Detailing Action"
+msgstr "Detalhamento da Ação"
+
+#: View/Scaffolds/
+msgid "Code Allocation"
+msgstr "Código da Dotação"
+
+#: View/Scaffolds/
+msgid "Estimate Controls"
+msgstr "Controle de Estimativas"
+
+#: View/Scaffolds/
+msgid "Fund Id"
+msgstr "Verba"
+
+#: View/Scaffolds/
+msgid "Fund Father"
+msgstr "Verba Pai"
+
+#: View/Scaffolds/
+msgid "Ethnicities"
+msgstr "Etnias"
+
+#: View/Scaffolds/
+msgid "Ethnicity"
+msgstr "Etnia"
+
+#: View/Scaffolds/
+msgid "Events"
+msgstr "Eventos"
+
+#: View/Scaffolds/
+msgid "Juridical Relation Id"
+msgstr "Relação Jurídica"
+
+#: View/Scaffolds/
+msgid "Special Project Id"
+msgstr "Projeto Especial"
+
+#: View/Scaffolds/
+msgid "Sub Event"
+msgstr "SubEvento"
+
+#: View/Scaffolds/
+msgid "Fiscal Id"
+msgstr "Fiscal"
+
+#: View/Scaffolds/
+msgid "Surrogate Id"
+msgstr "Suplente"
+
+#: View/Scaffolds/
+msgid "Age Group Id"
+msgstr "Faixa Etária"
+
+#: View/Scaffolds/
+msgid "Producer Id"
+msgstr "Produtor"
+
+#: View/Scaffolds/
+msgid "Date Send"
+msgstr "Data de Envio"
+
+#: View/Scaffolds/
+msgid "Public Target"
+msgstr "Público Alvo"
+
+#: View/Scaffolds/
+msgid "Fiscals"
+msgstr "Fiscais"
+
+#: View/Scaffolds/
+msgid "Formation Coordinations"
+msgstr "Coordenadorias"
+
+#: View/Scaffolds/
+msgid "Coordination"
+msgstr "Coordenadoria"
+
+#: View/Scaffolds/
+msgid "Formation Effectives"
+msgstr "Vigência"
+
+#: View/Scaffolds/
+msgid "Period"
+msgstr "Período"
+
+#: View/Scaffolds/
+msgid "Year"
+msgstr "Ano"
+
+#: View/Scaffolds/
+msgid "Formation Installments"
+msgstr "Parcelas"
+
+#: View/Scaffolds/
+msgid "Effective Id"
+msgstr "Vigência"
+
+#: View/Scaffolds/
+msgid "Number Installments"
+msgstr "Nº Parcelas"
+
+#: View/Scaffolds/
+msgid "Date Start"
+msgstr "Data Início"
+
+#: View/Scaffolds/
+msgid "Date Final"
+msgstr "Data Final"
+
+#: View/Scaffolds/
+msgid "Formation Languages"
+msgstr "Linguagens"
+
+#: View/Scaffolds/
+msgid "Language"
+msgstr "Linguagem"
+
+#: View/Scaffolds/
+msgid "Formation Offices"
+msgstr "Cargos"
+
+#: View/Scaffolds/
+msgid "Office"
+msgstr "Cargo"
+
+#: View/Scaffolds/
+msgid "Formation Programs"
+msgstr "Programas"
+
+#: View/Scaffolds/
+msgid "Program"
+msgstr "Programa"
+
+#: View/Scaffolds/
+msgid "Notice"
+msgstr "Edital"
+
+#: View/Scaffolds/
+msgid "Formation Projects"
+msgstr "Projetos"
+
+#: View/Scaffolds/
+msgid "Formation Regions"
+msgstr "Regiões"
+
+#: View/Scaffolds/
+msgid "Region"
+msgstr "Região"
+
+#: View/Scaffolds/
+msgid "Formation Subprefecture"
+msgstr "Subprefeitura"
+
+#: View/Scaffolds/
+msgid "Subprefecture"
+msgstr "Subprefeitura"
+
+#: View/Scaffolds/
+msgid "Formation Territories"
+msgstr "Territórios"
+
+#: View/Scaffolds/
+msgid "Territory"
+msgstr "Território"
+
+#: View/Scaffolds/
+msgid "Formations"
+msgstr "Formação"
+
+#: View/Scaffolds/
+msgid "Fisical Person Id"
+msgstr "Pessoa Física"
+
+#: View/Scaffolds/
+msgid "Coordination Id"
+msgstr "Coordenadoria"
+
+#: View/Scaffolds/
+msgid "Program Id"
+msgstr "Programa"
+
+#: View/Scaffolds/
+msgid "Language Id"
+msgstr "Linguagem"
+
+#: View/Scaffolds/
+msgid "Project Id"
+msgstr "Projeto"
+
+#: View/Scaffolds/
+msgid "Local 1 Id"
+msgstr "Local 1"
+
+#: View/Scaffolds/
+msgid "Local 2 Id"
+msgstr "Local 2"
+
+#: View/Scaffolds/
+msgid "Local 3 Id"
+msgstr "Local 3"
+
+#: View/Scaffolds/
+msgid "Call"
+msgstr "Chamado"
+
+#: View/Scaffolds/
+msgid "Ponctuation"
+msgstr "Pontuação"
+
+#: View/Scaffolds/
+msgid "Payment Process Number"
+msgstr "Nº Processo Pagamento"
+
+#: View/Scaffolds/
+msgid "Surrogate"
+msgstr "Suplente"
+
+#: View/Scaffolds/
+msgid "Father"
+msgstr "Pai"
+
+#: View/Scaffolds/
+msgid "Reward"
+msgstr "Prêmio"
+
+#: View/Scaffolds/
+msgid "Budget Allocation"
+msgstr "Dotação Orçamentária"
+
+#: View/Scaffolds/
+msgid "Multiple"
+msgstr "Múltiplo"
+
+#: View/Scaffolds/
+msgid "Do Premium"
+msgstr "Do Prêmio"
+
+#: View/Scaffolds/
+msgid "Number Reserve Pj"
+msgstr "Nº Reserva Pj"
+
+#: View/Scaffolds/
+msgid "Number Reserve Pf"
+msgstr "Nº Reserva Pf"
+
+#: View/Scaffolds/
+msgid "Number Reserve Charges"
+msgstr "Nº Reserva Encargos"
+
+#: View/Scaffolds/
+msgid "Vocative"
+msgstr "Vocativo"
+
+#: View/Scaffolds/
+msgid "Sector Vocative"
+msgstr "Setor Vocativo"
+
+#: View/Scaffolds/
+msgid "Funds Users"
+msgstr "Verbas dos Usuários"
+
+#: View/Scaffolds/
+msgid "Get Tickets"
+msgstr "Retirada de Ingressos"
+
+#: View/Scaffolds/
+msgid "Get Ticket"
+msgstr "Retirada de Ingressos"
+
+#: View/Scaffolds/
+msgid "Groups"
+msgstr "Grupos"
+
+#: View/Scaffolds/
+msgid "Hiring Requests"
+msgstr "Pedidos de Contratação"
+
+#: View/Scaffolds/
+msgid "Type Modality Hiring"
+msgstr "Modalidade da Contratação"
+
+#: View/Scaffolds/
+msgid "Modality Hiring"
+msgstr "Modalidade da Contratação"
+
+#: View/Scaffolds/
+msgid "Type Person Id"
+msgstr "Tipo de Pessoa"
+
+#: View/Scaffolds/
+msgid "Person Id"
+msgstr "Pessoa"
+
+#: View/Scaffolds/
+msgid "Executant Id"
+msgstr "Executante"
+
+#: View/Scaffolds/
+msgid "Form of Payment"
+msgstr "Forma de Pagamento"
+
+#: View/Scaffolds/
+msgid "Quantity Installment"
+msgstr "Nº Parcelas"
+
+#: View/Scaffolds/
+msgid "Process Number"
+msgstr "Nº Processo"
+
+#: View/Scaffolds/
+msgid "Number Note Empenho"
+msgstr "Nº Nota de Empenho"
+
+#: View/Scaffolds/
+msgid "Penalties Id"
+msgstr "Penalidade"
+
+#: View/Scaffolds/
+msgid "Date Emission Note Empenho"
+msgstr "Data Emissão da Nota de Empenho"
+
+#: View/Scaffolds/
+msgid "Date Delivery Note Empenho"
+msgstr "Data Entrega da Nota de Empenho"
+
+#: View/Scaffolds/
+msgid "Contract Operator Id"
+msgstr "Operador do Contrato"
+
+#: View/Scaffolds/
+msgid "Approval Finance"
+msgstr "Aprovação Financeiro"
+
+#: View/Scaffolds/
+msgid "Support Legal"
+msgstr "Amparo Legal"
+
+#: View/Scaffolds/
+msgid "Completion"
+msgstr "Complemento"
+
+#: View/Scaffolds/
+msgid "Date Contract"
+msgstr "Data do Contrato"
+
+#: View/Scaffolds/
+msgid "Date Proposal"
+msgstr "Data da Proposta"
+
+#: View/Scaffolds/
+msgid "Date Reserve"
+msgstr "Data da Reserva"
+
+#: View/Scaffolds/
+msgid "Date Juridical"
+msgstr "Data Jurídico"
+
+#: View/Scaffolds/
+msgid "Date Publication"
+msgstr "Data da Publicação"
+
+#: View/Scaffolds/
+msgid "Date Accounting"
+msgstr "Data Contabilidade"
+
+#: View/Scaffolds/
+msgid "Date Payment"
+msgstr "Data do Pagamento"
+
+#: View/Scaffolds/
+msgid "Process Sof"
+msgstr "Processo SOF"
+
+#: View/Scaffolds/
+msgid "Extract Liquidation"
+msgstr "Extrato da Liquidação"
+
+#: View/Scaffolds/
+msgid "Retention INSS"
+msgstr "Retenção INSS"
+
+#: View/Scaffolds/
+msgid "Retention ISS"
+msgstr "Retenção ISS"
+
+#: View/Scaffolds/
+msgid "Retention IRRF"
+msgstr "Retenção IRRF"
+
+#: View/Scaffolds/
+msgid "Information Productions"
+msgstr "Informações de Produção"
+
+#: View/Scaffolds/
+msgid "Installments"
+msgstr "Parcelas"
+
+#: View/Scaffolds/
+msgid "Hiring Request Id"
+msgstr "Pedido de Contratação"
+
+#: View/Scaffolds/
+msgid "Winning"
+msgstr "Vencimento"
+
+#: View/Scaffolds/
+msgid "Start Effective"
+msgstr "Início da Vigência"
+
+#: View/Scaffolds/
+msgid "Final Effective"
+msgstr "Final da Vigência"
+
+#: View/Scaffolds/
+msgid "Institutions"
+msgstr "Instituções"
+
+#: View/Scaffolds/
+msgid "Internal Events"
+msgstr "Eventos Internos"
+
+#: View/Scaffolds/
+msgid "Information Production Id"
+msgstr "Informação de Produção"
+
+#: View/Scaffolds/
+msgid "Juridical Relations"
+msgstr "Relações Jurídicas"
+
+#: View/Scaffolds/
+msgid "Juridical Relation"
+msgstr "Relação Jurídica"
+
+#: View/Scaffolds/
+msgid "Legal Persons"
+msgstr "Pessoas Jurídicas"
+
+#: View/Scaffolds/
+msgid "Company Name"
+msgstr "Nome da Empresa"
+
+#: View/Scaffolds/
+msgid "Legal Representative 1"
+msgstr "Representante Legal 1"
+
+#: View/Scaffolds/
+msgid "Legal Representative 2"
+msgstr "Representante Legal 2"
+
+#: View/Scaffolds/
+msgid "Bank Id"
+msgstr "Banco"
+
+#: View/Scaffolds/
+msgid "Bank Branch"
+msgstr "Agência"
+
+#: View/Scaffolds/
+msgid "Account"
+msgstr "Conta"
+
+#: View/Scaffolds/
+msgid "Date Update"
+msgstr "Data da Atualização"
+
+#: View/Scaffolds/
+msgid "event_id"
+msgstr "ID do Evento"
+
+#: View/Scaffolds/
+msgid "legal_representative"
+msgstr "Representante Legal"
+
+#: View/Scaffolds/
+msgid "civil_status_id"
+msgstr "ID Estado Civil"
+
+#: View/Scaffolds/
+msgid "rg"
+msgstr "RG"
+
+#: View/Scaffolds/
+msgid "cpf"
+msgstr "CPF"
+
+#: View/Scaffolds/
+msgid "nationality"
+msgstr "Nacionalidade"
+
+//grau de instrução level_instructions
+
+#: View/Scaffolds/
+msgid "level_instrucion"
+msgstr "Grau de Instrução"
+
+//locais - locals
+
+#: View/Scaffolds/
+msgid "institution_id"
+msgstr "Instituição"
+
+#: View/Scaffolds/
+msgid "local"
+msgstr "Local"
+
+#: View/Scaffolds/
+msgid "rider"
+msgstr "Rider"
+
+#: View/Scaffolds/add.ctp:31
+msgid "Published"
+msgstr "Publicado"
+
+//usuarios locais - locals_users
+
+#: View/Scaffolds/
+msgid "local_id"
+msgstr "ID do Local"
+
+#: View/Scaffolds/
+msgid "user_id"
+msgstr "ID do Usuário"
+
+//log reabertura - log_reopenings
+
+#: View/Scaffolds/
+msgid "call_id"
+msgstr "ID do Chamado"
+
+#: View/Scaffolds/
+msgid "category_id"
+msgstr "ID da Categoria"
+
+#: View/Scaffolds/
+msgid "description"
+msgstr "Descrição"
+
+#: View/Scaffolds/
+msgid "date"
+msgstr "Data"
+
+#: View/Scaffolds/
+msgid "ip"
+msgstr "IP"
+
+//logs
+
+#: View/Scaffolds/
+msgid "date_log"
+msgstr "Data do Log"
+
+#: View/Scaffolds/
+msgid "address_ip"
+msgstr "Endereço IP"
+
+//Grupos - members
+
+#: View/Scaffolds/
+msgid "hiring_request_id"
+msgstr "ID Pedido de Contratação"
+
+#: View/Scaffolds/
+msgid "full_name"
+msgstr "Nome Completo"
+
+// Modelo Jurídico- model_juridicals
+
+#: View/Scaffolds/
+msgid "model_name"
+msgstr "Nome Modelo"
+
+#: View/Scaffolds/
+msgid "support_legal"
+msgstr "Amparo"
+
+#: View/Scaffolds/
+msgid "completion"
+msgstr "Finalização"
+
+// País de origem - movie_countries
+
+#: View/Scaffolds/
+msgid "country_name"
+msgstr "País de Origem"
+
+// Verbas multiplas - multiple_funds
+
+#: View/Scaffolds/
+msgid "funds_id"
+msgstr "ID Verbas"
+
+#: View/Scaffolds/
+msgid "value"
+msgstr "Valor"
+
+// música - musics
+
+#: View/Scaffolds/
+msgid "genre"
+msgstr "Gênero"
+
+#: View/Scaffolds/
+msgid "sale"
+msgstr "Venda"
+
+#: View/Scaffolds/
+msgid "material"
+msgstr "Material"
+
+// ocorrências - occurrences
+
+#: View/Scaffolds/
+msgid "sub_event_id"
+msgstr "ID Sub-Evento"
+
+#: View/Scaffolds/
+msgid "occurrence_type_id"
+msgstr "ID Tipo Ocorrência"
+
+#: View/Scaffolds/
+msgid "date_starter"
+msgstr "Data Inicial"
+
+#: View/Scaffolds/
+msgid "date_final"
+msgstr "Data Final"
+
+#: View/Scaffolds/
+msgid "monday"
+msgstr "Segunda-feira"
+
+#: View/Scaffolds/
+msgid "tuesday"
+msgstr "Terça=feira"
+
+#: View/Scaffolds/
+msgid "wednesday"
+msgstr "Quarta-feira"
+
+#: View/Scaffolds/
+msgid "thursday"
+msgstr "Quinta-feira"
+
+#: View/Scaffolds/
+msgid "friday"
+msgstr "Sexta-feira"
+
+#: View/Scaffolds/
+msgid "saturday"
+msgstr "Sábado"
+
+#: View/Scaffolds/
+msgid "sunday"
+msgstr "Domingo"
+
+#: View/Scaffolds/
+msgid "duration"
+msgstr "Duração"
+
+#: View/Scaffolds/
+msgid "special_day"
+msgstr "Dia Especial"
+
+#: View/Scaffolds/
+msgid "audio_description"
+msgstr "Audio Descrição"
+
+#: View/Scaffolds/
+msgid "libras"
+msgstr "Libras"
+
+#: View/Scaffolds/
+msgid "cultural_turn"
+msgstr "Virada Cultural"
+
+#: View/Scaffolds/
+msgid "popular_price"
+msgstr "Preço Popular"
+
+#: View/Scaffolds/
+msgid "get_ticket"
+msgstr "Retirada Ingresso"
+
+#: View/Scaffolds/
+msgid "ticket_value"
+msgstr "Valor do Ingresso"
+
+#: View/Scaffolds/
+msgid "local_other"
+msgstr "Outros Locais"
+
+#: View/Scaffolds/
+msgid "reserved"
+msgstr "Reservado"
+
+#: View/Scaffolds/
+msgid "capacity"
+msgstr "Capacidade"
+
+#: View/Scaffolds/
+msgid "timezone"
+msgstr "Fuso-Horário"
+
+#: View/Scaffolds/
+msgid "all_day"
+msgstr "Dia Todo"
+
+#: View/Scaffolds/
+msgid "frequency"
+msgstr "Frequência"
+
+#: View/Scaffolds/
+msgid "cinema_id"
+msgstr "ID Cinema"
+
+// opções - options
+
+#: View/Scaffolds/
+msgid "string_option"
+msgstr "Opção String"
+
+#: View/Scaffolds/
+msgid "option"
+msgstr "Opção"
+
+#: View/Scaffolds/
+msgid "coverage"
+msgstr "Cobertura"
+
+#: View/Scaffolds/
+msgid "type"
+msgstr "Tipo"
+
+#: View/Scaffolds/
+msgid "code"
+msgstr "Código"
+
+#: View/Scaffolds/
+msgid "alert"
+msgstr "Alerta"
+
+// penalidades - penalties
+
+#: View/Scaffolds/
+msgid "model"
+msgstr "Modelo"
+
+// permissões - permissions
+
+#: View/Scaffolds/
+msgid "group_id"
+msgstr "ID Grupo"
+
+#: View/Scaffolds/
+msgid "action"
+msgstr "Ação"
+
+#: View/Scaffolds/
+msgid "created"
+msgstr "Criado"
+
+#: View/Scaffolds/
+msgid "modified"
+msgstr "Modificado"
+
+// frases - phrases
+
+#: View/Scaffolds/
+msgid "phrase"
+msgstr "Frase"
+
+// Pessoa física - physical_persons
+
+#: View/Scaffolds/
+msgid "photo"
+msgstr "Foto"
+
+#: View/Scaffolds/
+msgid "name"
+msgstr "Nome"
+
+#: View/Scaffolds/
+msgid "artistic_name"
+msgstr "Nome Artístico"
+
+#: View/Scaffolds/
+msgid "date_birth"
+msgstr "Data de Nascimento"
+
+#: View/Scaffolds/
+msgid "type_document_id"
+msgstr "ID Tipo Documento"
+
+#: View/Scaffolds/
+msgid "cbo"
+msgstr "CBO"
+
+#: View/Scaffolds/
+msgid "ccm"
+msgstr "CCM"
+
+#: View/Scaffolds/
+msgid "drt"
+msgstr "DRT"
+
+#: View/Scaffolds/
+msgid "nit"
+msgstr "NIT"
+
+#: View/Scaffolds/
+msgid "pis"
+msgstr "PIS"
+
+#: View/Scaffolds/
+msgid "omb"
+msgstr "OMB"
+
+#: View/Scaffolds/
+msgid "function"
+msgstr "Função"
+
+#: View/Scaffolds/
+msgid "cep"
+msgstr "CEP"
+
+#: View/Scaffolds/
+msgid "phone_1"
+msgstr "Telefone #1"
+
+#: View/Scaffolds/
+msgid "phone_2"
+msgstr "Telefone #2"
+
+#: View/Scaffolds/
+msgid "phone_3"
+msgstr "Telefone #3"
+
+#: View/Scaffolds/
+msgid "email"
+msgstr "E-mail"
+
+#: View/Scaffolds/
+msgid "bank_id"
+msgstr "ID Banco"
+
+#: View/Scaffolds/
+msgid "bank_branch"
+msgstr "Agência"
+
+#: View/Scaffolds/
+msgid "account"
+msgstr "Conta"
+
+#: View/Scaffolds/
+msgid "observation"
+msgstr "Observação"
+
+#: View/Scaffolds/
+msgid "date_update"
+msgstr "Data Atualização"
+
+// formação pessoa física - physical_persons_formations
+
+#: View/Scaffolds/
+msgid "physical_person_id"
+msgstr "ID Pessoa Física"
+
+#: View/Scaffolds/
+msgid "ethnicity_id"
+msgstr "ID Etnia"
+
+#: View/Scaffolds/
+msgid "region_id"
+msgstr "ID Região"
+
+#: View/Scaffolds/
+msgid "level_instrucions_id"
+msgstr "ID Grau de Instrução"
+
+#: View/Scaffolds/
+msgid "member"
+msgstr "Grupo"
+
+#: View/Scaffolds/
+msgid "curriculum"
+msgstr "Currículo"
+
+#: View/Scaffolds/
+msgid "agent_sp_cultura_id"
+msgstr "ID Agente SP Cultura"
+
+// Produtores - producers
+
+#: View/Scaffolds/
+msgid "phone"
+msgstr "Telefone"
+
+// renovação - renewals
+
+#: View/Scaffolds/
+msgid "text"
+msgstr "Texto"
+
+// serviços - services
+
+#: View/Scaffolds/
+msgid "subtitle"
+msgstr "Legenda"
+
+#: View/Scaffolds/
+msgid "translation"
+msgstr "Tradução"
+
+#: View/Scaffolds/
+msgid "graphics"
+msgstr "Gráficos"
+
+#: View/Scaffolds/
+msgid "pass"
+msgstr "Passagem"
+
+#: View/Scaffolds/
+msgid "mounting"
+msgstr "Montagem"
+
+#: View/Scaffolds/
+msgid "accommodation"
+msgstr "Hospedagem"
+
+#: View/Scaffolds/
+msgid "security"
+msgstr "Seguro"
+
+#: View/Scaffolds/
+msgid "transport"
+msgstr "Transport"
+
+#: View/Scaffolds/
+msgid "itinerary"
+msgstr "Itinerário"
+
+#: View/Scaffolds/
+msgid "company_name"
+msgstr "Razão Social"
+
+#: View/Scaffolds/
+msgid "cpfCnpj"
+msgstr "CPF/CNPJ"
+
+#: View/Scaffolds/
+msgid "bank"
+msgstr "Banco"
+
+#: View/Scaffolds/
+msgid "billing"
+msgstr "Bilhetagem"
+
+#: View/Scaffolds/
+msgid "capacity"
+msgstr "Capacidade"
+
+// projetos especiais - special_projects
+
+#: View/Scaffolds/
+msgid "special_project"
+msgstr "Projeto Especial"
+
+// estado - status
+
+#: View/Scaffolds/
+msgid "status"
+msgstr "Status"
+
+#: View/Scaffolds/
+msgid "order"
+msgstr "Ordem"
+
+#: View/Scaffolds/
+msgid "area"
+msgstr "Área"
+
+// sub-evento - sub_events
+
+#: View/Scaffolds/
+msgid "type_event_id"
+msgstr "ID Tipo do Evento"
+
+#: View/Scaffolds/
+msgid "title"
+msgstr "Título"
+
+// datas temp - temp_datas
+
+#: View/Scaffolds/
+msgid "start_date"
+msgstr "Data Ínicio"
+
+#: View/Scaffolds/
+msgid "send_date"
+msgstr "Data Envio"
+
+// EmCartaz temp - temp_posters
+
+#: View/Scaffolds/
+msgid "agenda_posters_id"
+msgstr "Agenda EmCartaz"
+
+#: View/Scaffolds/
+msgid "special_project_id"
+msgstr "Projeto Especial"
+
+// teatro dança - theater_dances
+
+#: View/Scaffolds/
+msgid "premiere"
+msgstr "Estréia"
+
+// times
+
+#: View/Scaffolds/
+msgid "time"
+msgstr "Tempo"
+
+// tipo chamado - type_calls
+
+#: View/Scaffolds/
+msgid "call"
+msgstr "Chamado"
+
+// type_documents
+
+#: View/Scaffolds/
+msgid "document"
+msgstr "Documento"
+
+// tipo evento - type_events
+
+#: View/Scaffolds/
+msgid "type_event"
+msgstr "Tipo Evento"
+
+// tipo ocorrências - type occurrences
+
+#: View/Scaffolds/
+msgid "occurrence_type"
+msgstr "Tipo Ocorrência"
+
+//tipo pessoa - type_persons
+
+#: View/Scaffolds/
+msgid "person_type"
+msgstr "Tipo Pessoa"
+
+// upload categoria - upload_categories
+
+#: View/Scaffolds/
+msgid "category"
+msgstr "Categoria"
+
+// upload nome documentos - upload_document_names
+
+#: View/Scaffolds/
+msgid "upload_category_id"
+msgstr "ID Categoria Upload"
+
+#: View/Scaffolds/
+msgid "initials"
+msgstr "Iniciais"
+
+//upload Eventos - upload_events
+
+#: View/Scaffolds/
+msgid "file"
+msgstr "Arquivo"
+
+// upload Formação - upload_formations
+
+#: View/Scaffolds/
+msgid "formation_id"
+msgstr "ID Formação"
+
+#: View/Scaffolds/
+msgid "upload_name_document"
+msgstr "Nome Documento Upload"
+
+//upload Pessoas - upload_persons
+
+#: View/Scaffolds/
+msgid "type_person_id"
+msgstr "ID Tipo Pessoa"
+
+#: View/Scaffolds/
+msgid "person_id"
+msgstr "ID Pessoa"
+
+#: View/Scaffolds/
+msgid "date_send"
+msgstr "Data Envio"
+
+#: View/Scaffolds/
+msgid "upload_name_document_id"
+msgstr "ID Nome Documento Upload"
+
+//usuarios - users
+
+#: View/Scaffolds/
+msgid "user_name"
+msgstr "Usuário"
+
+#: View/Scaffolds/
+msgid "rf_rg"
+msgstr "RF/RG"
+
+#: View/Scaffolds/
+msgid "password"
+msgstr "Senha"
+
+#: View/Scaffolds/
+msgid "get_notification"
+msgstr "Receber Notificação"
+
+#: View/Scaffolds/
+msgid "contracts"
+msgstr "Contratos"
+
+// Artes Visuais - visual_arts
+
+#: View/Scaffolds/
+msgid "number"
+msgstr "Número"
+
+#: View/Scaffolds/
+msgid "panel"
+msgstr "Painel"
+
+#: View/Scaffolds/
+msgid "identity"
+msgstr "Identidade"
+
+#: View/Scaffolds/
+msgid "support"
+msgstr "Suporte"
+
+#: View/Scaffolds/
+msgid "collection"
+msgstr "Acervo"
+
+//weblogs
+
+#: View/Scaffolds/
+msgid "message"
+msgstr "Mensagem"
+
+// workshop - oficinas
+
+#: View/Scaffolds/
+msgid "certificate"
+msgstr "Certificado"
+
+#: View/Scaffolds/
+msgid "vacancies"
+msgstr "Vagas"
+
+#: View/Scaffolds/
+msgid "public"
+msgstr "Público"
+
+#: View/Scaffolds/
+msgid "inscription"
+msgstr "Inscrição"
+
+#: View/Scaffolds/
+msgid "value_hour"
+msgstr "Valor/Hora"
+
+#: View/Scaffolds/
+msgid "divulgation"
+msgstr "Divulgação"
+
+#: View/Scaffolds/
+msgid "workload"
+msgstr "Carga Horária"
+
+#: View/Scaffolds/
+msgid "Add Group"
+msgstr "Adicionar Grupo"
+
+#: View/Scaffolds/
+msgid "Please enter your username and password"
+msgstr "Por favor insira seu nome de usuário e senha!"
+
+#: View/Scaffolds/
+msgid "User"
+msgstr "Nome do Usuário"
+
+#: View/Scaffolds/
+msgid "Producer"
+msgstr "Produtor"
+
+#: View/Scaffolds/
+msgid "Add Event"
+msgstr "Adicionar Evento"
+
+#: View/Scaffolds/
+msgid "Add Institution"
+msgstr "Adicionar Instituição"
+
+#: View/Scaffolds/
+msgid "Special Projects"
+msgstr "Projetos Especiais"
+
+#: View/Scaffolds/
+msgid "Add Special Project"
+msgstr "Adicionar Projeto Especial"

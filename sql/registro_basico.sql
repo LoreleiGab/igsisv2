@@ -46,97 +46,7 @@ INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, 
 (32, 2, 'Users', 'view', NULL, NULL),
 (33, 2, 'Users', 'add', NULL, NULL),
 (34, 2, 'Users', 'edit', NULL, NULL),
-(35, 2, 'Users', 'delete', NULL, NULL),
-('', 1, 'Cinemas', 'index', NULL, NULL),
-('', 1, 'Cinemas', 'view', NULL, NULL),
-('', 1, 'Cinemas', 'add', NULL, NULL),
-('', 1, 'Cinemas', 'edit', NULL, NULL),
-
-('', 1, 'Fiscals', 'index', NULL, NULL),
-('', 1, 'Fiscals', 'view', NULL, NULL),
-('', 1, 'Fiscals', 'add', NULL, NULL),
-('', 1, 'Fiscals', 'edit', NULL, NULL),
-
-('', 1, 'Institutions', 'index', NULL, NULL),
-('', 1, 'Institutions', 'view', NULL, NULL),
-('', 1, 'Institutions', 'add', NULL, NULL),
-('', 1, 'Institutions', 'edit', NULL, NULL),
-
-('', 1, 'InternalEvents', 'index', NULL, NULL),
-('', 1, 'InternalEvents', 'view', NULL, NULL),
-('', 1, 'InternalEvents', 'add', NULL, NULL),
-('', 1, 'InternalEvents', 'edit', NULL, NULL),
-
-('', 1, 'JuridicalRelations', 'index', NULL, NULL),
-('', 1, 'JuridicalRelations', 'view', NULL, NULL),
-('', 1, 'JuridicalRelations', 'add', NULL, NULL),
-('', 1, 'JuridicalRelations', 'edit', NULL, NULL),
-
-('', 1, 'MovieCountries', 'index', NULL, NULL),
-('', 1, 'MovieCountries', 'view', NULL, NULL),
-('', 1, 'MovieCountries', 'add', NULL, NULL),
-('', 1, 'MovieCountries', 'edit', NULL, NULL),
-
-('', 1, 'Musics', 'index', NULL, NULL),
-('', 1, 'Musics', 'view', NULL, NULL),
-('', 1, 'Musics', 'add', NULL, NULL),
-('', 1, 'Musics', 'edit', NULL, NULL),
-
-('', 1, 'Occurrences', 'index', NULL, NULL),
-('', 1, 'Occurrences', 'view', NULL, NULL),
-('', 1, 'Occurrences', 'add', NULL, NULL),
-('', 1, 'Occurrences', 'edit', NULL, NULL),
-
-('', 1, 'Permissions', 'index', NULL, NULL),
-('', 1, 'Permissions', 'view', NULL, NULL),
-('', 1, 'Permissions', 'add', NULL, NULL),
-('', 1, 'Permissions', 'edit', NULL, NULL),
-
-('', 1, 'Producers', 'index', NULL, NULL),
-('', 1, 'Producers', 'view', NULL, NULL),
-('', 1, 'Producers', 'add', NULL, NULL),
-('', 1, 'Producers', 'edit', NULL, NULL),
-
-('', 1, 'SpecialProjects', 'index', NULL, NULL),
-('', 1, 'SpecialProjects', 'view', NULL, NULL),
-('', 1, 'SpecialProjects', 'add', NULL, NULL),
-('', 1, 'SpecialProjects', 'edit', NULL, NULL),
-
-('', 1, 'SubEvents', 'index', NULL, NULL),
-('', 1, 'SubEvents', 'view', NULL, NULL),
-('', 1, 'SubEvents', 'add', NULL, NULL),
-('', 1, 'SubEvents', 'edit', NULL, NULL),
-
-('', 1, 'Surrogates', 'index', NULL, NULL),
-('', 1, 'Surrogates', 'view', NULL, NULL),
-('', 1, 'Surrogates', 'add', NULL, NULL),
-('', 1, 'Surrogates', 'edit', NULL, NULL),
-
-('', 1, 'TheaterDances', 'index', NULL, NULL),
-('', 1, 'TheaterDances', 'view', NULL, NULL),
-('', 1, 'TheaterDances', 'add', NULL, NULL),
-('', 1, 'TheaterDances', 'edit', NULL, NULL),
-
-('', 1, 'TypeEvents', 'index', NULL, NULL),
-('', 1, 'TypeEvents', 'view', NULL, NULL),
-('', 1, 'TypeEvents', 'add', NULL, NULL),
-('', 1, 'TypeEvents', 'edit', NULL, NULL),
-
-('', 1, 'TypeOccurrences', 'index', NULL, NULL),
-('', 1, 'TypeOccurrences', 'view', NULL, NULL),
-('', 1, 'TypeOccurrences', 'add', NULL, NULL),
-('', 1, 'TypeOccurrences', 'edit', NULL, NULL),
-
-('', 1, 'VisualArts', 'index', NULL, NULL),
-('', 1, 'VisualArts', 'view', NULL, NULL),
-('', 1, 'VisualArts', 'add', NULL, NULL),
-('', 1, 'VisualArts', 'edit', NULL, NULL),
-
-('', 1, 'Workshops', 'index', NULL, NULL),
-('', 1, 'Workshops', 'view', NULL, NULL),
-('', 1, 'Workshops', 'add', NULL, NULL),
-('', 1, 'Workshops', 'edit', NULL, NULL);
-
+(35, 2, 'Users', 'delete', NULL, NULL);
 
 INSERT INTO `users` (`id`, `username`, `name`, `rf_rg`, `password`, `phone`, `email`, `institution_id`, `group_id`, `get_notification`, `contracts`, `published`) VALUES
 (9, 'super', '', '1', '$2y$10$BtOXnGu1e4OpInBRHXBOJOn1e06xcOty65UwBBF3T5.pkkwSDrfEe', '', '', 1, 1, 0, NULL, 1),
@@ -144,3 +54,21 @@ INSERT INTO `users` (`id`, `username`, `name`, `rf_rg`, `password`, `phone`, `em
 (11, 'manager', '', '3', '$2y$10$fdyw12c8ILUDI3AF3w.1Au/Ti6T89gbpYe/bl0LcHcTOCTeccC/BS', '', '', 1, 3, 0, NULL, 1),
 (12, 'user', '', '4', '$2y$10$BxWeJUnnaocfyNw/M9OH7OXlqrIHsLy0Fd968WTenQE/Gjb8tKNBu', '', '', 1, 4, 0, NULL, 1),
 (14, 'lorelei', '', '772.103.0', '$2y$10$BtOXnGu1e4OpInBRHXBOJOn1e06xcOty65UwBBF3T5.pkkwSDrfEe', '', '', 1, 1, 0, NULL, 1);
+
+INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
+('', 1, 'Events', 'index', NULL, NULL),
+('', 1, 'Events', 'view', NULL, NULL),
+('', 1, 'Events', 'add', NULL, NULL),
+('', 1, 'Events', 'edit', NULL, NULL);
+
+INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
+('', 1, 'Institutions', 'index', NULL, NULL),
+('', 1, 'Institutions', 'view', NULL, NULL),
+('', 1, 'Institutions', 'add', NULL, NULL),
+('', 1, 'Institutions', 'edit', NULL, NULL);
+
+INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
+('', 1, 'SpecialProjects', 'index', NULL, NULL),
+('', 1, 'SpecialProjects', 'view', NULL, NULL),
+('', 1, 'SpecialProjects', 'add', NULL, NULL),
+('', 1, 'SpecialProjects', 'edit', NULL, NULL);

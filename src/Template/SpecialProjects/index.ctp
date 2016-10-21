@@ -7,7 +7,7 @@
     </ul>
 </nav>
 <div class="specialProjects index col-md-10 columns content">
-    <h3>Special Projects</h3>
+    <h3>__('Special Project')</h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
