@@ -1,4 +1,10 @@
-
+<nav class="col-md-2 columns" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('List {0}', 'Events'), ['action' => 'index']) ?></li>
+       
+    </ul>
+</nav>
 <div class="events form col-md-10 columns content">
     <?= $this->Form->create($event) ?>
     <fieldset>
@@ -6,7 +12,7 @@
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('juridical_relation_id', ['options' => $juridicalRelations]);
-            echo $this->Form->input('special_project_id', ['options' => $specialProjects]);
+            echo $this->Form->input('especial_project_id');
             echo $this->Form->input('type_event_id', ['options' => $typeEvents]);
             echo $this->Form->input('sub_event');
             echo $this->Form->input('fiscal_id', ['options' => $fiscals]);

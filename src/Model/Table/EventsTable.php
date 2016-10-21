@@ -71,7 +71,7 @@ class EventsTable extends Table
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('SpecialProjects', [
-            'foreignKey' => 'special_project_id',
+            'foreignKey' => 'especial_project_id',
             'joinType' => 'INNER'
         ]);
         $this->belongsTo('TypeEvents', [
@@ -233,7 +233,7 @@ class EventsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['juridical_relation_id'], 'JuridicalRelations'));
-        $rules->add($rules->existsIn(['special_project_id'], 'SpecialProjects'));
+        $rules->add($rules->existsIn(['especial_project_id'], 'SpecialProjects'));
         $rules->add($rules->existsIn(['type_event_id'], 'TypeEvents'));
         $rules->add($rules->existsIn(['fiscal_id'], 'Fiscals'));
         $rules->add($rules->existsIn(['surrogate_id'], 'Surrogates'));

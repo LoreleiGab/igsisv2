@@ -1,4 +1,13 @@
-
+<nav class="col-lg-2 col-md-3">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href=""><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('Editar {0}', ['Type Event']), ['action' => 'edit', $typeEvent->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir {0}', ['Type Event']), ['action' => 'delete', $typeEvent->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $typeEvent->id)]) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Type Events']), ['action' => 'index']) ?> </li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Type Event']), ['action' => 'add']) ?> </li>
+       
+    </ul>
+</nav>
 <div class="typeEvents view col-lg-10 col-md-9">
     <h3><?= h($typeEvent->name) ?></h3>
     <table class="table table-striped table-hover">
@@ -103,7 +112,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Juridical Relation Id</th>
-                <th>Special Project Id</th>
+                <th>Especial Project Id</th>
                 <th>Type Event Id</th>
                 <th>Sub Event</th>
                 <th>Fiscal Id</th>
@@ -127,7 +136,7 @@
                 <td><?= h($events->id) ?></td>
                 <td><?= h($events->name) ?></td>
                 <td><?= h($events->juridical_relation_id) ?></td>
-                <td><?= h($events->special_project_id) ?></td>
+                <td><?= h($events->especial_project_id) ?></td>
                 <td><?= h($events->type_event_id) ?></td>
                 <td><?= h($events->sub_event) ?></td>
                 <td><?= h($events->fiscal_id) ?></td>
@@ -241,7 +250,7 @@
                 <th>Agenda Posters Id</th>
                 <th>Event Id</th>
                 <th>Type Event Id</th>
-                <th>Project Id</th>
+                <th>Special Projects Id</th>
                 <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($typeEvent->temp_posters as $tempPosters): ?>
@@ -249,7 +258,7 @@
                 <td><?= h($tempPosters->agenda_posters_id) ?></td>
                 <td><?= h($tempPosters->event_id) ?></td>
                 <td><?= h($tempPosters->type_event_id) ?></td>
-                <td><?= h($tempPosters->project_id) ?></td>
+                <td><?= h($tempPosters->special_projects_id) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Visualizar'), ['controller' => 'TempPosters', 'action' => 'view', $tempPosters->agenda_posters_id]) ?>
 

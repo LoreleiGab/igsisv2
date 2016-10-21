@@ -10,7 +10,6 @@ use Cake\Validation\Validator;
  * SpecialProjects Model
  *
  * @property \Cake\ORM\Association\BelongsTo $Institutions
- * @property \Cake\ORM\Association\HasMany $Events
  *
  * @method \App\Model\Entity\SpecialProject get($primaryKey, $options = [])
  * @method \App\Model\Entity\SpecialProject newEntity($data = null, array $options = [])
@@ -40,9 +39,6 @@ class SpecialProjectsTable extends Table
         $this->belongsTo('Institutions', [
             'foreignKey' => 'institution_id',
             'joinType' => 'INNER'
-        ]);
-        $this->hasMany('Events', [
-            'foreignKey' => 'special_project_id'
         ]);
     }
 

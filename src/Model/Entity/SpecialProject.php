@@ -12,7 +12,6 @@ use Cake\ORM\Entity;
  * @property bool $published
  *
  * @property \App\Model\Entity\Institution $institution
- * @property \App\Model\Entity\Event[] $events
  */
 class SpecialProject extends Entity
 {
