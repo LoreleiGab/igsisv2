@@ -1,4 +1,17 @@
-
+<nav class="col-md-2 columns" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a><?= __('Ação') ?></a></li>
+        <li><?= $this->Form->postLink(
+                __('Delete'),
+                ['action' => 'delete', $internalEvent->id],
+                ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $internalEvent->id)]
+            )
+        ?></li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Internal Event']), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Internal Events']), ['action' => 'index']) ?> </li>
+        
+    </ul>
+</nav>
 <div class="internalEvents form col-md-10 columns content">
     <?= $this->Form->create($internalEvent) ?>
     <fieldset>

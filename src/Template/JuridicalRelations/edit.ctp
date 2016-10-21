@@ -7,8 +7,8 @@
                 ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $juridicalRelation->id)]
             )
         ?></li>
-        <li><?= $this->Html->link(__('List {0}', 'Juridical Relations'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Listar {0}', 'Events'), ['controller' => 'Events', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('Novo {0}', ['Juridical Relation']), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Juridical Relations']), ['action' => 'index']) ?> </li>
         
     </ul>
 </nav>
@@ -17,7 +17,7 @@
     <fieldset>
         <legend><?= 'Edit Juridical Relation' ?></legend>
         <?php
-            echo $this->Form->input('juridical_relation');
+            echo $this->Form->input('name');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Gravar')) ?>

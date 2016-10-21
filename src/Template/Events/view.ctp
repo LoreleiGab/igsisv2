@@ -1,4 +1,14 @@
-
+<nav class="col-lg-2 col-md-3">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href=""><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('Editar {0}', ['Event']), ['action' => 'edit', $event->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir {0}', ['Event']), ['action' => 'delete', $event->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $event->id)]) ?> </li>
+		<li><?= $this->Html->link(__('Novo {0}', ['Event']), ['action' => 'add']) ?> </li>       
+	    <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['action' => 'index']) ?> </li>
+        
+        
+    </ul>
+</nav>
 <div class="events view col-lg-10 col-md-9">
     <h3><?= h($event->name) ?></h3>
     <table class="table table-striped table-hover">
@@ -9,10 +19,6 @@
         <tr>
             <th>Juridical Relation</th>
             <td><?= $event->has('juridical_relation') ? $this->Html->link($event->juridical_relation->name, ['controller' => 'JuridicalRelations', 'action' => 'view', $event->juridical_relation->id]) : '' ?></td>
-        </tr>
-        <tr>
-            <th>Special Project</th>
-            <td><?= $event->has('special_project') ? $this->Html->link($event->special_project->name, ['controller' => 'SpecialProjects', 'action' => 'view', $event->special_project->id]) : '' ?></td>
         </tr>
         <tr>
             <th>Type Event</th>
@@ -49,6 +55,10 @@
         <tr>
             <th>'Id</th>
             <td><?= $this->Number->format($event->id) ?></td>
+        </tr>
+        <tr>
+            <th>'Special Project Id</th>
+            <td><?= $this->Number->format($event->special_project_id) ?></td>
         </tr>
         <tr>
             <th>Date Send</th>
@@ -251,12 +261,12 @@
                 <th>Title</th>
                 <th>Original Title</th>
                 <th>Direction</th>
-                <th>Country Id</th>
+                <th>Movie Country Id</th>
                 <th>Production Year</th>
                 <th>Synopsis</th>
                 <th>Cast</th>
                 <th>Genre</th>
-                <th>Age Ratting</th>
+                <th>Age Rating</th>
                 <th>Minutes</th>
                 <th>Link Trailer</th>
                 <th>Gauge</th>
@@ -270,12 +280,12 @@
                 <td><?= h($cinemas->title) ?></td>
                 <td><?= h($cinemas->original_title) ?></td>
                 <td><?= h($cinemas->direction) ?></td>
-                <td><?= h($cinemas->country_id) ?></td>
+                <td><?= h($cinemas->movie_country_id) ?></td>
                 <td><?= h($cinemas->production_year) ?></td>
                 <td><?= h($cinemas->synopsis) ?></td>
                 <td><?= h($cinemas->cast) ?></td>
                 <td><?= h($cinemas->genre) ?></td>
-                <td><?= h($cinemas->age_ratting) ?></td>
+                <td><?= h($cinemas->age_rating) ?></td>
                 <td><?= h($cinemas->minutes) ?></td>
                 <td><?= h($cinemas->link_trailer) ?></td>
                 <td><?= h($cinemas->gauge) ?></td>
@@ -588,7 +598,7 @@
             <tr>
                 <th>Id</th>
                 <th>Event Id</th>
-                <th>Legal Representative</th>
+                <th>Name</th>
                 <th>Civil Status Id</th>
                 <th>Rg</th>
                 <th>Cpf</th>
@@ -599,7 +609,7 @@
             <tr>
                 <td><?= h($legalRepresentatives->id) ?></td>
                 <td><?= h($legalRepresentatives->event_id) ?></td>
-                <td><?= h($legalRepresentatives->legal_representative) ?></td>
+                <td><?= h($legalRepresentatives->name) ?></td>
                 <td><?= h($legalRepresentatives->civil_status_id) ?></td>
                 <td><?= h($legalRepresentatives->rg) ?></td>
                 <td><?= h($legalRepresentatives->cpf) ?></td>
@@ -805,7 +815,6 @@
                 <th>Date Update</th>
                 <th>Event Id</th>
                 <th>User Id</th>
-                <th>Physical Personscol</th>
                 <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($event->physical_persons as $physicalPersons): ?>
@@ -839,7 +848,6 @@
                 <td><?= h($physicalPersons->date_update) ?></td>
                 <td><?= h($physicalPersons->event_id) ?></td>
                 <td><?= h($physicalPersons->user_id) ?></td>
-                <td><?= h($physicalPersons->physical_personscol) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Visualizar'), ['controller' => 'PhysicalPersons', 'action' => 'view', $physicalPersons->id]) ?>
 
@@ -987,7 +995,7 @@
                 <th>Agenda Posters Id</th>
                 <th>Event Id</th>
                 <th>Type Event Id</th>
-                <th>Project Id</th>
+                <th>Special Projects Id</th>
                 <th class="actions"><?= __('Ação') ?></th>
             </tr>
             <?php foreach ($event->temp_posters as $tempPosters): ?>
@@ -995,7 +1003,7 @@
                 <td><?= h($tempPosters->agenda_posters_id) ?></td>
                 <td><?= h($tempPosters->event_id) ?></td>
                 <td><?= h($tempPosters->type_event_id) ?></td>
-                <td><?= h($tempPosters->project_id) ?></td>
+                <td><?= h($tempPosters->special_projects_id) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('Visualizar'), ['controller' => 'TempPosters', 'action' => 'view', $tempPosters->agenda_posters_id]) ?>
 

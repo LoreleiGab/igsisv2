@@ -1,4 +1,14 @@
-
+<nav class="col-lg-2 col-md-3">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href=""><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('Editar {0}', ['Surrogate']), ['action' => 'edit', $surrogate->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir {0}', ['Surrogate']), ['action' => 'delete', $surrogate->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $surrogate->id)]) ?> </li>
+		<li><?= $this->Html->link(__('New {0}', ['Surrogate']), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Surrogates']), ['action' => 'index']) ?> </li>
+        
+        
+    </ul>
+</nav>
 <div class="surrogates view col-lg-10 col-md-9">
     <h3><?= h($surrogate->name) ?></h3>
     <table class="table table-striped table-hover">
@@ -23,7 +33,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Juridical Relation Id</th>
-                <th>Special Project Id</th>
+                <th>Especial Project Id</th>
                 <th>Type Event Id</th>
                 <th>Sub Event</th>
                 <th>Fiscal Id</th>
@@ -47,7 +57,7 @@
                 <td><?= h($events->id) ?></td>
                 <td><?= h($events->name) ?></td>
                 <td><?= h($events->juridical_relation_id) ?></td>
-                <td><?= h($events->special_project_id) ?></td>
+                <td><?= h($events->especial_project_id) ?></td>
                 <td><?= h($events->type_event_id) ?></td>
                 <td><?= h($events->sub_event) ?></td>
                 <td><?= h($events->fiscal_id) ?></td>

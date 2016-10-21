@@ -1,5 +1,11 @@
 <div class="row">
-
+<nav class="col-md-2" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a><?= __('Actions') ?></a></li>
+        <li><?= $this->Html->link(__('New {0}', ['Age Group']), ['action' => 'add']) ?></li>
+      
+    </ul>
+</nav>
 <div class="ageGroups index col-md-10 columns content">
     <h3>Age Groups</h3>
     <table class="table table-striped table-hover">

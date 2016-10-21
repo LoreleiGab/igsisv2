@@ -1,4 +1,14 @@
-
+<nav class="col-lg-2 col-md-3">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href=""><?= __('Ação') ?></a></li>
+        <li><?= $this->Html->link(__('Editar {0}', ['Institution']), ['action' => 'edit', $institution->id]) ?> </li>
+        <li><?= $this->Form->postLink(__('Excluir {0}', ['Institution']), ['action' => 'delete', $institution->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $institution->id)]) ?> </li>
+		<li><?= $this->Html->link(__('Novo {0}', ['Institution']), ['action' => 'add']) ?> </li>
+        <li><?= $this->Html->link(__('Listar {0}', ['Institutions']), ['action' => 'index']) ?> </li>
+        
+        
+    </ul>
+</nav>
 <div class="institutions view col-lg-10 col-md-9">
     <h3><?= h($institution->name) ?></h3>
     <table class="table table-striped table-hover">
@@ -305,7 +315,7 @@
         <table class="table table-striped table-hover">
             <tr>
                 <th>Id</th>
-                <th>Fund</th>
+                <th>Name</th>
                 <th>Father</th>
                 <th>Institution Id</th>
                 <th>Pf</th>
@@ -330,7 +340,7 @@
             <?php foreach ($institution->funds as $funds): ?>
             <tr>
                 <td><?= h($funds->id) ?></td>
-                <td><?= h($funds->fund) ?></td>
+                <td><?= h($funds->name) ?></td>
                 <td><?= h($funds->father) ?></td>
                 <td><?= h($funds->institution_id) ?></td>
                 <td><?= h($funds->pf) ?></td>
@@ -468,7 +478,7 @@
             <tr>
                 <th>Id</th>
                 <th>Institution Id</th>
-                <th>Local</th>
+                <th>Name</th>
                 <th>Rider</th>
                 <th>Published</th>
                 <th class="actions"><?= __('Ação') ?></th>
@@ -477,7 +487,7 @@
             <tr>
                 <td><?= h($locals->id) ?></td>
                 <td><?= h($locals->institution_id) ?></td>
-                <td><?= h($locals->local) ?></td>
+                <td><?= h($locals->name) ?></td>
                 <td><?= h($locals->rider) ?></td>
                 <td><?= h($locals->published) ?></td>
                 <td class="actions">

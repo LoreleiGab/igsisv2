@@ -54,9 +54,9 @@ class JuridicalRelationsTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('juridical_relation', 'create')
-            ->notEmpty('juridical_relation')
-            ->add('juridical_relation', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->requirePresence('name', 'create')
+            ->notEmpty('name')
+            ->add('name', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         return $validator;
     }
@@ -70,7 +70,7 @@ class JuridicalRelationsTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['juridical_relation']));
+        $rules->add($rules->isUnique(['name']));
 
         return $rules;
     }
