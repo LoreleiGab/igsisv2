@@ -1,7 +1,7 @@
 <div class="row">
 
 <div class="musics index col-md-10 columns content">
-    <h3>Musics</h3>
+    <h3><?= __('Musics') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

@@ -1,7 +1,7 @@
 <div class="row">
 
 <div class="movieCountries index col-md-10 columns content">
-    <h3>Movie Countries</h3>
+    <h3><?= __('Movie Countries')?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

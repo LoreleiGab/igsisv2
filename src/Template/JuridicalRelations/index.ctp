@@ -7,7 +7,7 @@
     </ul>
 </nav>
 <div class="juridicalRelations index col-md-10 columns content">
-    <h3>Juridical Relations</h3>
+    <h3><?= __('Juridical Relations') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

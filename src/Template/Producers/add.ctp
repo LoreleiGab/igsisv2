@@ -9,7 +9,7 @@
 <div class="producers form col-md-10 columns content">
     <?= $this->Form->create($producer) ?>
     <fieldset>
-        <legend><?= 'Add Producer' ?></legend>
+        <legend><?= __('Add Producer') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('phone');

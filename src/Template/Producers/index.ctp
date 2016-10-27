@@ -7,7 +7,7 @@
     </ul>
 </nav>
 <div class="producers index col-md-10 columns content">
-    <h3>Producers</h3>
+    <h3><?= __('Producers') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
