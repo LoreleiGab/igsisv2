@@ -82,27 +82,22 @@
 	  </li><!-- FIM Menu Administrador -->
 	  <!-- Menu Evento -->
 	  <li class="treeview"><a href="#"><i class="fa fa-circle"></i> <span>Evento</span> <i class="fa fa-angle-left pull-right"></i></a>
-	    <ul class="treeview-menu">		  
-		<li class="treeview">
-		  <a href="#"><i class="fa fa-folder-open-o"></i> <span>Eventos</span> <i class="fa fa-angle-left pull-right"></i></a>
-		  <ul class="treeview-menu">
+	    <ul class="treeview-menu">		
 			<li><?= $this->Html->link(__('Listar'), ['controller' => 'Events', 'action' => 'index']) ?></li>
 			<li><?= $this->Html->link(__('Novo', ['Events']), ['action' => 'add']) ?></li>
 			<li>  
 				<?php
 					if($controller == 'Events' || $controller == 'Producers'){
-						echo "
-						<ul class='treeview-menu'>
-			<li><?= $this->Html->link(__('Listar'), ['controller' => 'Events', 'action' => 'index']) ?></li>
-			<li><?= $this->Html->link(__('Novo', ['Events']), ['action' => 'add']) ?></li>";
+						include 'Events.ctp';
 					}else{
 						echo "teste";
 					}  
 				?>
-			</li>
-		  </ul>
-		</li>		  
+			</li>		  
 		</ul>
 	  </li>
   </ul>
   <!-- /.sidebar-menu -->
+  
+  
+  

@@ -72,3 +72,10 @@ INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, 
 ('', 1, 'SpecialProjects', 'view', NULL, NULL),
 ('', 1, 'SpecialProjects', 'add', NULL, NULL),
 ('', 1, 'SpecialProjects', 'edit', NULL, NULL);
+
+INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
+('', 1, 'Producers', 'index', NULL, NULL),
+('', 1, 'Producers', 'view', NULL, NULL),
+('', 1, 'Producers', 'add', NULL, NULL),
+('', 1, 'Producers', 'edit', NULL, NULL);
+

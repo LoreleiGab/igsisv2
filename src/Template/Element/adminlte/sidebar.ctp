@@ -32,13 +32,11 @@
 
   <!-- Sidebar Menu -->
   <?php
-	if($loguser == '' || $loguser == 'manager'){
+	if($group == '' || $loguser == 'manager'){
 		include 'teste.ctp';
 	}else{
-		include '/menu/'.$loguser.'.ctp';
+		include '/menu/'.$group.'.ctp';
 	}
-	//include 'administrador.ctp';
-	// Colocar aqui a variável do nemo do módulo para fazer o menu personalizado
   ?>
   
   <ul class="sidebar-menu">
