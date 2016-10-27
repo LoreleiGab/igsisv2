@@ -581,7 +581,7 @@ msgstr "Nome do Usuário"
 msgid "Type Call Id"
 msgstr "Tipo de Chamado"
 
-#: View/Scaffolds/
+#: View/Scaffolds/index.php
 msgid "Title"
 msgstr "Título"
 
@@ -607,6 +607,16 @@ msgstr "Local"
 
 #: View/Scaffolds/
 msgid "Occurrences Id"
+msgstr "Ocorrências"
+
+
+
+#: View/Scaffolds/
+msgid "Occurrence Type"
+msgstr "Tipo de Ocorrência"
+
+#: View/Scaffolds/
+msgid "Occurrences"
 msgstr "Ocorrências"
 
 #: View/Scaffolds/
@@ -643,6 +653,10 @@ msgstr "Direção"
 
 #: View/Scaffolds/
 msgid "Movie Country Id"
+msgstr "País"
+
+#: View/Scaffolds/index.php:12
+msgid "Movie Country"
 msgstr "País"
 
 #: View/Scaffolds/
@@ -683,6 +697,10 @@ msgstr "Comunicação"
 
 #: View/Scaffolds/
 msgid "Special Project"
+msgstr "Projeto Especial"
+
+#: View/Scaffolds/
+msgid "Especial Project"
 msgstr "Projeto Especial"
 
 #: View/Scaffolds/
@@ -781,6 +799,14 @@ msgstr "Responsável - Telefone 2"
 msgid "Email Responsible"
 msgstr "Email do Responsável"
 
+#: View/Scaffolds/index.ctp:10
+msgid "Surrogates"
+msgstr "Suplentes"
+
+#: View/Scaffolds/add.ctp:11
+msgid "Add Surrogate"
+msgstr "Adicionar Suplente"
+
 #: View/Scaffolds/
 msgid "Detailing Action"
 msgstr "Detalhamento da Ação"
@@ -832,6 +858,10 @@ msgstr "Projeto Especial"
 #: View/Scaffolds/
 msgid "Sub Event"
 msgstr "SubEvento"
+
+#: View/Scaffolds/
+msgid "Sub Events"
+msgstr "Sub Evento"
 
 #: View/Scaffolds/
 msgid "Fiscal Id"
@@ -1226,6 +1256,10 @@ msgid "Juridical Relation"
 msgstr "Relação Jurídica"
 
 #: View/Scaffolds/
+msgid "Add Juridical Relation"
+msgstr "Adicionar Relação Jurídica"
+
+#: View/Scaffolds/
 msgid "Legal Persons"
 msgstr "Pessoas Jurídicas"
 
@@ -1393,9 +1427,13 @@ msgstr "Valor"
 msgid "genre"
 msgstr "Gênero"
 
-#: View/Scaffolds/
-msgid "sale"
-msgstr "Venda"
+#: View/Scaffolds/index.ctp
+msgid "Musics"
+msgstr "Músicas"
+
+#: View/Scaffolds/index.ctp
+msgid "Sale"
+msgstr "Venda de Materiais"
 
 #: View/Scaffolds/
 msgid "material"
@@ -1685,6 +1723,14 @@ msgstr "ID Agente SP Cultura"
 
 // Produtores - producers
 
+#: View/Scaffolds/index.ctp:10
+msgid "Producers"
+msgstr "Produtores"
+
+#: View/Scaffolds/add.ctp:12
+msgid "Add Producer"
+msgstr "Adicionar Produtor"
+
 #: View/Scaffolds/
 msgid "phone"
 msgstr "Telefone"
@@ -1697,8 +1743,8 @@ msgstr "Texto"
 
 // serviços - services
 
-#: View/Scaffolds/
-msgid "subtitle"
+#: View/Scaffolds/index.ctp:14
+msgid "Subtitle"
 msgstr "Legenda"
 
 #: View/Scaffolds/
@@ -1806,6 +1852,11 @@ msgstr "Projeto Especial"
 // teatro dança - theater_dances
 
 #: View/Scaffolds/
+msgid "Theater Dances"
+msgstr "Teatro e Danças"
+
+
+#: View/Scaffolds/
 msgid "premiere"
 msgstr "Estréia"
 
@@ -1834,6 +1885,10 @@ msgid "type_event"
 msgstr "Tipo Evento"
 
 // tipo ocorrências - type occurrences
+
+#: View/Scaffolds/
+msgid "Type Occurrences"
+msgstr "Tipos de Ocorrência"
 
 #: View/Scaffolds/
 msgid "occurrence_type"
@@ -1919,12 +1974,12 @@ msgstr "Contratos"
 
 // Artes Visuais - visual_arts
 
-#: View/Scaffolds/
-msgid "number"
+#: View/Scaffolds/index.ctp:10
+msgid "Number"
 msgstr "Número"
 
-#: View/Scaffolds/
-msgid "panel"
+#: View/Scaffolds/index.ctp:13
+msgid "Panel"
 msgstr "Painel"
 
 #: View/Scaffolds/
@@ -1975,7 +2030,7 @@ msgstr "Divulgação"
 msgid "workload"
 msgstr "Carga Horária"
 
-#: View/Scaffolds/
+#: View/Scaffolds/add.ctp
 msgid "Add Group"
 msgstr "Adicionar Grupo"
 
@@ -2006,3 +2061,30 @@ msgstr "Projetos Especiais"
 #: View/Scaffolds/
 msgid "Add Special Project"
 msgstr "Adicionar Projeto Especial"
+
+#: View/Scaffolds/index.php
+msgid "Event"
+msgstr "Evento"
+
+#: View/Scaffolds/
+msgid "Movie Countries"
+msgstr "País de Origem"
+
+#: View/Scaffolds/
+msgid "Type Events"
+msgstr "Tipos de Evento"
+
+#: View/Scaffolds/add.ctp:11
+msgid "Add Type Event"
+msgstr "Adicionar Tipo de Evento"
+
+#: View/Scaffolds/index.ctp:4
+msgid "Visual Arts"
+msgstr "Artes Visuais"
+
+#: View/Scaffolds/index.ctp:11
+msgid "Type"
+msgstr "Tipo"
+
+
+

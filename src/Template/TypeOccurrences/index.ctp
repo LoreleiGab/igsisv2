@@ -1,7 +1,7 @@
 <div class="row">
 
 <div class="typeOccurrences index col-md-10 columns content">
-    <h3>Type Occurrences</h3>
+    <h3><?= __('Type Occurrences') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

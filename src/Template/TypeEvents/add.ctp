@@ -8,7 +8,7 @@
 <div class="typeEvents form col-md-10 columns content">
     <?= $this->Form->create($typeEvent) ?>
     <fieldset>
-        <legend><?= 'Add Type Event' ?></legend>
+        <legend><?= __('Add Type Event') ?></legend>
         <?php
             echo $this->Form->input('name');
         ?>

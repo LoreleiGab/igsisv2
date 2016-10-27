@@ -1,7 +1,7 @@
 <div class="row">
 
 <div class="groups index col-md-10 columns content">
-    <h3>Groups</h3>
+    <h3><?= __('Groups') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

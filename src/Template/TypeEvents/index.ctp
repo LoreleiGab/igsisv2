@@ -7,7 +7,7 @@
     </ul>
 </nav>
 <div class="typeEvents index col-md-10 columns content">
-    <h3>Type Events</h3>
+    <h3><?= __('Type Events') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

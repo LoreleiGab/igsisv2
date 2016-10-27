@@ -2,7 +2,7 @@
 <div class="groups form col-md-10 columns content">
     <?= $this->Form->create($group) ?>
     <fieldset>
-        <legend><?= 'Add Group' ?></legend>
+        <legend><?= __('Add Group') ?></legend>
         <?php
             echo $this->Form->input('name');
         ?>
