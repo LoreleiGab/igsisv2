@@ -22,31 +22,12 @@ INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, 
 (8, 1, 'Permissions', 'add', NULL, NULL),
 (9, 1, 'Permissions', 'edit', NULL, NULL),
 (10, 1, 'Permissions', 'delete', NULL, NULL),
-(11, 1, 'Servidores', 'index', NULL, NULL),
-(12, 1, 'Servidores', 'view', NULL, NULL),
-(13, 1, 'Servidores', 'add', NULL, NULL),
-(14, 1, 'Servidores', 'edit', NULL, NULL),
-(15, 1, 'Servidores', 'delete', NULL, NULL),
-(16, 1, 'Users', 'index', NULL, NULL),
-(17, 1, 'Users', 'view', NULL, NULL),
-(18, 1, 'Users', 'add', NULL, NULL),
-(19, 1, 'Users', 'edit', NULL, NULL),
-(20, 1, 'Users', 'delete', NULL, NULL),
-(21, 2, 'Groups', 'index', NULL, NULL),
-(22, 2, 'Groups', 'view', NULL, NULL),
-(23, 2, 'Groups', 'add', NULL, NULL),
-(24, 2, 'Groups', 'edit', NULL, NULL),
-(25, 2, 'Groups', 'delete', NULL, NULL),
-(26, 2, 'Permissions', 'index', NULL, NULL),
-(27, 2, 'Permissions', 'view', NULL, NULL),
-(28, 2, 'Permissions', 'add', NULL, NULL),
-(29, 2, 'Permissions', 'edit', NULL, NULL),
-(30, 2, 'Permissions', 'delete', NULL, NULL),
-(31, 2, 'Users', 'index', NULL, NULL),
-(32, 2, 'Users', 'view', NULL, NULL),
-(33, 2, 'Users', 'add', NULL, NULL),
-(34, 2, 'Users', 'edit', NULL, NULL),
-(35, 2, 'Users', 'delete', NULL, NULL);
+(11, 1, 'Users', 'index', NULL, NULL),
+(12, 1, 'Users', 'view', NULL, NULL),
+(13, 1, 'Users', 'add', NULL, NULL),
+(14, 1, 'Users', 'edit', NULL, NULL),
+(15, 1, 'Users', 'delete', NULL, NULL);
+
 
 INSERT INTO `users` (`id`, `username`, `name`, `rf_rg`, `password`, `phone`, `email`, `institution_id`, `group_id`, `get_notification`, `contracts`, `published`) VALUES
 (9, 'super', '', '1', '$2y$10$BtOXnGu1e4OpInBRHXBOJOn1e06xcOty65UwBBF3T5.pkkwSDrfEe', '', '', 1, 1, 0, NULL, 1),
@@ -73,9 +54,196 @@ INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, 
 ('', 1, 'SpecialProjects', 'add', NULL, NULL),
 ('', 1, 'SpecialProjects', 'edit', NULL, NULL);
 
-INSERT INTO `permissions` (`id`, `group_id`, `controller`, `action`, `created`, `modified`) VALUES
-('', 1, 'Producers', 'index', NULL, NULL),
-('', 1, 'Producers', 'view', NULL, NULL),
-('', 1, 'Producers', 'add', NULL, NULL),
-('', 1, 'Producers', 'edit', NULL, NULL);
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'TypeEvents', 'index'),
+(1, 'TypeEvents', 'view'),
+(1, 'TypeEvents', 'add'),
+(1, 'TypeEvents', 'edit');
 
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Producers', 'index'),
+(1, 'Producers', 'view'),
+(1, 'Producers', 'add'),
+(1, 'Producers', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Fiscals', 'index'),
+(1, 'Fiscals', 'view'),
+(1, 'Fiscals', 'add'),
+(1, 'Fiscals', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Users', 'index'),
+(1, 'Users', 'view'),
+(1, 'Users', 'add'),
+(1, 'Users', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'JuridicalRelations', 'index'),
+(1, 'JuridicalRelations', 'view'),
+(1, 'JuridicalRelations', 'add'),
+(1, 'JuridicalRelations', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Surrogates', 'index'),
+(1, 'Surrogates', 'view'),
+(1, 'Surrogates', 'add'),
+(1, 'Surrogates', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'AgeGroups', 'index'),
+(1, 'AgeGroups', 'view'),
+(1, 'AgeGroups', 'add'),
+(1, 'AgeGroups', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'AgendaPosters', 'index'),
+(1, 'AgendaPosters', 'view'),
+(1, 'AgendaPosters', 'add'),
+(1, 'AgendaPosters', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Agendas', 'index'),
+(1, 'Agendas', 'view'),
+(1, 'Agendas', 'add'),
+(1, 'Agendas', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Calls', 'index'),
+(1, 'Calls', 'view'),
+(1, 'Calls', 'add'),
+(1, 'Calls', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'CheckProductions', 'index'),
+(1, 'CheckProductions', 'view'),
+(1, 'CheckProductions', 'add'),
+(1, 'CheckProductions', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Cinemas', 'index'),
+(1, 'Cinemas', 'view'),
+(1, 'Cinemas', 'add'),
+(1, 'Cinemas', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Communications', 'index'),
+(1, 'Communications', 'view'),
+(1, 'Communications', 'add'),
+(1, 'Communications', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'HistoricHiringRequest', 'index'),
+(1, 'HistoricHiringRequest', 'view'),
+(1, 'HistoricHiringRequest', 'add'),
+(1, 'HistoricHiringRequest', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'HistoricOccurrences', 'index'),
+(1, 'HistoricOccurrences', 'view'),
+(1, 'HistoricOccurrences', 'add'),
+(1, 'HistoricOccurrences', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Historics', 'index'),
+(1, 'Historics', 'view'),
+(1, 'Historics', 'add'),
+(1, 'Historics', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'InformationProductions', 'index'),
+(1, 'InformationProductions', 'view'),
+(1, 'InformationProductions', 'add'),
+(1, 'InformationProductions', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'LegalPersons', 'index'),
+(1, 'LegalPersons', 'view'),
+(1, 'LegalPersons', 'add'),
+(1, 'LegalPersons', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'LegalRepresentatives', 'index'),
+(1, 'LegalRepresentatives', 'view'),
+(1, 'LegalRepresentatives', 'add'),
+(1, 'LegalRepresentatives', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'LogReopenings', 'index'),
+(1, 'LogReopenings', 'view'),
+(1, 'LogReopenings', 'add'),
+(1, 'LogReopenings', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Musics', 'index'),
+(1, 'Musics', 'view'),
+(1, 'Musics', 'add'),
+(1, 'Musics', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Occurrences', 'index'),
+(1, 'Occurrences', 'view'),
+(1, 'Occurrences', 'add'),
+(1, 'Occurrences', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'PhysicalPersons', 'index'),
+(1, 'PhysicalPersons', 'view'),
+(1, 'PhysicalPersons', 'add'),
+(1, 'PhysicalPersons', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Services', 'index'),
+(1, 'Services', 'view'),
+(1, 'Services', 'add'),
+(1, 'Services', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'SubEvents', 'index'),
+(1, 'SubEvents', 'view'),
+(1, 'SubEvents', 'add'),
+(1, 'SubEvents', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'TempDatas', 'index'),
+(1, 'TempDatas', 'view'),
+(1, 'TempDatas', 'add'),
+(1, 'TempDatas', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'TempPosters', 'index'),
+(1, 'TempPosters', 'view'),
+(1, 'TempPosters', 'add'),
+(1, 'TempPosters', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'TheaterDances', 'index'),
+(1, 'TheaterDances', 'view'),
+(1, 'TheaterDances', 'add'),
+(1, 'TheaterDances', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'UploadEvents', 'index'),
+(1, 'UploadEvents', 'view'),
+(1, 'UploadEvents', 'add'),
+(1, 'UploadEvents', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'VisualArts', 'index'),
+(1, 'VisualArts', 'view'),
+(1, 'VisualArts', 'add'),
+(1, 'VisualArts', 'edit');
+
+INSERT INTO `permissions` (`group_id`, `controller`, `action`) VALUES
+(1, 'Workshops', 'index'),
+(1, 'Workshops', 'view'),
+(1, 'Workshops', 'add'),
+(1, 'Workshops', 'edit');
+
+INSERT INTO `age_groups` (`name`) VALUES
+('LIVRE'),
+('18 Anos'),
+('16 Anos'),
+('14 Anos'),
+('12 Anos'),
+('10 Anos');
