@@ -35,7 +35,7 @@
 	if($group == '' || $loguser == 'manager'){
 		include 'teste.ctp';
 	}else{
-		include '/menu/'.$group.'.ctp';
+		include 'menu/'.$group.'.ctp';
 	}
   ?>
   
