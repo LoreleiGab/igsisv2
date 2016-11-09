@@ -361,6 +361,10 @@ msgstr "%s relacionados(as)"
 msgid "Users"
 msgstr "Usuários"
 
+#: View/Scaffolds/edit.ctp:50
+msgid "Edit User"
+msgstr "Editar Usuário"
+
 #: View/Scaffolds/index.ctp:48
 msgid "Username"
 msgstr "Nome de Usuário"
@@ -400,6 +404,10 @@ msgstr "Nome de Usuário"
 #: View/Scaffolds/
 msgid "Institution"
 msgstr "Instituição"
+
+#: View/Scaffolds/
+msgid "Edit Institution"
+msgstr "Editar Instituição"
 
 #: View/Scaffolds/
 msgid "Group"
@@ -473,9 +481,17 @@ msgstr "Dotação"
 msgid "Age Groups"
 msgstr "Faixas Etárias"
 
+#: View/Scaffolds/edit.ctp:17
+msgid "Edit Age Group"
+msgstr "Editar Faixa Etária"
+
 #: View/Scaffolds/
 msgid "Age Group"
 msgstr "Faixa Etária"
+
+#: View/Scaffolds/
+msgid "Add Age Group"
+msgstr "Adicionar Faixa Etária"
 
 #: View/Scaffolds/
 msgid "Agenda Posters"
@@ -572,6 +588,26 @@ msgstr "Comentário"
 #: View/Scaffolds/
 msgid "Calls"
 msgstr "Chamados"
+
+#: View/Scaffolds/index.ctp
+msgid "Type Calls"
+msgstr "Tipos de Chamado"
+
+#: View/Scaffolds/index.ctp
+msgid "Edit Type Call"
+msgstr "Editar Tipo de Chamado"
+
+#: View/Scaffolds/index.ctp
+msgid "Add Type Call"
+msgstr "Adicionar Tipo de Chamado"
+
+#: View/Scaffolds/
+msgid "Type Call"
+msgstr "Tipo de Chamado"
+
+#: View/Scaffolds/add.ctp
+msgid "Add Call"
+msgstr "Abrir um Chamado"
 
 #: View/Scaffolds/
 msgid "User Id"
@@ -756,6 +792,18 @@ msgid "Detail Locals"
 msgstr "Detalhes dos Locais"
 
 #: View/Scaffolds/
+msgid "Locals"
+msgstr "Locais"
+
+#: View/Scaffolds/add.ctp:24
+msgid "Add Local"
+msgstr "Adicionar Local"
+
+#: View/Scaffolds/edit.ctp:30
+msgid "Edit Local"
+msgstr "Editar Local"
+
+#: View/Scaffolds/
 msgid "Territory Id"
 msgstr "Território"
 
@@ -890,6 +938,14 @@ msgstr "Público Alvo"
 #: View/Scaffolds/
 msgid "Fiscals"
 msgstr "Fiscais"
+
+#: View/Scaffolds/edit.ctp
+msgid "Edit Fiscal"
+msgstr "Editar Fiscal"
+
+#: View/Scaffolds/add.ctp:11
+msgid "Add Fiscal"
+msgstr "Adicionar Fiscal"
 
 #: View/Scaffolds/
 msgid "Formation Coordinations"
@@ -1040,6 +1096,10 @@ msgid "Surrogate"
 msgstr "Suplente"
 
 #: View/Scaffolds/
+msgid "Edit Surrogate"
+msgstr "Editar Suplente"
+
+#: View/Scaffolds/
 msgid "Father"
 msgstr "Pai"
 
@@ -1081,7 +1141,19 @@ msgstr "Setor Vocativo"
 
 #: View/Scaffolds/
 msgid "Funds Users"
-msgstr "Verbas dos Usuários"
+msgstr "Verbas dos Usuários
+
+#: View/Scaffolds/add.ctp:20
+msgid "Add Fund"
+msgstr "Adicionar Verba"
+
+#: View/Scaffolds/edit.ctp
+msgid "Edit Fund"
+msgstr "Editar Verba"
+
+#: View/Scaffolds/
+msgid "Funds"
+msgstr "Verbas"
 
 #: View/Scaffolds/
 msgid "Get Tickets"
@@ -1237,7 +1309,7 @@ msgstr "Final da Vigência"
 
 #: View/Scaffolds/
 msgid "Institutions"
-msgstr "Instituções"
+msgstr "Instituições"
 
 #: View/Scaffolds/
 msgid "Internal Events"
@@ -1732,6 +1804,10 @@ msgid "Add Producer"
 msgstr "Adicionar Produtor"
 
 #: View/Scaffolds/
+msgid "Edit Producer"
+msgstr "Editar Produtor"
+
+#: View/Scaffolds/
 msgid "phone"
 msgstr "Telefone"
 
@@ -2059,6 +2135,10 @@ msgid "Special Projects"
 msgstr "Projetos Especiais"
 
 #: View/Scaffolds/
+msgid "Edit Special Project"
+msgstr "Editar Projeto Especial"
+
+#: View/Scaffolds/
 msgid "Add Special Project"
 msgstr "Adicionar Projeto Especial"
 
@@ -2078,6 +2158,10 @@ msgstr "Tipos de Evento"
 msgid "Add Type Event"
 msgstr "Adicionar Tipo de Evento"
 
+#: View/Scaffolds/
+msgid "Edit Type Event"
+msgstr "Editar Tipo de Evento"
+
 #: View/Scaffolds/index.ctp:4
 msgid "Visual Arts"
 msgstr "Artes Visuais"
@@ -2085,6 +2169,27 @@ msgstr "Artes Visuais"
 #: View/Scaffolds/index.ctp:11
 msgid "Type"
 msgstr "Tipo"
+
+#: View/Scaffolds/edit.ctp
+msgid "Edit Events"
+msgstr "Editar Evento"
+
+#: View/Scaffolds/edit.ctp
+msgid "Edit Event"
+msgstr "Editar Evento"
+
+#: View/Scaffolds/add.ctp
+msgid "Add Permission"
+msgstr "Adicionar Permissão" 
+
+#: View/Scaffolds/edit.ctp:18
+msgid "Edit Permission"
+msgstr "Editar Permissão" 
+
+#: View/Scaffolds/edit.ctp
+msgid "Edit Group"
+msgstr "Editar Grupo"
+
 
 
 

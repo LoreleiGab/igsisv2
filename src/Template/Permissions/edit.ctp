@@ -15,7 +15,7 @@
 <div class="permissions form col-md-10 columns content">
     <?= $this->Form->create($permission) ?>
     <fieldset>
-        <legend><?= 'Edit Permission' ?></legend>
+        <legend><?= __('Edit Permission') ?></legend>
         <?php
             echo $this->Form->input('group_id', ['options' => $groups]);
             echo $this->Form->input('controller');

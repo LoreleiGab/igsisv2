@@ -32,16 +32,12 @@
         <li><?= $this->Html->link(__('Novo {0}', 'Physical Person'), ['controller' => 'PhysicalPersons', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('Listar {0}', 'Times'), ['controller' => 'Times', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('Novo {0}', 'Time'), ['controller' => 'Times', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Listar {0}', 'Funds'), ['controller' => 'Funds', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Novo {0}', 'Fund'), ['controller' => 'Funds', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('Listar {0}', 'Locals'), ['controller' => 'Locals', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('Novo {0}', 'Local'), ['controller' => 'Locals', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="users form col-md-10 columns content">
     <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= 'Add User' ?></legend>
+        <legend><?= __('Add User') ?></legend>
         <?php
             echo $this->Form->input('username');
             echo $this->Form->input('name');
@@ -54,8 +50,7 @@
             echo $this->Form->input('get_notification');
             echo $this->Form->input('contracts');
             echo $this->Form->input('published');
-            echo $this->Form->input('funds._ids', ['options' => $funds]);
-            echo $this->Form->input('locals._ids', ['options' => $locals]);
+
         ?>
     </fieldset>
     <?= $this->Form->button(__('Gravar')) ?>

@@ -7,7 +7,7 @@
     </ul>
 </nav>
 <div class="ageGroups index col-md-10 columns content">
-    <h3>Age Groups</h3>
+    <h3><?= __('Age Groups') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

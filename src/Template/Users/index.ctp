@@ -40,7 +40,7 @@
     </ul>
 </nav>
 <div class="users index col-md-10 columns content">
-    <h3>Users</h3>
+    <h3><?= __('Users') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

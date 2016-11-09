@@ -15,7 +15,7 @@
 <div class="institutions form col-md-10 columns content">
     <?= $this->Form->create($institution) ?>
     <fieldset>
-        <legend><?= 'Edit Institution' ?></legend>
+        <legend><?= __('Edit Institution') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('initials');

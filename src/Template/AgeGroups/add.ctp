@@ -8,7 +8,7 @@
 <div class="ageGroups form col-md-10 columns content">
     <?= $this->Form->create($ageGroup) ?>
     <fieldset>
-        <legend><?= 'Add Age Group' ?></legend>
+        <legend><?= __('Add Age Group') ?></legend>
         <?php
             echo $this->Form->input('name');
         ?>

@@ -8,7 +8,7 @@
 <div class="fiscals form col-md-10 columns content">
     <?= $this->Form->create($fiscal) ?>
     <fieldset>
-        <legend><?= 'Add Fiscal' ?></legend>
+        <legend><?= __('Add Fiscal') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('rf');

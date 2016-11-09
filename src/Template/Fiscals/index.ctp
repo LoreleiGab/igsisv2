@@ -8,7 +8,7 @@
     </ul>
 </nav>
 <div class="fiscals index col-md-10 columns content">
-    <h3>Fiscals</h3>
+    <h3><?= __('Fiscals') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

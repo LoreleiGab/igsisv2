@@ -16,7 +16,7 @@
 <div class="fiscals form col-md-10 columns content">
     <?= $this->Form->create($fiscal) ?>
     <fieldset>
-        <legend><?= 'Edit Fiscal' ?></legend>
+        <legend><?= __('Edit Fiscal') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('rf');
