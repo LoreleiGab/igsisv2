@@ -43,7 +43,7 @@ class AppController extends Controller
 		$this->loadComponent('Control'); // Nosso componente
         $this->loadComponent('Auth', [
             'loginRedirect' => [
-                'controller' => 'Permissions',
+                'controller' => 'Pages',
                 'action' => 'index',
 				'base' => false
             ],
