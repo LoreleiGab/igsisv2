@@ -3,22 +3,8 @@
 
   <!-- Sidebar user panel (optional) -->
   <div class="user-panel">
-    <div class="pull-left image">
-      <?php
-            echo $this->Html->image(
-                'TwitterBootstrap.user2-160x160.jpg',
-                ['class'=>'img-circle',  "alt"=>"User Image"]
-            );
-        ?>
-    </div>
-    <div class="pull-left info">
-      <p>Lorelei Lourenço</p>
-      <!-- Status -->
-      <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-    </div>
-  </div>
-
-  <!-- search form (Optional) -->
+    
+  <!-- search form (Optional) 
   <form action="#" method="get" class="sidebar-form">
     <div class="input-group">
       <input type="text" name="q" class="form-control" placeholder="Pesquisar...">
@@ -27,13 +13,13 @@
             </button>
           </span>
     </div>
-  </form>
+  </form>-->
   <!-- /.search form -->
 
   <!-- Sidebar Menu -->
   <?php
-	if($group == '' || $loguser == 'manager'){
-		include 'teste.ctp';
+	if($group != '' || $loguser == 'manager'){
+		include 'menu/1.ctp';
 	}else{
 		include 'menu/'.$group.'.ctp';
 	}
