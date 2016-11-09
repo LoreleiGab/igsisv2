@@ -15,7 +15,7 @@
 <div class="surrogates form col-md-10 columns content">
     <?= $this->Form->create($surrogate) ?>
     <fieldset>
-        <legend><?= 'Edit Surrogate' ?></legend>
+        <legend><?= __('Edit Surrogate') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('rf');

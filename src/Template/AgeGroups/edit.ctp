@@ -14,7 +14,7 @@
 <div class="ageGroups form col-md-10 columns content">
     <?= $this->Form->create($ageGroup) ?>
     <fieldset>
-        <legend><?= 'Edit Age Group' ?></legend>
+        <legend><?= __('Edit Age Group') ?></legend>
         <?php
             echo $this->Form->input('name');
         ?>

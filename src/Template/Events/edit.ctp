@@ -1,7 +1,7 @@
 <div class="events form col-md-10 columns content">
     <?= $this->Form->create($event) ?>
     <fieldset>
-        <legend><?= 'Edit Event' ?></legend>
+        <legend><?= __('Edit Event') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('juridical_relation_id', ['options' => $juridicalRelations]);

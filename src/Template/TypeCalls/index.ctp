@@ -2,35 +2,32 @@
 <nav class="col-md-2" id="actions-sidebar">
     <ul class="nav nav-pills nav-stacked">
         <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Institution']), ['action' => 'add']) ?></li>
-        
+        <li><?= $this->Html->link(__('New {0}', ['Type Call']), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List {0}', ['Calls']), ['controller' => 'Calls', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New {0}', ['Call']), ['controller' => 'Calls', 'action' => 'add']) ?></li>
     </ul>
 </nav>
-<div class="institutions index col-md-10 columns content">
-    <h3><?= __('Institutions') ?></h3>
+<div class="typeCalls index col-md-10 columns content">
+    <h3><?= __('Type Calls') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('name') ?></th>
-                <th><?= $this->Paginator->sort('initials') ?></th>
-                <th><?= $this->Paginator->sort('institution_father') ?></th>
-                <th><?= $this->Paginator->sort('logo') ?></th>
+                <th><?= $this->Paginator->sort('area') ?></th>
                 <th class="actions"><?= __('Ação') ?></th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($institutions as $institution): ?>
+            <?php foreach ($typeCalls as $typeCall): ?>
             <tr>
-                <td><?= $this->Number->format($institution->id) ?></td>
-                <td><?= h($institution->name) ?></td>
-                <td><?= h($institution->initials) ?></td>
-                <td><?= $this->Number->format($institution->institution_father) ?></td>
-                <td><?= h($institution->logo) ?></td>
+                <td><?= $this->Number->format($typeCall->id) ?></td>
+                <td><?= h($typeCall->name) ?></td>
+                <td><?= $this->Number->format($typeCall->area) ?></td>
                 <td class="actions" style="white-space:nowrap">
-                    <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $institution->id], ['class'=>'btn btn-default btn-xs']) ?>
-                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $institution->id], ['class'=>'btn btn-primary btn-xs']) ?>
-                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $institution->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $institution->id), 'class'=>'btn btn-danger btn-xs']) ?>
+                    <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $typeCall->id], ['class'=>'btn btn-default btn-xs']) ?>
+                    <?= $this->Html->link(__('Editar'), ['action' => 'edit', $typeCall->id], ['class'=>'btn btn-primary btn-xs']) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $typeCall->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $typeCall->id), 'class'=>'btn btn-danger btn-xs']) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
