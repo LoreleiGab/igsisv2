@@ -1,5 +1,5 @@
 <ul class="sidebar-menu">
-	<li class="active"><a href="#"><span>Informações Gerais</span></a></li>
+	<li><?= $this->Html->link(__('Informações Gerais'), ['controller' => 'Events', 'action' => 'edit']) ?></li>
 	<li class="treeview"><a href="#"><span>Serviços</span> <i class="fa fa-angle-left pull-right"></i></a>
 		<ul class="treeview-menu">
 			<li><?= $this->Html->link(__('Interno'), ['controller' => 'Producers', 'action' => 'index']) ?></li>

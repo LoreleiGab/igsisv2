@@ -1,7 +1,23 @@
+<nav class="col-md-2 columns" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a><?= __('Informações Gerais') ?></a></li>
+        <li class="treeview"><a href="#"><span>Serviços</span> <i class="fa fa-angle-down pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><?= $this->Html->link(__('Interno'), ['controller' => 'Producers', 'action' => 'index']) ?></li>
+			<li><?= $this->Html->link(__('Externo'), ['controller' => 'Services', 'action' => 'index']) ?></li>
+		</ul>
+	</li> 
+		<li><?= $this->Html->link(__('Especificidades'), ['controller' => 'Services', 'action' => 'index']) ?></li>	
+		<li><?= $this->Html->link(__('Arquivos Comunicação/Produção'), ['controller' => 'Services', 'action' => 'index']) ?></li>
+		<li><?= $this->Html->link(__('Ocorrências'), ['controller' => 'Services', 'action' => 'index']) ?></li>
+		<li><?= $this->Html->link(__('Contratados'), ['controller' => 'Services', 'action' => 'index']) ?></li>
+		<li><?= $this->Html->link(__('Enviar'), ['controller' => 'Services', 'action' => 'index']) ?></li>
+    </ul>
+</nav>
 <div class="events form col-md-10 columns content">
     <?= $this->Form->create($event) ?>
     <fieldset>
-        <legend><?= __('Add Event') ?></legend>
+        <legend><?= __('Informações Gerais') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('juridical_relation_id', ['options' => $juridicalRelations]);
