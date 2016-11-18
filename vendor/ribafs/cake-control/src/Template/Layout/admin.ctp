@@ -1,12 +1,10 @@
 <?php
 use Cake\Core\Configure;
-
 if (!$this->fetch('html')) {
     $this->start('html');
     printf('<html lang="%s">', Configure::read('App.language'));
     $this->end();
 }
-
 if (!$this->fetch('title') && Configure::read('App.title')) {
     $this->start('title');
     echo Configure::read('App.title');
@@ -16,7 +14,6 @@ if (!$this->fetch('title') && Configure::read('App.title')) {
 elseif ($this->fetch('title') && Configure::read('App.title')) {
     $this->append('title', sprintf(' | %s', Configure::read('App.title')));
 }
-
 // Prepend some meta tags
 $this->prepend('meta', $this->Html->meta('icon'));
 $this->prepend('meta', $this->Html->meta('viewport', 'width=device-width, initial-scale=1'));
@@ -26,7 +23,6 @@ if (Configure::read('App.author')) {
         'content' => Configure::read('App.author')
     ]));
 }
-
 ?>
 <!DOCTYPE html>
 <?= $this->fetch('html'); ?>
@@ -38,29 +34,26 @@ if (Configure::read('App.author')) {
     <?php
         // Meta
         echo $this->fetch('meta');
-
         // Styles
         echo $this->Less->less([
             'CakeControl.less/bootstrap_admin.less'
         ]);
         echo $this->fetch('css');
-
 		echo $this->Html->script('jquery',['block' => 'script']);
 		echo $this->Html->script('tinymce/jquery.tinymce.min',['block' => 'script']);
 		echo $this->Html->script('tinymce/tinymce.min',['block' => 'script']);
 		echo $this->Html->script('custom',['block' => 'custom']);
-
     ?>
 </head>
 <body onLoad="username.focus();">
     <header role="banner" class="navbar navbar-inverse">
-        <div class="container">
-	<?php 
+        <div class="container"><span style="color: #FFF; font-weight: bold; font-size: larger"> IGSIS2</span>
+	<?php /*
 		if(isset($loguser)){
 			echo $this->element('CakeControl.topmenu');
 		}else{
 			//echo $this->element('CakeControl.topmenu-no');
-		}
+		}*/
 	?>
             <div class="navbar-header">
                 <?php if ($this->fetch('navbar.top')): ?>

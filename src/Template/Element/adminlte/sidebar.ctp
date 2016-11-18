@@ -1,4 +1,3 @@
-
 <!-- sidebar: style can be found in sidebar.less -->
 <section class="sidebar">
 
@@ -33,8 +32,11 @@
 
   <!-- Sidebar Menu -->
   <?php
-	include 'administrador.ctp';
-	// Colocar aqui a variável do nemo do módulo para fazer o menu personalizado
+	if($group == '' || $loguser == 'manager'){
+		include 'teste.ctp';
+	}else{
+		include 'menu/'.$group.'.ctp';
+	}
   ?>
   
   <ul class="sidebar-menu">
@@ -46,7 +48,7 @@
         <li><a href="#"><i class="fa fa-circle-o  text-blue"></i> Mural de avisos</a></li>
 		<li><a href="#"><i class="fa fa-circle-o text-red"></i> Carregar módulos</a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> Ajuda</a></li>
-		<li><a href="#"><i class="fa fa-circle-o  text-green"></i> Sair</a></li>
+		<li><?= $this->Html->link(__('Sair'), ['controller' => 'Users', 'action' => 'logout']) ?></li>
       </ul>
     </li>   
   </ul>

@@ -7,7 +7,7 @@
     </ul>
 </nav>
 <div class="surrogates index col-md-10 columns content">
-    <h3>Surrogates</h3>
+    <h3><?= __('Surrogates') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

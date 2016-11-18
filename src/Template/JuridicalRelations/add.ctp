@@ -8,7 +8,7 @@
 <div class="juridicalRelations form col-md-10 columns content">
     <?= $this->Form->create($juridicalRelation) ?>
     <fieldset>
-        <legend><?= 'Add Juridical Relation' ?></legend>
+        <legend><?= __('Add Juridical Relation') ?></legend>
         <?php
             echo $this->Form->input('name');
         ?>

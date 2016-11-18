@@ -7,7 +7,7 @@ use Cake\ORM\Entity;
  * TypeOccurrence Entity
  *
  * @property int $id
- * @property string $occurrence_type
+ * @property string $name
  */
 class TypeOccurrence extends Entity
 {

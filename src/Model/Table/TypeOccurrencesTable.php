@@ -48,9 +48,9 @@ class TypeOccurrencesTable extends Table
             ->allowEmpty('id', 'create');
 
         $validator
-            ->requirePresence('occurrence_type', 'create')
-            ->notEmpty('occurrence_type')
-            ->add('occurrence_type', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
+            ->requirePresence('name', 'create')
+            ->notEmpty('name')
+            ->add('name', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         return $validator;
     }
@@ -64,7 +64,7 @@ class TypeOccurrencesTable extends Table
      */
     public function buildRules(RulesChecker $rules)
     {
-        $rules->add($rules->isUnique(['occurrence_type']));
+        $rules->add($rules->isUnique(['name']));
 
         return $rules;
     }

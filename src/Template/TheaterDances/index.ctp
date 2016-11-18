@@ -1,7 +1,7 @@
 <div class="row">
 
 <div class="theaterDances index col-md-10 columns content">
-    <h3>Theater Dances</h3>
+    <h3><?= __('Theater Dances') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

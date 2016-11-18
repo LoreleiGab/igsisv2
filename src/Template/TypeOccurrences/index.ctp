@@ -1,12 +1,17 @@
 <div class="row">
-
+<nav class="col-md-2" id="actions-sidebar">
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a><?= __('Actions') ?></a></li>
+        <li><?= $this->Html->link(__('New {0}', ['Type Occurrence']), ['action' => 'add']) ?></li>
+    </ul>
+</nav>
 <div class="typeOccurrences index col-md-10 columns content">
     <h3>Type Occurrences</h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th><?= $this->Paginator->sort('id') ?></th>
-                <th><?= $this->Paginator->sort('occurrence_type') ?></th>
+                <th><?= $this->Paginator->sort('name') ?></th>
                 <th class="actions"><?= __('Ação') ?></th>
             </tr>
         </thead>
@@ -14,7 +19,7 @@
             <?php foreach ($typeOccurrences as $typeOccurrence): ?>
             <tr>
                 <td><?= $this->Number->format($typeOccurrence->id) ?></td>
-                <td><?= h($typeOccurrence->occurrence_type) ?></td>
+                <td><?= h($typeOccurrence->name) ?></td>
                 <td class="actions" style="white-space:nowrap">
                     <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $typeOccurrence->id], ['class'=>'btn btn-default btn-xs']) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $typeOccurrence->id], ['class'=>'btn btn-primary btn-xs']) ?>

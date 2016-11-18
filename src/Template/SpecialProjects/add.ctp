@@ -10,7 +10,7 @@
 <div class="specialProjects form col-md-10 columns content">
     <?= $this->Form->create($specialProject) ?>
     <fieldset>
-        <legend><?= 'Add Special Project' ?></legend>
+        <legend><?= __('Add Special Project') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('institution_id', ['options' => $institutions]);

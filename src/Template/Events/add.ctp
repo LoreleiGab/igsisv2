@@ -1,14 +1,7 @@
-<nav class="col-md-2 columns" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Ação') ?></a></li>
-        <li><?= $this->Html->link(__('List {0}', 'Events'), ['action' => 'index']) ?></li>
-        
-    </ul>
-</nav>
 <div class="events form col-md-10 columns content">
     <?= $this->Form->create($event) ?>
     <fieldset>
-        <legend><?= 'Add Event' ?></legend>
+        <legend><?= __('Add Event') ?></legend>
         <?php
             echo $this->Form->input('name');
             echo $this->Form->input('juridical_relation_id', ['options' => $juridicalRelations]);

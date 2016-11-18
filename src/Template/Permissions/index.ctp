@@ -8,7 +8,7 @@
     </ul>
 </nav>
 <div class="permissions index col-md-10 columns content">
-    <h3>Permissions</h3>
+    <h3><?= __('Permissions')?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

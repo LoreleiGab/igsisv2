@@ -1,75 +1,64 @@
-<nav class="col-lg-2 col-md-3">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href=""><?= __('Ação') ?></a></li>
-        <li><?= $this->Html->link(__('Editar {0}', ['Event']), ['action' => 'edit', $event->id]) ?> </li>
-        <li><?= $this->Form->postLink(__('Excluir {0}', ['Event']), ['action' => 'delete', $event->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $event->id)]) ?> </li>
-		<li><?= $this->Html->link(__('Novo {0}', ['Event']), ['action' => 'add']) ?> </li>       
-	    <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['action' => 'index']) ?> </li>
-        
-        
-    </ul>
-</nav>
 <div class="events view col-lg-10 col-md-9">
     <h3><?= h($event->name) ?></h3>
-    <table class="table table-striped table-hover">
+    <table class="table table-striped table-hover">        
         <tr>
-            <th>Name</th>
+            <th>Código do Evento</th>
+            <td><?= $this->Number->format($event->id) ?></td>
+        </tr>
+		<tr>
+            <th><?= __('Name') ?></th>
             <td><?= h($event->name) ?></td>
         </tr>
         <tr>
-            <th>Juridical Relation</th>
+            <th><?= __('Juridical Relation') ?></th>
             <td><?= $event->has('juridical_relation') ? $this->Html->link($event->juridical_relation->name, ['controller' => 'JuridicalRelations', 'action' => 'view', $event->juridical_relation->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>Type Event</th>
+            <th><?= __('Type Event') ?></th>
             <td><?= $event->has('type_event') ? $this->Html->link($event->type_event->name, ['controller' => 'TypeEvents', 'action' => 'view', $event->type_event->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>Fiscal</th>
+            <th><?= __('Fiscal') ?></th>
             <td><?= $event->has('fiscal') ? $this->Html->link($event->fiscal->name, ['controller' => 'Fiscals', 'action' => 'view', $event->fiscal->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>Surrogate</th>
+            <th><?= __('Surrogate') ?></th>
             <td><?= $event->has('surrogate') ? $this->Html->link($event->surrogate->name, ['controller' => 'Surrogates', 'action' => 'view', $event->surrogate->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>Age Group</th>
+            <th><?= __('Age Group') ?></th>
             <td><?= $event->has('age_group') ? $this->Html->link($event->age_group->name, ['controller' => 'AgeGroups', 'action' => 'view', $event->age_group->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>Producer</th>
+            <th><?= __('Producer') ?></th>
             <td><?= $event->has('producer') ? $this->Html->link($event->producer->name, ['controller' => 'Producers', 'action' => 'view', $event->producer->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>User</th>
+            <th><?= __('User') ?></th>
             <td><?= $event->has('user') ? $this->Html->link($event->user->name, ['controller' => 'Users', 'action' => 'view', $event->user->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>Institution</th>
+            <th><?= __('Institution') ?></th>
             <td><?= $event->has('institution') ? $this->Html->link($event->institution->name, ['controller' => 'Institutions', 'action' => 'view', $event->institution->id]) : '' ?></td>
         </tr>
         <tr>
-            <th>Public Target</th>
+            <th><?= __('Public Target') ?></th>
             <td><?= h($event->public_target) ?></td>
         </tr>
         <tr>
-            <th>'Id</th>
-            <td><?= $this->Number->format($event->id) ?></td>
-        </tr>
-        <tr>
-            <th>'Special Project Id</th>
+            <th><?= __('Special Project') ?></th>
             <td><?= $this->Number->format($event->special_project_id) ?></td>
         </tr>
         <tr>
-            <th>Date Send</th>
+            <th><?= __('Date Send') ?></th>
             <td><?= h($event->date_send) ?></tr>
         </tr>
         <tr>
-            <th>Sub Event</th>
+            <th><?= __('Sub Event') ?></th>
             <td><?= $event->sub_event ? __('Yes') : __('No'); ?></td>
          </tr>
         <tr>
-            <th>Published</th>
+            <th><?= __('Published') ?></th>
             <td><?= $event->published ? __('Yes') : __('No'); ?></td>
          </tr>
     </table>
@@ -92,133 +81,7 @@
     <div class="row">
         <h4>Links</h4>
         <?= $this->Text->autoParagraph(h($event->links)); ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Agenda Posters']) ?></h4>
-        <?php if (!empty($event->agenda_posters)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Id</th>
-                <th>Event Id</th>
-                <th>Name Event</th>
-                <th>Type Event Id</th>
-                <th>Type Event</th>
-                <th>Institution Id</th>
-                <th>Local Id</th>
-                <th>Occurrences Id</th>
-                <th>Date</th>
-                <th>Hour</th>
-                <th>Cinema Id</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->agenda_posters as $agendaPosters): ?>
-            <tr>
-                <td><?= h($agendaPosters->id) ?></td>
-                <td><?= h($agendaPosters->event_id) ?></td>
-                <td><?= h($agendaPosters->name_event) ?></td>
-                <td><?= h($agendaPosters->type_event_id) ?></td>
-                <td><?= h($agendaPosters->type_event) ?></td>
-                <td><?= h($agendaPosters->institution_id) ?></td>
-                <td><?= h($agendaPosters->local_id) ?></td>
-                <td><?= h($agendaPosters->occurrences_id) ?></td>
-                <td><?= h($agendaPosters->date) ?></td>
-                <td><?= h($agendaPosters->hour) ?></td>
-                <td><?= h($agendaPosters->cinema_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'AgendaPosters', 'action' => 'view', $agendaPosters->id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'AgendaPosters', 'action' => 'edit', $agendaPosters->id]) ?>
-
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'AgendaPosters', 'action' => 'delete', $agendaPosters->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $agendaPosters->id)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Agendas']) ?></h4>
-        <?php if (!empty($event->agendas)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Id</th>
-                <th>Event Id</th>
-                <th>Type Event Id</th>
-                <th>Occurrences Id</th>
-                <th>Institution Id</th>
-                <th>Local Id</th>
-                <th>Date</th>
-                <th>Hour</th>
-                <th>Cinema Id</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->agendas as $agendas): ?>
-            <tr>
-                <td><?= h($agendas->id) ?></td>
-                <td><?= h($agendas->event_id) ?></td>
-                <td><?= h($agendas->type_event_id) ?></td>
-                <td><?= h($agendas->occurrences_id) ?></td>
-                <td><?= h($agendas->institution_id) ?></td>
-                <td><?= h($agendas->local_id) ?></td>
-                <td><?= h($agendas->date) ?></td>
-                <td><?= h($agendas->hour) ?></td>
-                <td><?= h($agendas->cinema_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Agendas', 'action' => 'view', $agendas->id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'Agendas', 'action' => 'edit', $agendas->id]) ?>
-
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Agendas', 'action' => 'delete', $agendas->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $agendas->id)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Calls']) ?></h4>
-        <?php if (!empty($event->calls)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Id</th>
-                <th>Type Call Id</th>
-                <th>Event Id</th>
-                <th>User Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Justification</th>
-                <th>Date</th>
-                <th>Status</th>
-                <th>Note</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->calls as $calls): ?>
-            <tr>
-                <td><?= h($calls->id) ?></td>
-                <td><?= h($calls->type_call_id) ?></td>
-                <td><?= h($calls->event_id) ?></td>
-                <td><?= h($calls->user_id) ?></td>
-                <td><?= h($calls->title) ?></td>
-                <td><?= h($calls->description) ?></td>
-                <td><?= h($calls->justification) ?></td>
-                <td><?= h($calls->date) ?></td>
-                <td><?= h($calls->status) ?></td>
-                <td><?= h($calls->note) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Calls', 'action' => 'view', $calls->id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'Calls', 'action' => 'edit', $calls->id]) ?>
-
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Calls', 'action' => 'delete', $calls->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $calls->id)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
+    </div>    
     <div class="related">
         <h4><?= __('Related {0}', ['Check Productions']) ?></h4>
         <?php if (!empty($event->check_productions)): ?>
@@ -360,136 +223,6 @@
                     <?= $this->Html->link(__('Editar'), ['controller' => 'Communications', 'action' => 'edit', $communications->id]) ?>
 
                     <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Communications', 'action' => 'delete', $communications->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $communications->id)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Historic Occurrences']) ?></h4>
-        <?php if (!empty($event->historic_occurrences)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Occurrences</th>
-                <th>Occurrences Id</th>
-                <th>Occurrence Type Id</th>
-                <th>Local Id</th>
-                <th>Event Id</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-                <th>Start Date</th>
-                <th>Final Date</th>
-                <th>Start Time</th>
-                <th>Final Time</th>
-                <th>Timezone</th>
-                <th>All Day</th>
-                <th>Special Day</th>
-                <th>Libras</th>
-                <th>Audio Description</th>
-                <th>Ticket Value</th>
-                <th>Get Ticket</th>
-                <th>Local Others</th>
-                <th>Capacity</th>
-                <th>Reserved</th>
-                <th>Duration</th>
-                <th>Popular Price</th>
-                <th>Frequency</th>
-                <th>Sub Event Id</th>
-                <th>Cinema Id</th>
-                <th>Cultural Turn</th>
-                <th>Opening Date</th>
-                <th>Published</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->historic_occurrences as $historicOccurrences): ?>
-            <tr>
-                <td><?= h($historicOccurrences->occurrences) ?></td>
-                <td><?= h($historicOccurrences->occurrences_id) ?></td>
-                <td><?= h($historicOccurrences->occurrence_type_id) ?></td>
-                <td><?= h($historicOccurrences->local_id) ?></td>
-                <td><?= h($historicOccurrences->event_id) ?></td>
-                <td><?= h($historicOccurrences->monday) ?></td>
-                <td><?= h($historicOccurrences->tuesday) ?></td>
-                <td><?= h($historicOccurrences->wednesday) ?></td>
-                <td><?= h($historicOccurrences->thursday) ?></td>
-                <td><?= h($historicOccurrences->friday) ?></td>
-                <td><?= h($historicOccurrences->saturday) ?></td>
-                <td><?= h($historicOccurrences->sunday) ?></td>
-                <td><?= h($historicOccurrences->start_date) ?></td>
-                <td><?= h($historicOccurrences->final_date) ?></td>
-                <td><?= h($historicOccurrences->start_time) ?></td>
-                <td><?= h($historicOccurrences->final_time) ?></td>
-                <td><?= h($historicOccurrences->timezone) ?></td>
-                <td><?= h($historicOccurrences->all_day) ?></td>
-                <td><?= h($historicOccurrences->special_day) ?></td>
-                <td><?= h($historicOccurrences->libras) ?></td>
-                <td><?= h($historicOccurrences->audio_description) ?></td>
-                <td><?= h($historicOccurrences->ticket_value) ?></td>
-                <td><?= h($historicOccurrences->get_ticket) ?></td>
-                <td><?= h($historicOccurrences->local_others) ?></td>
-                <td><?= h($historicOccurrences->capacity) ?></td>
-                <td><?= h($historicOccurrences->reserved) ?></td>
-                <td><?= h($historicOccurrences->duration) ?></td>
-                <td><?= h($historicOccurrences->popular_price) ?></td>
-                <td><?= h($historicOccurrences->frequency) ?></td>
-                <td><?= h($historicOccurrences->sub_event_id) ?></td>
-                <td><?= h($historicOccurrences->cinema_id) ?></td>
-                <td><?= h($historicOccurrences->cultural_turn) ?></td>
-                <td><?= h($historicOccurrences->opening_date) ?></td>
-                <td><?= h($historicOccurrences->published) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'HistoricOccurrences', 'action' => 'view', $historicOccurrences->occurrences]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'HistoricOccurrences', 'action' => 'edit', $historicOccurrences->occurrences]) ?>
-
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'HistoricOccurrences', 'action' => 'delete', $historicOccurrences->occurrences], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $historicOccurrences->occurrences)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Historics']) ?></h4>
-        <?php if (!empty($event->historics)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Id</th>
-                <th>Event Id</th>
-                <th>Table</th>
-                <th>Field</th>
-                <th>Date</th>
-                <th>Value</th>
-                <th>User Id</th>
-                <th>Opening Date</th>
-                <th>Ip</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->historics as $historics): ?>
-            <tr>
-                <td><?= h($historics->id) ?></td>
-                <td><?= h($historics->event_id) ?></td>
-                <td><?= h($historics->table) ?></td>
-                <td><?= h($historics->field) ?></td>
-                <td><?= h($historics->date) ?></td>
-                <td><?= h($historics->value) ?></td>
-                <td><?= h($historics->user_id) ?></td>
-                <td><?= h($historics->opening_date) ?></td>
-                <td><?= h($historics->ip) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Historics', 'action' => 'view', $historics->id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'Historics', 'action' => 'edit', $historics->id]) ?>
-
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Historics', 'action' => 'delete', $historics->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $historics->id)]) ?>
 
                 </td>
             </tr>
@@ -950,66 +683,6 @@
                     <?= $this->Html->link(__('Editar'), ['controller' => 'SubEvents', 'action' => 'edit', $subEvents->id]) ?>
 
                     <?= $this->Form->postLink(__('Excluir'), ['controller' => 'SubEvents', 'action' => 'delete', $subEvents->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $subEvents->id)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Temp Datas']) ?></h4>
-        <?php if (!empty($event->temp_datas)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Id Temp</th>
-                <th>Event Id</th>
-                <th>Start Date</th>
-                <th>Send Date</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->temp_datas as $tempDatas): ?>
-            <tr>
-                <td><?= h($tempDatas->id_temp) ?></td>
-                <td><?= h($tempDatas->event_id) ?></td>
-                <td><?= h($tempDatas->start_date) ?></td>
-                <td><?= h($tempDatas->send_date) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'TempDatas', 'action' => 'view', $tempDatas->id_temp]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'TempDatas', 'action' => 'edit', $tempDatas->id_temp]) ?>
-
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'TempDatas', 'action' => 'delete', $tempDatas->id_temp], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $tempDatas->id_temp)]) ?>
-
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-    <?php endif; ?>
-    </div>
-    <div class="related">
-        <h4><?= __('Related {0}', ['Temp Posters']) ?></h4>
-        <?php if (!empty($event->temp_posters)): ?>
-        <table class="table table-striped table-hover">
-            <tr>
-                <th>Agenda Posters Id</th>
-                <th>Event Id</th>
-                <th>Type Event Id</th>
-                <th>Special Projects Id</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->temp_posters as $tempPosters): ?>
-            <tr>
-                <td><?= h($tempPosters->agenda_posters_id) ?></td>
-                <td><?= h($tempPosters->event_id) ?></td>
-                <td><?= h($tempPosters->type_event_id) ?></td>
-                <td><?= h($tempPosters->special_projects_id) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'TempPosters', 'action' => 'view', $tempPosters->agenda_posters_id]) ?>
-
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'TempPosters', 'action' => 'edit', $tempPosters->agenda_posters_id]) ?>
-
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'TempPosters', 'action' => 'delete', $tempPosters->agenda_posters_id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $tempPosters->agenda_posters_id)]) ?>
 
                 </td>
             </tr>

@@ -1,7 +1,7 @@
 <div class="row">
 
 <div class="visualArts index col-md-10 columns content">
-    <h3>Visual Arts</h3>
+    <h3><?= __('Visual Arts') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

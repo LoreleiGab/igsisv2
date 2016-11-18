@@ -18,10 +18,10 @@ class TypeOccurrencesFixture extends TestFixture
     // @codingStandardsIgnoreStart
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'occurrence_type' => ['type' => 'string', 'length' => 60, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'name' => ['type' => 'string', 'length' => 60, 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
-            'occurrence_type_UNIQUE' => ['type' => 'unique', 'columns' => ['occurrence_type'], 'length' => []],
+            'occurrence_type_UNIQUE' => ['type' => 'unique', 'columns' => ['name'], 'length' => []],
         ],
         '_options' => [
             'engine' => 'InnoDB',
@@ -38,7 +38,7 @@ class TypeOccurrencesFixture extends TestFixture
     public $records = [
         [
             'id' => 1,
-            'occurrence_type' => 'Lorem ipsum dolor sit amet'
+            'name' => 'Lorem ipsum dolor sit amet'
         ],
     ];
 }
