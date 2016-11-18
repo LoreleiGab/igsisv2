@@ -51,8 +51,8 @@
 		<li class="treeview">
 		  <a href="#"><i class="fa fa-pencil-square-o"></i> <span>Projetos</span> <i class="fa fa-angle-left pull-right"></i></a>
 		  <ul class="treeview-menu">
-			<li><?= $this->Html->link(__('Listar'), ['controller' => 'ProjetoEspecials', 'action' => 'index']) ?></li>
-			<li><?= $this->Html->link(__('Novo', ['ProjetoEspecials']), ['action' => 'add']) ?></li>
+			<li><?= $this->Html->link(__('Listar'), ['controller' => 'SpecialProjects', 'action' => 'index']) ?></li>
+			<li><?= $this->Html->link(__('Novo', ['SpecialProjects']), ['action' => 'add']) ?></li>
 		  </ul>
 		</li>
 		<li class="treeview">
