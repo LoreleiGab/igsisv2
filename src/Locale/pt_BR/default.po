@@ -1565,9 +1565,9 @@ msgstr "Duração"
 msgid "special_day"
 msgstr "Dia Especial"
 
-#: View/Scaffolds/
-msgid "audio_description"
-msgstr "Audio Descrição"
+#: View/Scaffolds/add.ctp:20
+msgid "Audio Description"
+msgstr "Audiodescrição"
 
 #: View/Scaffolds/
 msgid "libras"
@@ -1819,40 +1819,52 @@ msgstr "Texto"
 
 // serviços - services
 
+#: View/Scaffolds/add.ctp
+msgid "Add Service"
+msgstr "Adicionar Serviços Externos"
+
+#: View/Scaffolds/edit.ctp
+msgid "Edit Service"
+msgstr "Editar Serviços Externos"
+
+#: View/Scaffolds/
+msgid "Services"
+msgstr "Serviços Externos"
+
 #: View/Scaffolds/index.ctp:14
 msgid "Subtitle"
 msgstr "Legenda"
 
-#: View/Scaffolds/
-msgid "translation"
+#: View/Scaffolds/index.ctp:19
+msgid "Translation"
 msgstr "Tradução"
 
-#: View/Scaffolds/
-msgid "graphics"
+#: View/Scaffolds/index.ctp:20
+msgid "Graphics"
 msgstr "Gráficos"
 
-#: View/Scaffolds/
-msgid "pass"
+#: View/Scaffolds/index.ctp:21
+msgid "Pass"
 msgstr "Passagem"
 
-#: View/Scaffolds/
-msgid "mounting"
-msgstr "Montagem"
+#: View/Scaffolds/add.ctp:21
+msgid "Mounting"
+msgstr "Montagem Fina"
 
-#: View/Scaffolds/
-msgid "accommodation"
+#: View/Scaffolds/add.ctp:22
+msgid "Accommodation"
 msgstr "Hospedagem"
 
-#: View/Scaffolds/
-msgid "security"
+#: View/Scaffolds/add.ctp:23
+msgid "Security"
 msgstr "Seguro"
 
-#: View/Scaffolds/
-msgid "transport"
-msgstr "Transport"
+#: View/Scaffolds/add.ctp:24
+msgid "Transport"
+msgstr "Transporte"
 
-#: View/Scaffolds/
-msgid "itinerary"
+#: View/Scaffolds/add.ctp:25
+msgid "Itinerary"
 msgstr "Itinerário"
 
 #: View/Scaffolds/
@@ -1864,15 +1876,15 @@ msgid "cpfCnpj"
 msgstr "CPF/CNPJ"
 
 #: View/Scaffolds/
-msgid "bank"
+msgid "Bank"
 msgstr "Banco"
 
-#: View/Scaffolds/
-msgid "billing"
+#: View/Scaffolds/add.ctp:31
+msgid "Billing"
 msgstr "Bilhetagem"
 
-#: View/Scaffolds/
-msgid "capacity"
+#: View/Scaffolds/add.ctp:32
+msgid "Capacity"
 msgstr "Capacidade"
 
 // projetos especiais - special_projects

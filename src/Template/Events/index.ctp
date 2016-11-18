@@ -26,7 +26,7 @@
                 <td class="actions" style="white-space:nowrap">
                     <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $event->id], ['class'=>'btn btn-default btn-xs']) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $event->id], ['class'=>'btn btn-primary btn-xs']) ?>
-                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $event->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $event->id), 'class'=>'btn btn-danger btn-xs']) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $event->id], ['confirm' => __('Você tem certeza que deseja excluir a igsis id {0}?', $event->id), 'class'=>'btn btn-danger btn-xs']) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
