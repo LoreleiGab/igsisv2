@@ -5,8 +5,7 @@
         <li><?= $this->Form->postLink(__('Excluir {0}', ['Service']), ['action' => 'delete', $service->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $service->id)]) ?> </li>
         <li><?= $this->Html->link(__('Listar {0}', ['Services']), ['action' => 'index']) ?> </li>
         <li><?= $this->Html->link(__('Novo {0}', ['Service']), ['action' => 'add']) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Events']), ['controller' => 'Events', 'action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Event']), ['controller' => 'Events', 'action' => 'add']) ?> </li>
+        
     </ul>
 </nav>
 <div class="services view col-lg-10 col-md-9">
