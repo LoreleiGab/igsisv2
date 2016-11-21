@@ -8,7 +8,12 @@
 	</li> 
 	<li class="treeview"><a href="#"><span>Especificidades</span> <i class="fa fa-angle-left pull-right"></i></a></li>
 	
-	<li class="treeview"><a href="#"><span>Arquivos<br/> Comunicação / Produção</span> <i class="fa fa-angle-left pull-right"></i></a></li>
+	<li class="treeview"><a href="#"><span>Arquivos<br/> Comunicação / Produção</span> <i class="fa fa-angle-left pull-right"></i></a>
+		<ul class="treeview-menu">
+			<li><?= $this->Html->link(__('Listar Arquivos Inseridos'), ['controller' => 'UploadEvents', 'action' => 'index']) ?></li>
+			<li><?= $this->Html->link(__('Adicionar Arquivos'), ['controller' => 'UploadEvents', 'action' => 'add']) ?></li>
+		</ul>
+	</li>
 	
 	<li class="treeview"><a href="#"><span>Ocorrências</span> <i class="fa fa-angle-left pull-right"></i></a>
 		<ul class="treeview-menu">
