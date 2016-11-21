@@ -645,7 +645,9 @@ msgstr "Local"
 msgid "Occurrences Id"
 msgstr "Ocorrências"
 
-
+#: View/Scaffolds/add.ctp
+msgid "Add Occurrence"
+msgstr "Adicionar Ocorrência"
 
 #: View/Scaffolds/
 msgid "Occurrence Type"
@@ -903,6 +905,10 @@ msgstr "Relação Jurídica"
 msgid "Special Project Id"
 msgstr "Projeto Especial"
 
+#: View/Scaffolds/add.ctp:20
+msgid "Especial Day"
+msgstr "Dia Especial"
+
 #: View/Scaffolds/
 msgid "Sub Event"
 msgstr "SubEvento"
@@ -981,6 +987,14 @@ msgstr "Nº Parcelas"
 
 #: View/Scaffolds/
 msgid "Date Start"
+msgstr "Data Início"
+
+#: View/Scaffolds/add.ctp:23
+msgid "Start Hour"
+msgstr "Horário de Início"
+
+#: View/Scaffolds/
+msgid "Date Starter"
 msgstr "Data Início"
 
 #: View/Scaffolds/
@@ -1557,8 +1571,8 @@ msgstr "Sábado"
 msgid "sunday"
 msgstr "Domingo"
 
-#: View/Scaffolds/
-msgid "duration"
+#: View/Scaffolds/add.ctp:19
+msgid "Duration"
 msgstr "Duração"
 
 #: View/Scaffolds/
@@ -1573,44 +1587,44 @@ msgstr "Audiodescrição"
 msgid "libras"
 msgstr "Libras"
 
-#: View/Scaffolds/
-msgid "cultural_turn"
+#: View/Scaffolds/add.ctp:24
+msgid "Cultural Turn"
 msgstr "Virada Cultural"
 
-#: View/Scaffolds/
-msgid "popular_price"
+#: View/Scaffolds/add.ctp:25
+msgid "Popular Price"
 msgstr "Preço Popular"
 
 #: View/Scaffolds/
 msgid "get_ticket"
 msgstr "Retirada Ingresso"
 
-#: View/Scaffolds/
-msgid "ticket_value"
+#: View/Scaffolds/add.ctp:27
+msgid "Ticket Value"
 msgstr "Valor do Ingresso"
 
-#: View/Scaffolds/
-msgid "local_other"
+#: View/Scaffolds/add.ctp:29
+msgid "Local Other"
 msgstr "Outros Locais"
 
-#: View/Scaffolds/
-msgid "reserved"
-msgstr "Reservado"
+#: View/Scaffolds/add.ctp:30
+msgid "Reserved"
+msgstr "Reservados"
 
 #: View/Scaffolds/
 msgid "capacity"
 msgstr "Capacidade"
 
-#: View/Scaffolds/
-msgid "timezone"
+#: View/Scaffolds/add.ctp:32
+msgid "Timezone"
 msgstr "Fuso-Horário"
 
-#: View/Scaffolds/
-msgid "all_day"
-msgstr "Dia Todo"
+#: View/Scaffolds/add.ctp:33
+msgid "All Day"
+msgstr "Dia Inteiro"
 
-#: View/Scaffolds/
-msgid "frequency"
+#: View/Scaffolds/add.ctp:34
+msgid "Frequency"
 msgstr "Frequência"
 
 #: View/Scaffolds/
