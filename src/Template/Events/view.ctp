@@ -435,80 +435,53 @@
         <?php if (!empty($event->occurrences)): ?>
         <table class="table table-striped table-hover">
             <tr>
-                <th>Id</th>
+                <!--
+				<th>Id</th>
                 <th>Event Id</th>
-                <th>Sub Event Id</th>
-                <th>Occurrence Type Id</th>
-                <th>Date Starter</th>
-                <th>Date Final</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-                <th>Duration</th>
-                <th>Especial Day</th>
-                <th>Audio Description</th>
-                <th>Libras</th>
-                <th>Start Hour</th>
-                <th>Cultural Turn</th>
-                <th>Popular Price</th>
-                <th>Get Ticket</th>
-                <th>Ticket Value</th>
-                <th>Local Id</th>
-                <th>Local Other</th>
-                <th>Reserved</th>
-                <th>Capacity</th>
-                <th>Timezone</th>
-                <th>All Day</th>
-                <th>Frequency</th>
-                <th>Cinema Id</th>
-                <th>Published</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->occurrences as $occurrences): ?>
-            <tr>
-                <td><?= h($occurrences->id) ?></td>
-                <td><?= h($occurrences->event_id) ?></td>
-                <td><?= h($occurrences->sub_event_id) ?></td>
-                <td><?= h($occurrences->occurrence_type_id) ?></td>
-                <td><?= h($occurrences->date_starter) ?></td>
-                <td><?= h($occurrences->date_final) ?></td>
-                <td><?= h($occurrences->monday) ?></td>
-                <td><?= h($occurrences->tuesday) ?></td>
-                <td><?= h($occurrences->wednesday) ?></td>
-                <td><?= h($occurrences->thursday) ?></td>
-                <td><?= h($occurrences->friday) ?></td>
-                <td><?= h($occurrences->saturday) ?></td>
-                <td><?= h($occurrences->sunday) ?></td>
-                <td><?= h($occurrences->duration) ?></td>
-                <td><?= h($occurrences->especial_day) ?></td>
-                <td><?= h($occurrences->audio_description) ?></td>
-                <td><?= h($occurrences->libras) ?></td>
-                <td><?= h($occurrences->start_hour) ?></td>
-                <td><?= h($occurrences->cultural_turn) ?></td>
-                <td><?= h($occurrences->popular_price) ?></td>
-                <td><?= h($occurrences->get_ticket) ?></td>
-                <td><?= h($occurrences->ticket_value) ?></td>
-                <td><?= h($occurrences->local_id) ?></td>
-                <td><?= h($occurrences->local_other) ?></td>
-                <td><?= h($occurrences->reserved) ?></td>
-                <td><?= h($occurrences->capacity) ?></td>
-                <td><?= h($occurrences->timezone) ?></td>
-                <td><?= h($occurrences->all_day) ?></td>
-                <td><?= h($occurrences->frequency) ?></td>
-                <td><?= h($occurrences->cinema_id) ?></td>
-                <td><?= h($occurrences->published) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Occurrences', 'action' => 'view', $occurrences->id]) ?>
+				-->
+				<?php foreach ($event->occurrences as $occurrences): ?>
+                <th>Sub Event Id: <?= h($occurrences->sub_event_id) ?>
+                <br>Occurrence Type Id: <?= h($occurrences->occurrence_type_id) ?>
+                <br>Date Starter: <?= h($occurrences->date_starter) ?>
+				<br>Date Final: <?= h($occurrences->date_final) ?>
+                <br>Monday: <?= h($occurrences->monday) ?>
+				<br>Tuesday: <?= h($occurrences->tuesday) ?>
+                <br>Wednesday: <?= h($occurrences->wednesday) ?>
+                <br>Thursday: <?= h($occurrences->thursday) ?>
+                <br>Friday: <?= h($occurrences->friday) ?>
+                <br>Saturday: <?= h($occurrences->saturday) ?>
+                <br>Sunday: <?= h($occurrences->sunday) ?>
+                <br>Duration: <?= h($occurrences->duration) ?>
+                <br>Especial Day: <?= h($occurrences->especial_day) ?>
+				<br>Audio Description: <?= h($occurrences->audio_description) ?>
+				<br>Libras: <?= h($occurrences->libras) ?>
+                <br>Start Hour: <?= h($occurrences->start_hour) ?>
+				<br>Cultural Turn: <?= h($occurrences->cultural_turn) ?>
+				<br>Popular Price: <?= h($occurrences->popular_price) ?>
+				<br>Get Ticket: <?= h($occurrences->get_ticket) ?>
+				<br>Ticket Value: <?= h($occurrences->ticket_value) ?>
+				<br>Local Id: <?= h($occurrences->local_id) ?>
+				<br>Local Other: <?= h($occurrences->local_other) ?>
+                <br>Reserved: <?= h($occurrences->reserved) ?>
+				<br>Capacity: <?= h($occurrences->capacity) ?>
+                <br>Timezone: <?= h($occurrences->timezone) ?>
+                <br>All Day: <?= h($occurrences->all_day) ?>
+                <br>Frequency: <?= h($occurrences->frequency) ?>
+                <br>Cinema Id: <?= h($occurrences->cinema_id) ?>
+				
+				<br><br><br><class="actions"><?= __('Ação') ?>
+                <class="actions">
+                   <br><?= $this->Html->link(__('Visualizar'), ['controller' => 'Occurrences', 'action' => 'view', $occurrences->id], ['class'=>'btn btn-default btn-xs']) ?>
 
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'Occurrences', 'action' => 'edit', $occurrences->id]) ?>
+                   <?= $this->Html->link(__('Editar'), ['controller' => 'Occurrences', 'action' => 'edit', $occurrences->id], ['class'=>'btn btn-primary btn-xs']) ?>
 
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Occurrences', 'action' => 'delete', $occurrences->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $occurrences->id)]) ?>
-
-                </td>
+                   <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Occurrences', 'action' => 'delete', $occurrences->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $occurrences->id), 'class'=>'btn btn-danger btn-xs']) ?>
+                <!--
+				<td><?//= h($occurrences->id) ?></td>
+                <td><?//= h($occurrences->event_id) ?></td>
+                <td><?//= h($occurrences->published) ?></td>
+				-->
+				</th>
             </tr>
             <?php endforeach; ?>
         </table>
@@ -599,58 +572,37 @@
         <?php if (!empty($event->services)): ?>
         <table class="table table-striped table-hover">
             <tr>
-                <th>Id</th>
-                <th>Event Id</th>
-                <th>Libras</th>
-                <th>Subtitle</th>
-                <th>Translation</th>
-                <th>Graphics</th>
-                <th>Pass</th>
-                <th>Audio Description</th>
-                <th>Mounting</th>
-                <th>Accommodation</th>
-                <th>Security</th>
-                <th>Transport</th>
-                <th>Itinerary</th>
-                <th>Company Name</th>
-                <th>CpfCnpj</th>
-                <th>Bank</th>
-                <th>Bank Branch</th>
-                <th>Account</th>
-                <th>Billing</th>
-                <th>Capacity</th>
-                <th class="actions"><?= __('Ação') ?></th>
-            </tr>
-            <?php foreach ($event->services as $services): ?>
-            <tr>
-                <td><?= h($services->id) ?></td>
-                <td><?= h($services->event_id) ?></td>
-                <td><?= h($services->libras) ?></td>
-                <td><?= h($services->subtitle) ?></td>
-                <td><?= h($services->translation) ?></td>
-                <td><?= h($services->graphics) ?></td>
-                <td><?= h($services->pass) ?></td>
-                <td><?= h($services->audio_description) ?></td>
-                <td><?= h($services->mounting) ?></td>
-                <td><?= h($services->accommodation) ?></td>
-                <td><?= h($services->security) ?></td>
-                <td><?= h($services->transport) ?></td>
-                <td><?= h($services->itinerary) ?></td>
-                <td><?= h($services->company_name) ?></td>
-                <td><?= h($services->cpfCnpj) ?></td>
-                <td><?= h($services->bank) ?></td>
-                <td><?= h($services->bank_branch) ?></td>
-                <td><?= h($services->account) ?></td>
-                <td><?= h($services->billing) ?></td>
-                <td><?= h($services->capacity) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('Visualizar'), ['controller' => 'Services', 'action' => 'view', $services->id]) ?>
+				<?php foreach ($event->services as $services): ?>
+                <th>Id: <?= h($services->id) ?>
+                <br>Event Id: <?= h($services->event_id) ?>
+                <br>Libras: <?= h($services->libras) ?>
+                <br>Subtitle: <?= h($services->subtitle) ?>
+                <br>Translation: <?= h($services->translation) ?>
+                <br>Graphics: <?= h($services->graphics) ?>
+                <br>Pass: <?= h($services->pass) ?>
+                <br>Audio Description: <?= h($services->audio_description) ?>
+                <br>Mounting: <?= h($services->mounting) ?>
+                <br>Accommodation: <?= h($services->accommodation) ?>
+                <br>Security: <?= h($services->security) ?>
+                <br>Transport: <?= h($services->transport) ?>
+                <br>Itinerary: <?= h($services->itinerary) ?>
+                <br>Company Name: <?= h($services->company_name) ?>
+                <br>CpfCnpj: <?= h($services->cpfCnpj) ?>
+                <br>Bank: <?= h($services->bank) ?>
+                <br>Bank Branch: <?= h($services->bank_branch) ?>
+                <br>Account: <?= h($services->account) ?>
+                <br>Billing: <?= h($services->billing) ?>
+                <br>Capacity: <?= h($services->capacity) ?>
+                
+				<br><br><br><class="actions"><?= __('Ação') ?>
+				<class="actions">
+                    <br><?= $this->Html->link(__('Visualizar'), ['controller' => 'Services', 'action' => 'view', $services->id], ['class'=>'btn btn-default btn-xs']) ?>
 
-                    <?= $this->Html->link(__('Editar'), ['controller' => 'Services', 'action' => 'edit', $services->id]) ?>
+					<?= $this->Html->link(__('Editar'), ['controller' => 'Services', 'action' => 'edit', $services->id], ['class'=>'btn btn-primary btn-xs']) ?>
 
-                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Services', 'action' => 'delete', $services->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $services->id)]) ?>
-
-                </td>
+                    <?= $this->Form->postLink(__('Excluir'), ['controller' => 'Services', 'action' => 'delete', $services->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $services->id), 'class'=>'btn btn-danger btn-xs']) ?>
+					<br><br>
+                </th>
             </tr>
             <?php endforeach; ?>
         </table>
