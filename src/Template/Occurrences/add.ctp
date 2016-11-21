@@ -2,7 +2,7 @@
 <div class="occurrences form col-md-10 columns content">
     <?= $this->Form->create($occurrence) ?>
     <fieldset>
-        <legend><?= 'Add Occurrence' ?></legend>
+        <legend><?= __('Add Occurrence') ?></legend>
         <?php
             echo $this->Form->input('event_id', ['options' => $events]);
             echo $this->Form->input('sub_event_id', ['options' => $subEvents, 'empty' => true]);

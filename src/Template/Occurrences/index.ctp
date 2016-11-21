@@ -11,7 +11,6 @@
                 <th><?= $this->Paginator->sort('occurrence_type_id') ?></th>
                 <th><?= $this->Paginator->sort('date_starter') ?></th>
                 <th><?= $this->Paginator->sort('date_final') ?></th>
-                <th><?= $this->Paginator->sort('monday') ?></th>
                 <th class="actions"><?= __('Ação') ?></th>
             </tr>
         </thead>
