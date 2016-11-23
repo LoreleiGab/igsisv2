@@ -28,7 +28,7 @@
                 <td class="actions" style="white-space:nowrap">
                     <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $producer->id], ['class'=>'btn btn-default btn-xs']) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $producer->id], ['class'=>'btn btn-primary btn-xs']) ?>
-                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $producer->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $producer->id), 'class'=>'btn btn-danger btn-xs']) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $producer->id], ['confirm' => __('Você tem certeza que deseja excluir o Id Produtor {0}?', $producer->id), 'class'=>'btn btn-danger btn-xs']) ?>
                 </td>
             </tr>
             <?php endforeach; ?>

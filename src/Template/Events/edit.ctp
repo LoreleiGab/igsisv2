@@ -19,7 +19,6 @@
             echo $this->Form->input('producer_id', ['options' => $producers]);
             echo $this->Form->input('user_id', ['options' => $users]);
             echo $this->Form->input('institution_id', ['options' => $institutions]);
-            echo $this->Form->input('date_send');
             echo $this->Form->input('public_target');
             echo $this->Form->input('published');
         ?>
