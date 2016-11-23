@@ -7,7 +7,7 @@
     </ul>
 </nav>
 <div class="uploadEvents index col-md-10 columns content">
-    <h3>Upload Events</h3>
+    <h3><?= __('Upload Events') ?></h3>
     <table class="table table-striped table-hover">
         <thead>
             <tr>

@@ -1,16 +1,15 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Producer']), ['action' => 'add']) ?></li>
-         <li><?= $this->Html->link(__('List {0}', 'Producers'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
+
 <div class="producers index col-md-10 columns content">
     <h3><?= __('Producers') ?></h3>
+	<?= $this->Html->link(__('Adicionar'), ['controller' => 'Producers', 'action' => 'add'], ['class'=>'btn btn-primary btn-xs']) ?>
     <table class="table table-striped table-hover">
         <thead>
             <tr>
+			
+				<ul class="treeview-menu">
+
+		</ul>
+		
                 <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('name') ?></th>
                 <th><?= $this->Paginator->sort('phone') ?></th>
