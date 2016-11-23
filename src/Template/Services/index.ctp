@@ -35,7 +35,7 @@
                 <td class="actions" style="white-space:nowrap">
                     <?= $this->Html->link(__('Visualizar'), ['action' => 'view', $service->id], ['class'=>'btn btn-default btn-xs']) ?>
                     <?= $this->Html->link(__('Editar'), ['action' => 'edit', $service->id], ['class'=>'btn btn-primary btn-xs']) ?>
-                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $service->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $service->id), 'class'=>'btn btn-danger btn-xs']) ?>
+                    <?= $this->Form->postLink(__('Excluir'), ['action' => 'delete', $service->id], ['confirm' => __('Você tem certeza que deseja excluir o Id Serviço Externo {0}?', $service->id), 'class'=>'btn btn-danger btn-xs']) ?>
                 </td>
             </tr>
             <?php endforeach; ?>
