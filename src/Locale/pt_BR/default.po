@@ -2021,7 +2021,19 @@ msgstr "Iniciais"
 //upload Eventos - upload_events
 
 #: View/Scaffolds/
-msgid "file"
+msgid "Add Upload Event"
+msgstr "Adicionar Arquivos do Evento"
+
+#: View/Scaffolds/add.ctp:5
+msgid "Upload Events"
+msgstr "Arquivos do Evento"
+
+#: View/Scaffolds/
+msgid "Edit Upload Event"
+msgstr "Editar Arquivos do Evento"
+
+#: View/Scaffolds/add.ctp:8
+msgid "File"
 msgstr "Arquivo"
 
 // upload Formação - upload_formations
