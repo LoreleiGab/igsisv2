@@ -3,8 +3,7 @@
         <li class="active"><a href=""><?= __('Ação') ?></a></li>
         <li><?= $this->Html->link(__('Editar {0}', ['Service']), ['action' => 'edit', $service->id]) ?> </li>
         <li><?= $this->Form->postLink(__('Excluir {0}', ['Service']), ['action' => 'delete', $service->id], ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $service->id)]) ?> </li>
-        <li><?= $this->Html->link(__('Listar {0}', ['Services']), ['action' => 'index']) ?> </li>
-        <li><?= $this->Html->link(__('Novo {0}', ['Service']), ['action' => 'add']) ?> </li>
+       
         
     </ul>
 </nav>
