@@ -7,8 +7,7 @@
                 ['confirm' => __('Você tem certeza que deseja excluir # {0}?', $service->id)]
             )
         ?></li>
-		<li><?= $this->Html->link(__('New {0}', ['Service']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', 'Services'), ['action' => 'index']) ?></li>
+		
         
     </ul>
 </nav>

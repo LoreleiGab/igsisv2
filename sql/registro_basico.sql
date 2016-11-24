@@ -247,3 +247,18 @@ INSERT INTO `age_groups` (`name`) VALUES
 ('14 Anos'),
 ('12 Anos'),
 ('10 Anos');
+
+INSERT INTO `Events` (`name`) VALUES
+(1, 'Events', 'index'),
+(1, 'Events', 'view'),
+(1, 'Events', 'add'),
+(1, 'Events', 'edit');
+
+INSERT INTO `UploadEvents` (`name`) VALUES
+(1, 'UploadEvents', 'index'),
+(1, 'UploadEvents', 'view'),
+(1, 'UploadEvents', 'add'),
+(1, 'UploadEvents', 'edit');
+
+
+
