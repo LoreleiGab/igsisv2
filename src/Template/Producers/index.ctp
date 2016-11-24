@@ -1,7 +1,7 @@
-
 <div class="producers index col-md-10 columns content">
     <h3><?= __('Producers') ?></h3>
 	<?= $this->Html->link(__('Adicionar'), ['controller' => 'Producers', 'action' => 'add'], ['class'=>'btn btn-primary btn-xs']) ?>
+	
     <table class="table table-striped table-hover">
         <thead>
             <tr>
