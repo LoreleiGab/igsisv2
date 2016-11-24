@@ -5,7 +5,12 @@
     <table class="table table-striped table-hover">
         <thead>
             <tr>
-                <th><?= $this->Paginator->sort('id') ?></th>
+			
+				<ul class="treeview-menu">
+
+		</ul>
+		
+		        <th><?= $this->Paginator->sort('id') ?></th>
                 <th><?= $this->Paginator->sort('event_id') ?></th>
                 <th><?= $this->Paginator->sort('libras') ?></th>
                 <th><?= $this->Paginator->sort('subtitle') ?></th>

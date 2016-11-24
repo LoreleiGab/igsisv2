@@ -1,20 +1,4 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Fund']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Institutions']), ['controller' => 'Institutions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Institution']), ['controller' => 'Institutions', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Estimate Controls']), ['controller' => 'EstimateControls', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Estimate Control']), ['controller' => 'EstimateControls', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Hiring Requests']), ['controller' => 'HiringRequests', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Hiring Request']), ['controller' => 'HiringRequests', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Historic Hiring Resquests']), ['controller' => 'HistoricHiringResquests', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Historic Hiring Resquest']), ['controller' => 'HistoricHiringResquests', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Users']), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['User']), ['controller' => 'Users', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
+
 <div class="funds index col-md-10 columns content">
     <h3><?= __('Funds') ?></h3>
     <table class="table table-striped table-hover">

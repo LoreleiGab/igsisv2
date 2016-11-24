@@ -1,11 +1,3 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Special Project']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', 'Special Projects'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
 <div class="specialProjects index col-md-10 columns content">
     <h3><?= __('Special Project') ?></h3>
     <table class="table table-striped table-hover">

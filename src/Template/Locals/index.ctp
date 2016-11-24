@@ -1,24 +1,3 @@
-<div class="row">
-<nav class="col-md-2" id="actions-sidebar">
-    <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a><?= __('Actions') ?></a></li>
-        <li><?= $this->Html->link(__('New {0}', ['Local']), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Institutions']), ['controller' => 'Institutions', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Institution']), ['controller' => 'Institutions', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Agenda Posters']), ['controller' => 'AgendaPosters', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Agenda Poster']), ['controller' => 'AgendaPosters', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Agendas']), ['controller' => 'Agendas', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Agenda']), ['controller' => 'Agendas', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Detail Locals']), ['controller' => 'DetailLocals', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Detail Local']), ['controller' => 'DetailLocals', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Historic Occurrences']), ['controller' => 'HistoricOccurrences', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Historic Occurrence']), ['controller' => 'HistoricOccurrences', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Occurrences']), ['controller' => 'Occurrences', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['Occurrence']), ['controller' => 'Occurrences', 'action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List {0}', ['Users']), ['controller' => 'Users', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New {0}', ['User']), ['controller' => 'Users', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
 <div class="locals index col-md-10 columns content">
     <h3><?= __('Locals') ?></h3>
     <table class="table table-striped table-hover">
